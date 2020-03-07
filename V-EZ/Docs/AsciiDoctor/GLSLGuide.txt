@@ -1,2 +1,0 @@
-== GLSL Guide
-_TODO_

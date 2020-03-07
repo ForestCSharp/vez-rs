@@ -1,0 +1,18 @@
+[package]
+name = "vez-rs"
+version = "0.1.0"
+authors = ["Forest Sharp <forestcollinssharp@gmail.com>"]
+edition = "2018"
+
+[build-dependencies]
+bindgen = "0.52.0"
+cmake = "0.1"
+
+[dev-dependencies.glfw]
+version = "0.35.0"
+features = ["vulkan"]
+
+[dev-dependencies]
+memoffset = "0.5.3"
+ultraviolet = "0.4.5"
+wavefront_obj = "7.0.0"

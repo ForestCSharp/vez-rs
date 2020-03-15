@@ -1480,7 +1480,7 @@ pub struct StencilFace(VkStencilFaceFlags);
 impl StencilFace {
     pub const FRONT : StencilFace = StencilFace(VkStencilFaceFlagBits::VK_STENCIL_FACE_FRONT_BIT as _);
     pub const BACK : StencilFace = StencilFace(VkStencilFaceFlagBits::VK_STENCIL_FACE_BACK_BIT as _);
-    pub const BOTH : StencilFace = StencilFace(VkStencilFaceFlagBits::VK_STENCIL_FACE_FRONT_AND_BACK as _);
+    pub const BOTH : StencilFace = StencilFace(VkStencilFaceFlagBits::VK_STENCIL_FRONT_AND_BACK as _);
 }
 
 impl BitOr for StencilFace {

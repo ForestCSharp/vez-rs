@@ -27,7 +27,9 @@ fn main() {
 
     println!("OUT DIR: {}", out_dir);
 
-    let _dst = cmake::Config::new("V-EZ").build();
+    let _dst = cmake::Config::new("V-EZ")
+        .define("VEZ_OUTPUT_DIRECTORY", &out_dir)
+        .build();
 
     println!("cargo:rustc-link-search={}\\Lib", vk_dir);
     println!("cargo:rustc-link-lib=vulkan-1");

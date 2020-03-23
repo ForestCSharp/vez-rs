@@ -35,8 +35,9 @@ fn main() {
     println!("cargo:rustc-link-lib=vulkan-1");
 
     println!("cargo:rustc-link-search={}", &out_dir);
-    println!("cargo:rustc-link-lib=VEZd");
-
-    //FIXME: STATUS_DLL_NOT_FOUND in triangle.exe
-    //FIX: do we need to copy the VEZd DLL into the executable directory? or add to search path
+    if cfg!(debug_assertions) {
+        println!("cargo:rustc-link-lib=VEZd");
+    } else {
+        println!("cargo:rustc-link-lib=VEZ");
+    }
 }

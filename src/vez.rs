@@ -13,7 +13,7 @@ pub const WINT_MIN: u32 = 0;
 pub const WINT_MAX: u32 = 65535;
 pub const VULKAN_CORE_H_: u32 = 1;
 pub const VK_VERSION_1_0: u32 = 1;
-pub const VK_HEADER_VERSION: u32 = 101;
+pub const VK_HEADER_VERSION: u32 = 131;
 pub const VK_NULL_HANDLE: u32 = 0;
 pub const VK_LOD_CLAMP_NONE: f64 = 1000.0;
 pub const VK_REMAINING_MIP_LEVELS: i32 = -1;
@@ -34,6 +34,9 @@ pub const VK_VERSION_1_1: u32 = 1;
 pub const VK_MAX_DEVICE_GROUP_SIZE: u32 = 32;
 pub const VK_LUID_SIZE: u32 = 8;
 pub const VK_QUEUE_FAMILY_EXTERNAL: i32 = -2;
+pub const VK_VERSION_1_2: u32 = 1;
+pub const VK_MAX_DRIVER_NAME_SIZE: u32 = 256;
+pub const VK_MAX_DRIVER_INFO_SIZE: u32 = 256;
 pub const VK_KHR_surface: u32 = 1;
 pub const VK_KHR_SURFACE_SPEC_VERSION: u32 = 25;
 pub const VK_KHR_SURFACE_EXTENSION_NAME: &'static [u8; 15usize] = b"VK_KHR_surface\0";
@@ -41,25 +44,25 @@ pub const VK_KHR_swapchain: u32 = 1;
 pub const VK_KHR_SWAPCHAIN_SPEC_VERSION: u32 = 70;
 pub const VK_KHR_SWAPCHAIN_EXTENSION_NAME: &'static [u8; 17usize] = b"VK_KHR_swapchain\0";
 pub const VK_KHR_display: u32 = 1;
-pub const VK_KHR_DISPLAY_SPEC_VERSION: u32 = 21;
+pub const VK_KHR_DISPLAY_SPEC_VERSION: u32 = 23;
 pub const VK_KHR_DISPLAY_EXTENSION_NAME: &'static [u8; 15usize] = b"VK_KHR_display\0";
 pub const VK_KHR_display_swapchain: u32 = 1;
-pub const VK_KHR_DISPLAY_SWAPCHAIN_SPEC_VERSION: u32 = 9;
+pub const VK_KHR_DISPLAY_SWAPCHAIN_SPEC_VERSION: u32 = 10;
 pub const VK_KHR_DISPLAY_SWAPCHAIN_EXTENSION_NAME: &'static [u8; 25usize] =
     b"VK_KHR_display_swapchain\0";
 pub const VK_KHR_sampler_mirror_clamp_to_edge: u32 = 1;
-pub const VK_KHR_SAMPLER_MIRROR_CLAMP_TO_EDGE_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_SAMPLER_MIRROR_CLAMP_TO_EDGE_SPEC_VERSION: u32 = 3;
 pub const VK_KHR_SAMPLER_MIRROR_CLAMP_TO_EDGE_EXTENSION_NAME: &'static [u8; 36usize] =
     b"VK_KHR_sampler_mirror_clamp_to_edge\0";
 pub const VK_KHR_multiview: u32 = 1;
 pub const VK_KHR_MULTIVIEW_SPEC_VERSION: u32 = 1;
 pub const VK_KHR_MULTIVIEW_EXTENSION_NAME: &'static [u8; 17usize] = b"VK_KHR_multiview\0";
 pub const VK_KHR_get_physical_device_properties2: u32 = 1;
-pub const VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_SPEC_VERSION: u32 = 2;
 pub const VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_EXTENSION_NAME: &'static [u8; 39usize] =
     b"VK_KHR_get_physical_device_properties2\0";
 pub const VK_KHR_device_group: u32 = 1;
-pub const VK_KHR_DEVICE_GROUP_SPEC_VERSION: u32 = 3;
+pub const VK_KHR_DEVICE_GROUP_SPEC_VERSION: u32 = 4;
 pub const VK_KHR_DEVICE_GROUP_EXTENSION_NAME: &'static [u8; 20usize] = b"VK_KHR_device_group\0";
 pub const VK_KHR_shader_draw_parameters: u32 = 1;
 pub const VK_KHR_SHADER_DRAW_PARAMETERS_SPEC_VERSION: u32 = 1;
@@ -118,6 +121,10 @@ pub const VK_KHR_descriptor_update_template: u32 = 1;
 pub const VK_KHR_DESCRIPTOR_UPDATE_TEMPLATE_SPEC_VERSION: u32 = 1;
 pub const VK_KHR_DESCRIPTOR_UPDATE_TEMPLATE_EXTENSION_NAME: &'static [u8; 34usize] =
     b"VK_KHR_descriptor_update_template\0";
+pub const VK_KHR_imageless_framebuffer: u32 = 1;
+pub const VK_KHR_IMAGELESS_FRAMEBUFFER_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_IMAGELESS_FRAMEBUFFER_EXTENSION_NAME: &'static [u8; 29usize] =
+    b"VK_KHR_imageless_framebuffer\0";
 pub const VK_KHR_create_renderpass2: u32 = 1;
 pub const VK_KHR_CREATE_RENDERPASS_2_SPEC_VERSION: u32 = 1;
 pub const VK_KHR_CREATE_RENDERPASS_2_EXTENSION_NAME: &'static [u8; 26usize] =
@@ -137,6 +144,10 @@ pub const VK_KHR_external_fence_fd: u32 = 1;
 pub const VK_KHR_EXTERNAL_FENCE_FD_SPEC_VERSION: u32 = 1;
 pub const VK_KHR_EXTERNAL_FENCE_FD_EXTENSION_NAME: &'static [u8; 25usize] =
     b"VK_KHR_external_fence_fd\0";
+pub const VK_KHR_performance_query: u32 = 1;
+pub const VK_KHR_PERFORMANCE_QUERY_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_PERFORMANCE_QUERY_EXTENSION_NAME: &'static [u8; 25usize] =
+    b"VK_KHR_performance_query\0";
 pub const VK_KHR_maintenance2: u32 = 1;
 pub const VK_KHR_MAINTENANCE2_SPEC_VERSION: u32 = 1;
 pub const VK_KHR_MAINTENANCE2_EXTENSION_NAME: &'static [u8; 20usize] = b"VK_KHR_maintenance2\0";
@@ -173,7 +184,7 @@ pub const VK_KHR_IMAGE_FORMAT_LIST_SPEC_VERSION: u32 = 1;
 pub const VK_KHR_IMAGE_FORMAT_LIST_EXTENSION_NAME: &'static [u8; 25usize] =
     b"VK_KHR_image_format_list\0";
 pub const VK_KHR_sampler_ycbcr_conversion: u32 = 1;
-pub const VK_KHR_SAMPLER_YCBCR_CONVERSION_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_SAMPLER_YCBCR_CONVERSION_SPEC_VERSION: u32 = 14;
 pub const VK_KHR_SAMPLER_YCBCR_CONVERSION_EXTENSION_NAME: &'static [u8; 32usize] =
     b"VK_KHR_sampler_ycbcr_conversion\0";
 pub const VK_KHR_bind_memory2: u32 = 1;
@@ -186,6 +197,10 @@ pub const VK_KHR_draw_indirect_count: u32 = 1;
 pub const VK_KHR_DRAW_INDIRECT_COUNT_SPEC_VERSION: u32 = 1;
 pub const VK_KHR_DRAW_INDIRECT_COUNT_EXTENSION_NAME: &'static [u8; 27usize] =
     b"VK_KHR_draw_indirect_count\0";
+pub const VK_KHR_shader_subgroup_extended_types: u32 = 1;
+pub const VK_KHR_SHADER_SUBGROUP_EXTENDED_TYPES_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_SHADER_SUBGROUP_EXTENDED_TYPES_EXTENSION_NAME: &'static [u8; 38usize] =
+    b"VK_KHR_shader_subgroup_extended_types\0";
 pub const VK_KHR_8bit_storage: u32 = 1;
 pub const VK_KHR_8BIT_STORAGE_SPEC_VERSION: u32 = 1;
 pub const VK_KHR_8BIT_STORAGE_EXTENSION_NAME: &'static [u8; 20usize] = b"VK_KHR_8bit_storage\0";
@@ -193,14 +208,17 @@ pub const VK_KHR_shader_atomic_int64: u32 = 1;
 pub const VK_KHR_SHADER_ATOMIC_INT64_SPEC_VERSION: u32 = 1;
 pub const VK_KHR_SHADER_ATOMIC_INT64_EXTENSION_NAME: &'static [u8; 27usize] =
     b"VK_KHR_shader_atomic_int64\0";
+pub const VK_KHR_shader_clock: u32 = 1;
+pub const VK_KHR_SHADER_CLOCK_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_SHADER_CLOCK_EXTENSION_NAME: &'static [u8; 20usize] = b"VK_KHR_shader_clock\0";
 pub const VK_KHR_driver_properties: u32 = 1;
-pub const VK_MAX_DRIVER_NAME_SIZE_KHR: u32 = 256;
-pub const VK_MAX_DRIVER_INFO_SIZE_KHR: u32 = 256;
 pub const VK_KHR_DRIVER_PROPERTIES_SPEC_VERSION: u32 = 1;
 pub const VK_KHR_DRIVER_PROPERTIES_EXTENSION_NAME: &'static [u8; 25usize] =
     b"VK_KHR_driver_properties\0";
+pub const VK_MAX_DRIVER_NAME_SIZE_KHR: u32 = 256;
+pub const VK_MAX_DRIVER_INFO_SIZE_KHR: u32 = 256;
 pub const VK_KHR_shader_float_controls: u32 = 1;
-pub const VK_KHR_SHADER_FLOAT_CONTROLS_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_SHADER_FLOAT_CONTROLS_SPEC_VERSION: u32 = 4;
 pub const VK_KHR_SHADER_FLOAT_CONTROLS_EXTENSION_NAME: &'static [u8; 29usize] =
     b"VK_KHR_shader_float_controls\0";
 pub const VK_KHR_depth_stencil_resolve: u32 = 1;
@@ -211,10 +229,37 @@ pub const VK_KHR_swapchain_mutable_format: u32 = 1;
 pub const VK_KHR_SWAPCHAIN_MUTABLE_FORMAT_SPEC_VERSION: u32 = 1;
 pub const VK_KHR_SWAPCHAIN_MUTABLE_FORMAT_EXTENSION_NAME: &'static [u8; 32usize] =
     b"VK_KHR_swapchain_mutable_format\0";
+pub const VK_KHR_timeline_semaphore: u32 = 1;
+pub const VK_KHR_TIMELINE_SEMAPHORE_SPEC_VERSION: u32 = 2;
+pub const VK_KHR_TIMELINE_SEMAPHORE_EXTENSION_NAME: &'static [u8; 26usize] =
+    b"VK_KHR_timeline_semaphore\0";
 pub const VK_KHR_vulkan_memory_model: u32 = 1;
 pub const VK_KHR_VULKAN_MEMORY_MODEL_SPEC_VERSION: u32 = 3;
 pub const VK_KHR_VULKAN_MEMORY_MODEL_EXTENSION_NAME: &'static [u8; 27usize] =
     b"VK_KHR_vulkan_memory_model\0";
+pub const VK_KHR_spirv_1_4: u32 = 1;
+pub const VK_KHR_SPIRV_1_4_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_SPIRV_1_4_EXTENSION_NAME: &'static [u8; 17usize] = b"VK_KHR_spirv_1_4\0";
+pub const VK_KHR_surface_protected_capabilities: u32 = 1;
+pub const VK_KHR_SURFACE_PROTECTED_CAPABILITIES_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_SURFACE_PROTECTED_CAPABILITIES_EXTENSION_NAME: &'static [u8; 38usize] =
+    b"VK_KHR_surface_protected_capabilities\0";
+pub const VK_KHR_separate_depth_stencil_layouts: u32 = 1;
+pub const VK_KHR_SEPARATE_DEPTH_STENCIL_LAYOUTS_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_SEPARATE_DEPTH_STENCIL_LAYOUTS_EXTENSION_NAME: &'static [u8; 38usize] =
+    b"VK_KHR_separate_depth_stencil_layouts\0";
+pub const VK_KHR_uniform_buffer_standard_layout: u32 = 1;
+pub const VK_KHR_UNIFORM_BUFFER_STANDARD_LAYOUT_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_UNIFORM_BUFFER_STANDARD_LAYOUT_EXTENSION_NAME: &'static [u8; 38usize] =
+    b"VK_KHR_uniform_buffer_standard_layout\0";
+pub const VK_KHR_buffer_device_address: u32 = 1;
+pub const VK_KHR_BUFFER_DEVICE_ADDRESS_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_BUFFER_DEVICE_ADDRESS_EXTENSION_NAME: &'static [u8; 29usize] =
+    b"VK_KHR_buffer_device_address\0";
+pub const VK_KHR_pipeline_executable_properties: u32 = 1;
+pub const VK_KHR_PIPELINE_EXECUTABLE_PROPERTIES_SPEC_VERSION: u32 = 1;
+pub const VK_KHR_PIPELINE_EXECUTABLE_PROPERTIES_EXTENSION_NAME: &'static [u8; 38usize] =
+    b"VK_KHR_pipeline_executable_properties\0";
 pub const VK_EXT_debug_report: u32 = 1;
 pub const VK_EXT_DEBUG_REPORT_SPEC_VERSION: u32 = 9;
 pub const VK_EXT_DEBUG_REPORT_EXTENSION_NAME: &'static [u8; 20usize] = b"VK_EXT_debug_report\0";
@@ -254,8 +299,12 @@ pub const VK_EXT_transform_feedback: u32 = 1;
 pub const VK_EXT_TRANSFORM_FEEDBACK_SPEC_VERSION: u32 = 1;
 pub const VK_EXT_TRANSFORM_FEEDBACK_EXTENSION_NAME: &'static [u8; 26usize] =
     b"VK_EXT_transform_feedback\0";
+pub const VK_NVX_image_view_handle: u32 = 1;
+pub const VK_NVX_IMAGE_VIEW_HANDLE_SPEC_VERSION: u32 = 1;
+pub const VK_NVX_IMAGE_VIEW_HANDLE_EXTENSION_NAME: &'static [u8; 25usize] =
+    b"VK_NVX_image_view_handle\0";
 pub const VK_AMD_draw_indirect_count: u32 = 1;
-pub const VK_AMD_DRAW_INDIRECT_COUNT_SPEC_VERSION: u32 = 1;
+pub const VK_AMD_DRAW_INDIRECT_COUNT_SPEC_VERSION: u32 = 2;
 pub const VK_AMD_DRAW_INDIRECT_COUNT_EXTENSION_NAME: &'static [u8; 27usize] =
     b"VK_AMD_draw_indirect_count\0";
 pub const VK_AMD_negative_viewport_height: u32 = 1;
@@ -263,7 +312,7 @@ pub const VK_AMD_NEGATIVE_VIEWPORT_HEIGHT_SPEC_VERSION: u32 = 1;
 pub const VK_AMD_NEGATIVE_VIEWPORT_HEIGHT_EXTENSION_NAME: &'static [u8; 32usize] =
     b"VK_AMD_negative_viewport_height\0";
 pub const VK_AMD_gpu_shader_half_float: u32 = 1;
-pub const VK_AMD_GPU_SHADER_HALF_FLOAT_SPEC_VERSION: u32 = 1;
+pub const VK_AMD_GPU_SHADER_HALF_FLOAT_SPEC_VERSION: u32 = 2;
 pub const VK_AMD_GPU_SHADER_HALF_FLOAT_EXTENSION_NAME: &'static [u8; 29usize] =
     b"VK_AMD_gpu_shader_half_float\0";
 pub const VK_AMD_shader_ballot: u32 = 1;
@@ -295,7 +344,7 @@ pub const VK_NV_external_memory: u32 = 1;
 pub const VK_NV_EXTERNAL_MEMORY_SPEC_VERSION: u32 = 1;
 pub const VK_NV_EXTERNAL_MEMORY_EXTENSION_NAME: &'static [u8; 22usize] = b"VK_NV_external_memory\0";
 pub const VK_EXT_validation_flags: u32 = 1;
-pub const VK_EXT_VALIDATION_FLAGS_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_VALIDATION_FLAGS_SPEC_VERSION: u32 = 2;
 pub const VK_EXT_VALIDATION_FLAGS_EXTENSION_NAME: &'static [u8; 24usize] =
     b"VK_EXT_validation_flags\0";
 pub const VK_EXT_shader_subgroup_ballot: u32 = 1;
@@ -306,12 +355,16 @@ pub const VK_EXT_shader_subgroup_vote: u32 = 1;
 pub const VK_EXT_SHADER_SUBGROUP_VOTE_SPEC_VERSION: u32 = 1;
 pub const VK_EXT_SHADER_SUBGROUP_VOTE_EXTENSION_NAME: &'static [u8; 28usize] =
     b"VK_EXT_shader_subgroup_vote\0";
+pub const VK_EXT_texture_compression_astc_hdr: u32 = 1;
+pub const VK_EXT_TEXTURE_COMPRESSION_ASTC_HDR_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_TEXTURE_COMPRESSION_ASTC_HDR_EXTENSION_NAME: &'static [u8; 36usize] =
+    b"VK_EXT_texture_compression_astc_hdr\0";
 pub const VK_EXT_astc_decode_mode: u32 = 1;
 pub const VK_EXT_ASTC_DECODE_MODE_SPEC_VERSION: u32 = 1;
 pub const VK_EXT_ASTC_DECODE_MODE_EXTENSION_NAME: &'static [u8; 24usize] =
     b"VK_EXT_astc_decode_mode\0";
 pub const VK_EXT_conditional_rendering: u32 = 1;
-pub const VK_EXT_CONDITIONAL_RENDERING_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_CONDITIONAL_RENDERING_SPEC_VERSION: u32 = 2;
 pub const VK_EXT_CONDITIONAL_RENDERING_EXTENSION_NAME: &'static [u8; 29usize] =
     b"VK_EXT_conditional_rendering\0";
 pub const VK_NVX_device_generated_commands: u32 = 1;
@@ -370,11 +423,11 @@ pub const VK_EXT_DEPTH_CLIP_ENABLE_SPEC_VERSION: u32 = 1;
 pub const VK_EXT_DEPTH_CLIP_ENABLE_EXTENSION_NAME: &'static [u8; 25usize] =
     b"VK_EXT_depth_clip_enable\0";
 pub const VK_EXT_swapchain_colorspace: u32 = 1;
-pub const VK_EXT_SWAPCHAIN_COLOR_SPACE_SPEC_VERSION: u32 = 3;
+pub const VK_EXT_SWAPCHAIN_COLOR_SPACE_SPEC_VERSION: u32 = 4;
 pub const VK_EXT_SWAPCHAIN_COLOR_SPACE_EXTENSION_NAME: &'static [u8; 28usize] =
     b"VK_EXT_swapchain_colorspace\0";
 pub const VK_EXT_hdr_metadata: u32 = 1;
-pub const VK_EXT_HDR_METADATA_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_HDR_METADATA_SPEC_VERSION: u32 = 2;
 pub const VK_EXT_HDR_METADATA_EXTENSION_NAME: &'static [u8; 20usize] = b"VK_EXT_hdr_metadata\0";
 pub const VK_EXT_external_memory_dma_buf: u32 = 1;
 pub const VK_EXT_EXTERNAL_MEMORY_DMA_BUF_SPEC_VERSION: u32 = 1;
@@ -389,11 +442,11 @@ pub const VK_EXT_debug_utils: u32 = 1;
 pub const VK_EXT_DEBUG_UTILS_SPEC_VERSION: u32 = 1;
 pub const VK_EXT_DEBUG_UTILS_EXTENSION_NAME: &'static [u8; 19usize] = b"VK_EXT_debug_utils\0";
 pub const VK_EXT_sampler_filter_minmax: u32 = 1;
-pub const VK_EXT_SAMPLER_FILTER_MINMAX_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_SAMPLER_FILTER_MINMAX_SPEC_VERSION: u32 = 2;
 pub const VK_EXT_SAMPLER_FILTER_MINMAX_EXTENSION_NAME: &'static [u8; 29usize] =
     b"VK_EXT_sampler_filter_minmax\0";
 pub const VK_AMD_gpu_shader_int16: u32 = 1;
-pub const VK_AMD_GPU_SHADER_INT16_SPEC_VERSION: u32 = 1;
+pub const VK_AMD_GPU_SHADER_INT16_SPEC_VERSION: u32 = 2;
 pub const VK_AMD_GPU_SHADER_INT16_EXTENSION_NAME: &'static [u8; 24usize] =
     b"VK_AMD_gpu_shader_int16\0";
 pub const VK_AMD_mixed_attachment_samples: u32 = 1;
@@ -431,6 +484,10 @@ pub const VK_NV_FRAMEBUFFER_MIXED_SAMPLES_EXTENSION_NAME: &'static [u8; 32usize]
 pub const VK_NV_fill_rectangle: u32 = 1;
 pub const VK_NV_FILL_RECTANGLE_SPEC_VERSION: u32 = 1;
 pub const VK_NV_FILL_RECTANGLE_EXTENSION_NAME: &'static [u8; 21usize] = b"VK_NV_fill_rectangle\0";
+pub const VK_NV_shader_sm_builtins: u32 = 1;
+pub const VK_NV_SHADER_SM_BUILTINS_SPEC_VERSION: u32 = 1;
+pub const VK_NV_SHADER_SM_BUILTINS_EXTENSION_NAME: &'static [u8; 25usize] =
+    b"VK_NV_shader_sm_builtins\0";
 pub const VK_EXT_post_depth_coverage: u32 = 1;
 pub const VK_EXT_POST_DEPTH_COVERAGE_SPEC_VERSION: u32 = 1;
 pub const VK_EXT_POST_DEPTH_COVERAGE_EXTENSION_NAME: &'static [u8; 27usize] =
@@ -460,11 +517,11 @@ pub const VK_NV_RAY_TRACING_SPEC_VERSION: u32 = 3;
 pub const VK_NV_RAY_TRACING_EXTENSION_NAME: &'static [u8; 18usize] = b"VK_NV_ray_tracing\0";
 pub const VK_SHADER_UNUSED_NV: i32 = -1;
 pub const VK_NV_representative_fragment_test: u32 = 1;
-pub const VK_NV_REPRESENTATIVE_FRAGMENT_TEST_SPEC_VERSION: u32 = 1;
+pub const VK_NV_REPRESENTATIVE_FRAGMENT_TEST_SPEC_VERSION: u32 = 2;
 pub const VK_NV_REPRESENTATIVE_FRAGMENT_TEST_EXTENSION_NAME: &'static [u8; 35usize] =
     b"VK_NV_representative_fragment_test\0";
 pub const VK_EXT_filter_cubic: u32 = 1;
-pub const VK_EXT_FILTER_CUBIC_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_FILTER_CUBIC_SPEC_VERSION: u32 = 3;
 pub const VK_EXT_FILTER_CUBIC_EXTENSION_NAME: &'static [u8; 20usize] = b"VK_EXT_filter_cubic\0";
 pub const VK_EXT_global_priority: u32 = 1;
 pub const VK_EXT_GLOBAL_PRIORITY_SPEC_VERSION: u32 = 2;
@@ -477,12 +534,16 @@ pub const VK_EXT_EXTERNAL_MEMORY_HOST_EXTENSION_NAME: &'static [u8; 28usize] =
 pub const VK_AMD_buffer_marker: u32 = 1;
 pub const VK_AMD_BUFFER_MARKER_SPEC_VERSION: u32 = 1;
 pub const VK_AMD_BUFFER_MARKER_EXTENSION_NAME: &'static [u8; 21usize] = b"VK_AMD_buffer_marker\0";
+pub const VK_AMD_pipeline_compiler_control: u32 = 1;
+pub const VK_AMD_PIPELINE_COMPILER_CONTROL_SPEC_VERSION: u32 = 1;
+pub const VK_AMD_PIPELINE_COMPILER_CONTROL_EXTENSION_NAME: &'static [u8; 33usize] =
+    b"VK_AMD_pipeline_compiler_control\0";
 pub const VK_EXT_calibrated_timestamps: u32 = 1;
 pub const VK_EXT_CALIBRATED_TIMESTAMPS_SPEC_VERSION: u32 = 1;
 pub const VK_EXT_CALIBRATED_TIMESTAMPS_EXTENSION_NAME: &'static [u8; 29usize] =
     b"VK_EXT_calibrated_timestamps\0";
 pub const VK_AMD_shader_core_properties: u32 = 1;
-pub const VK_AMD_SHADER_CORE_PROPERTIES_SPEC_VERSION: u32 = 1;
+pub const VK_AMD_SHADER_CORE_PROPERTIES_SPEC_VERSION: u32 = 2;
 pub const VK_AMD_SHADER_CORE_PROPERTIES_EXTENSION_NAME: &'static [u8; 30usize] =
     b"VK_AMD_shader_core_properties\0";
 pub const VK_AMD_memory_overallocation_behavior: u32 = 1;
@@ -493,6 +554,10 @@ pub const VK_EXT_vertex_attribute_divisor: u32 = 1;
 pub const VK_EXT_VERTEX_ATTRIBUTE_DIVISOR_SPEC_VERSION: u32 = 3;
 pub const VK_EXT_VERTEX_ATTRIBUTE_DIVISOR_EXTENSION_NAME: &'static [u8; 32usize] =
     b"VK_EXT_vertex_attribute_divisor\0";
+pub const VK_EXT_pipeline_creation_feedback: u32 = 1;
+pub const VK_EXT_PIPELINE_CREATION_FEEDBACK_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_PIPELINE_CREATION_FEEDBACK_EXTENSION_NAME: &'static [u8; 34usize] =
+    b"VK_EXT_pipeline_creation_feedback\0";
 pub const VK_NV_shader_subgroup_partitioned: u32 = 1;
 pub const VK_NV_SHADER_SUBGROUP_PARTITIONED_SPEC_VERSION: u32 = 1;
 pub const VK_NV_SHADER_SUBGROUP_PARTITIONED_EXTENSION_NAME: &'static [u8; 34usize] =
@@ -509,7 +574,7 @@ pub const VK_NV_FRAGMENT_SHADER_BARYCENTRIC_SPEC_VERSION: u32 = 1;
 pub const VK_NV_FRAGMENT_SHADER_BARYCENTRIC_EXTENSION_NAME: &'static [u8; 34usize] =
     b"VK_NV_fragment_shader_barycentric\0";
 pub const VK_NV_shader_image_footprint: u32 = 1;
-pub const VK_NV_SHADER_IMAGE_FOOTPRINT_SPEC_VERSION: u32 = 1;
+pub const VK_NV_SHADER_IMAGE_FOOTPRINT_SPEC_VERSION: u32 = 2;
 pub const VK_NV_SHADER_IMAGE_FOOTPRINT_EXTENSION_NAME: &'static [u8; 29usize] =
     b"VK_NV_shader_image_footprint\0";
 pub const VK_NV_scissor_exclusive: u32 = 1;
@@ -520,9 +585,21 @@ pub const VK_NV_device_diagnostic_checkpoints: u32 = 1;
 pub const VK_NV_DEVICE_DIAGNOSTIC_CHECKPOINTS_SPEC_VERSION: u32 = 2;
 pub const VK_NV_DEVICE_DIAGNOSTIC_CHECKPOINTS_EXTENSION_NAME: &'static [u8; 36usize] =
     b"VK_NV_device_diagnostic_checkpoints\0";
+pub const VK_INTEL_shader_integer_functions2: u32 = 1;
+pub const VK_INTEL_SHADER_INTEGER_FUNCTIONS_2_SPEC_VERSION: u32 = 1;
+pub const VK_INTEL_SHADER_INTEGER_FUNCTIONS_2_EXTENSION_NAME: &'static [u8; 35usize] =
+    b"VK_INTEL_shader_integer_functions2\0";
+pub const VK_INTEL_performance_query: u32 = 1;
+pub const VK_INTEL_PERFORMANCE_QUERY_SPEC_VERSION: u32 = 1;
+pub const VK_INTEL_PERFORMANCE_QUERY_EXTENSION_NAME: &'static [u8; 27usize] =
+    b"VK_INTEL_performance_query\0";
 pub const VK_EXT_pci_bus_info: u32 = 1;
 pub const VK_EXT_PCI_BUS_INFO_SPEC_VERSION: u32 = 2;
 pub const VK_EXT_PCI_BUS_INFO_EXTENSION_NAME: &'static [u8; 20usize] = b"VK_EXT_pci_bus_info\0";
+pub const VK_AMD_display_native_hdr: u32 = 1;
+pub const VK_AMD_DISPLAY_NATIVE_HDR_SPEC_VERSION: u32 = 1;
+pub const VK_AMD_DISPLAY_NATIVE_HDR_EXTENSION_NAME: &'static [u8; 26usize] =
+    b"VK_AMD_display_native_hdr\0";
 pub const VK_EXT_fragment_density_map: u32 = 1;
 pub const VK_EXT_FRAGMENT_DENSITY_MAP_SPEC_VERSION: u32 = 1;
 pub const VK_EXT_FRAGMENT_DENSITY_MAP_EXTENSION_NAME: &'static [u8; 28usize] =
@@ -539,6 +616,18 @@ pub const VK_GOOGLE_decorate_string: u32 = 1;
 pub const VK_GOOGLE_DECORATE_STRING_SPEC_VERSION: u32 = 1;
 pub const VK_GOOGLE_DECORATE_STRING_EXTENSION_NAME: &'static [u8; 26usize] =
     b"VK_GOOGLE_decorate_string\0";
+pub const VK_EXT_subgroup_size_control: u32 = 1;
+pub const VK_EXT_SUBGROUP_SIZE_CONTROL_SPEC_VERSION: u32 = 2;
+pub const VK_EXT_SUBGROUP_SIZE_CONTROL_EXTENSION_NAME: &'static [u8; 29usize] =
+    b"VK_EXT_subgroup_size_control\0";
+pub const VK_AMD_shader_core_properties2: u32 = 1;
+pub const VK_AMD_SHADER_CORE_PROPERTIES_2_SPEC_VERSION: u32 = 1;
+pub const VK_AMD_SHADER_CORE_PROPERTIES_2_EXTENSION_NAME: &'static [u8; 31usize] =
+    b"VK_AMD_shader_core_properties2\0";
+pub const VK_AMD_device_coherent_memory: u32 = 1;
+pub const VK_AMD_DEVICE_COHERENT_MEMORY_SPEC_VERSION: u32 = 1;
+pub const VK_AMD_DEVICE_COHERENT_MEMORY_EXTENSION_NAME: &'static [u8; 30usize] =
+    b"VK_AMD_device_coherent_memory\0";
 pub const VK_EXT_memory_budget: u32 = 1;
 pub const VK_EXT_MEMORY_BUDGET_SPEC_VERSION: u32 = 1;
 pub const VK_EXT_MEMORY_BUDGET_EXTENSION_NAME: &'static [u8; 21usize] = b"VK_EXT_memory_budget\0";
@@ -554,18 +643,60 @@ pub const VK_EXT_buffer_device_address: u32 = 1;
 pub const VK_EXT_BUFFER_DEVICE_ADDRESS_SPEC_VERSION: u32 = 2;
 pub const VK_EXT_BUFFER_DEVICE_ADDRESS_EXTENSION_NAME: &'static [u8; 29usize] =
     b"VK_EXT_buffer_device_address\0";
+pub const VK_EXT_tooling_info: u32 = 1;
+pub const VK_EXT_TOOLING_INFO_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_TOOLING_INFO_EXTENSION_NAME: &'static [u8; 20usize] = b"VK_EXT_tooling_info\0";
 pub const VK_EXT_separate_stencil_usage: u32 = 1;
 pub const VK_EXT_SEPARATE_STENCIL_USAGE_SPEC_VERSION: u32 = 1;
 pub const VK_EXT_SEPARATE_STENCIL_USAGE_EXTENSION_NAME: &'static [u8; 30usize] =
     b"VK_EXT_separate_stencil_usage\0";
 pub const VK_EXT_validation_features: u32 = 1;
-pub const VK_EXT_VALIDATION_FEATURES_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_VALIDATION_FEATURES_SPEC_VERSION: u32 = 2;
 pub const VK_EXT_VALIDATION_FEATURES_EXTENSION_NAME: &'static [u8; 27usize] =
     b"VK_EXT_validation_features\0";
 pub const VK_NV_cooperative_matrix: u32 = 1;
 pub const VK_NV_COOPERATIVE_MATRIX_SPEC_VERSION: u32 = 1;
 pub const VK_NV_COOPERATIVE_MATRIX_EXTENSION_NAME: &'static [u8; 25usize] =
     b"VK_NV_cooperative_matrix\0";
+pub const VK_NV_coverage_reduction_mode: u32 = 1;
+pub const VK_NV_COVERAGE_REDUCTION_MODE_SPEC_VERSION: u32 = 1;
+pub const VK_NV_COVERAGE_REDUCTION_MODE_EXTENSION_NAME: &'static [u8; 30usize] =
+    b"VK_NV_coverage_reduction_mode\0";
+pub const VK_EXT_fragment_shader_interlock: u32 = 1;
+pub const VK_EXT_FRAGMENT_SHADER_INTERLOCK_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_FRAGMENT_SHADER_INTERLOCK_EXTENSION_NAME: &'static [u8; 33usize] =
+    b"VK_EXT_fragment_shader_interlock\0";
+pub const VK_EXT_ycbcr_image_arrays: u32 = 1;
+pub const VK_EXT_YCBCR_IMAGE_ARRAYS_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_YCBCR_IMAGE_ARRAYS_EXTENSION_NAME: &'static [u8; 26usize] =
+    b"VK_EXT_ycbcr_image_arrays\0";
+pub const VK_EXT_headless_surface: u32 = 1;
+pub const VK_EXT_HEADLESS_SURFACE_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_HEADLESS_SURFACE_EXTENSION_NAME: &'static [u8; 24usize] =
+    b"VK_EXT_headless_surface\0";
+pub const VK_EXT_line_rasterization: u32 = 1;
+pub const VK_EXT_LINE_RASTERIZATION_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_LINE_RASTERIZATION_EXTENSION_NAME: &'static [u8; 26usize] =
+    b"VK_EXT_line_rasterization\0";
+pub const VK_EXT_host_query_reset: u32 = 1;
+pub const VK_EXT_HOST_QUERY_RESET_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_HOST_QUERY_RESET_EXTENSION_NAME: &'static [u8; 24usize] =
+    b"VK_EXT_host_query_reset\0";
+pub const VK_EXT_index_type_uint8: u32 = 1;
+pub const VK_EXT_INDEX_TYPE_UINT8_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_INDEX_TYPE_UINT8_EXTENSION_NAME: &'static [u8; 24usize] =
+    b"VK_EXT_index_type_uint8\0";
+pub const VK_EXT_shader_demote_to_helper_invocation: u32 = 1;
+pub const VK_EXT_SHADER_DEMOTE_TO_HELPER_INVOCATION_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_SHADER_DEMOTE_TO_HELPER_INVOCATION_EXTENSION_NAME: &'static [u8; 42usize] =
+    b"VK_EXT_shader_demote_to_helper_invocation\0";
+pub const VK_EXT_texel_buffer_alignment: u32 = 1;
+pub const VK_EXT_TEXEL_BUFFER_ALIGNMENT_SPEC_VERSION: u32 = 1;
+pub const VK_EXT_TEXEL_BUFFER_ALIGNMENT_EXTENSION_NAME: &'static [u8; 30usize] =
+    b"VK_EXT_texel_buffer_alignment\0";
+pub const VK_GOOGLE_user_type: u32 = 1;
+pub const VK_GOOGLE_USER_TYPE_SPEC_VERSION: u32 = 1;
+pub const VK_GOOGLE_USER_TYPE_EXTENSION_NAME: &'static [u8; 20usize] = b"VK_GOOGLE_user_type\0";
 pub type wchar_t = ::std::os::raw::c_ushort;
 pub type max_align_t = f64;
 pub type va_list = *mut ::std::os::raw::c_char;
@@ -783,7 +914,18 @@ impl VkResult {
         VkResult::VK_ERROR_INVALID_EXTERNAL_HANDLE;
 }
 impl VkResult {
-    pub const VK_RESULT_BEGIN_RANGE: VkResult = VkResult::VK_ERROR_FRAGMENTED_POOL;
+    pub const VK_ERROR_FRAGMENTATION_EXT: VkResult = VkResult::VK_ERROR_FRAGMENTATION;
+}
+impl VkResult {
+    pub const VK_ERROR_INVALID_DEVICE_ADDRESS_EXT: VkResult =
+        VkResult::VK_ERROR_INVALID_OPAQUE_CAPTURE_ADDRESS;
+}
+impl VkResult {
+    pub const VK_ERROR_INVALID_OPAQUE_CAPTURE_ADDRESS_KHR: VkResult =
+        VkResult::VK_ERROR_INVALID_OPAQUE_CAPTURE_ADDRESS;
+}
+impl VkResult {
+    pub const VK_RESULT_BEGIN_RANGE: VkResult = VkResult::VK_ERROR_UNKNOWN;
 }
 impl VkResult {
     pub const VK_RESULT_END_RANGE: VkResult = VkResult::VK_INCOMPLETE;
@@ -809,8 +951,11 @@ pub enum VkResult {
     VK_ERROR_TOO_MANY_OBJECTS = -10,
     VK_ERROR_FORMAT_NOT_SUPPORTED = -11,
     VK_ERROR_FRAGMENTED_POOL = -12,
+    VK_ERROR_UNKNOWN = -13,
     VK_ERROR_OUT_OF_POOL_MEMORY = -1000069000,
     VK_ERROR_INVALID_EXTERNAL_HANDLE = -1000072003,
+    VK_ERROR_FRAGMENTATION = -1000161000,
+    VK_ERROR_INVALID_OPAQUE_CAPTURE_ADDRESS = -1000257000,
     VK_ERROR_SURFACE_LOST_KHR = -1000000000,
     VK_ERROR_NATIVE_WINDOW_IN_USE_KHR = -1000000001,
     VK_SUBOPTIMAL_KHR = 1000001003,
@@ -819,11 +964,18 @@ pub enum VkResult {
     VK_ERROR_VALIDATION_FAILED_EXT = -1000011001,
     VK_ERROR_INVALID_SHADER_NV = -1000012000,
     VK_ERROR_INVALID_DRM_FORMAT_MODIFIER_PLANE_LAYOUT_EXT = -1000158000,
-    VK_ERROR_FRAGMENTATION_EXT = -1000161000,
     VK_ERROR_NOT_PERMITTED_EXT = -1000174001,
-    VK_ERROR_INVALID_DEVICE_ADDRESS_EXT = -1000244000,
-    VK_RESULT_RANGE_SIZE = 18,
+    VK_ERROR_FULL_SCREEN_EXCLUSIVE_MODE_LOST_EXT = -1000255000,
+    VK_RESULT_RANGE_SIZE = 19,
     VK_RESULT_MAX_ENUM = 2147483647,
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DRAW_PARAMETER_FEATURES: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DRAW_PARAMETERS_FEATURES;
 }
 impl VkStructureType {
     pub const VK_STRUCTURE_TYPE_DEBUG_REPORT_CREATE_INFO_EXT: VkStructureType =
@@ -958,6 +1110,14 @@ impl VkStructureType {
         VkStructureType::VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO;
 }
 impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_FLOAT16_INT8_FEATURES_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_FLOAT16_INT8_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FLOAT16_INT8_FEATURES_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_FLOAT16_INT8_FEATURES;
+}
+impl VkStructureType {
     pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES_KHR: VkStructureType =
         VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES;
 }
@@ -968,6 +1128,51 @@ impl VkStructureType {
 impl VkStructureType {
     pub const VK_STRUCTURE_TYPE_SURFACE_CAPABILITIES2_EXT: VkStructureType =
         VkStructureType::VK_STRUCTURE_TYPE_SURFACE_CAPABILITIES_2_EXT;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGELESS_FRAMEBUFFER_FEATURES_KHR:
+        VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGELESS_FRAMEBUFFER_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_FRAMEBUFFER_ATTACHMENTS_CREATE_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_FRAMEBUFFER_ATTACHMENTS_CREATE_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_FRAMEBUFFER_ATTACHMENT_IMAGE_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_FRAMEBUFFER_ATTACHMENT_IMAGE_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_RENDER_PASS_ATTACHMENT_BEGIN_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_RENDER_PASS_ATTACHMENT_BEGIN_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_ATTACHMENT_DESCRIPTION_2_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_ATTACHMENT_DESCRIPTION_2;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_ATTACHMENT_REFERENCE_2_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_ATTACHMENT_REFERENCE_2;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_SUBPASS_DESCRIPTION_2_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_SUBPASS_DESCRIPTION_2;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_SUBPASS_DEPENDENCY_2_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_SUBPASS_DEPENDENCY_2;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO_2_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO_2;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_SUBPASS_BEGIN_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_SUBPASS_BEGIN_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_SUBPASS_END_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_SUBPASS_END_INFO;
 }
 impl VkStructureType {
     pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FENCE_INFO_KHR: VkStructureType =
@@ -1001,7 +1206,11 @@ impl VkStructureType {
 }
 impl VkStructureType {
     pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES_KHR: VkStructureType =
-        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES;
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES;
 }
 impl VkStructureType {
     pub const VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS_KHR: VkStructureType =
@@ -1010,6 +1219,15 @@ impl VkStructureType {
 impl VkStructureType {
     pub const VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO_KHR: VkStructureType =
         VkStructureType::VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_FILTER_MINMAX_PROPERTIES_EXT:
+        VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_FILTER_MINMAX_PROPERTIES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_SAMPLER_REDUCTION_MODE_CREATE_INFO_EXT: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_SAMPLER_REDUCTION_MODE_CREATE_INFO;
 }
 impl VkStructureType {
     pub const VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2_KHR: VkStructureType =
@@ -1030,6 +1248,10 @@ impl VkStructureType {
 impl VkStructureType {
     pub const VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2_KHR: VkStructureType =
         VkStructureType::VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_IMAGE_FORMAT_LIST_CREATE_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_IMAGE_FORMAT_LIST_CREATE_INFO;
 }
 impl VkStructureType {
     pub const VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO_KHR: VkStructureType =
@@ -1066,6 +1288,30 @@ impl VkStructureType {
         VkStructureType::VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO;
 }
 impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_BINDING_FLAGS_CREATE_INFO_EXT:
+        VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_BINDING_FLAGS_CREATE_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_FEATURES_EXT: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES_EXT:
+        VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_ALLOCATE_INFO_EXT:
+        VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_ALLOCATE_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_LAYOUT_SUPPORT_EXT:
+        VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_LAYOUT_SUPPORT;
+}
+impl VkStructureType {
     pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES_KHR: VkStructureType =
         VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES;
 }
@@ -1074,12 +1320,133 @@ impl VkStructureType {
         VkStructureType::VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT;
 }
 impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SUBGROUP_EXTENDED_TYPES_FEATURES_KHR:
+        VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SUBGROUP_EXTENDED_TYPES_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_8BIT_STORAGE_FEATURES_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_8BIT_STORAGE_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_ATOMIC_INT64_FEATURES_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_ATOMIC_INT64_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DRIVER_PROPERTIES_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DRIVER_PROPERTIES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FLOAT_CONTROLS_PROPERTIES_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FLOAT_CONTROLS_PROPERTIES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOLVE_PROPERTIES_KHR:
+        VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOLVE_PROPERTIES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_SUBPASS_DESCRIPTION_DEPTH_STENCIL_RESOLVE_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_SUBPASS_DESCRIPTION_DEPTH_STENCIL_RESOLVE;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TIMELINE_SEMAPHORE_FEATURES_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TIMELINE_SEMAPHORE_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TIMELINE_SEMAPHORE_PROPERTIES_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TIMELINE_SEMAPHORE_PROPERTIES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_SEMAPHORE_TYPE_CREATE_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_SEMAPHORE_TYPE_CREATE_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_TIMELINE_SEMAPHORE_SUBMIT_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_TIMELINE_SEMAPHORE_SUBMIT_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_SEMAPHORE_WAIT_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_SEMAPHORE_WAIT_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_SEMAPHORE_SIGNAL_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_SEMAPHORE_SIGNAL_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_MEMORY_MODEL_FEATURES_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_MEMORY_MODEL_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SCALAR_BLOCK_LAYOUT_FEATURES_EXT: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SCALAR_BLOCK_LAYOUT_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SEPARATE_DEPTH_STENCIL_LAYOUTS_FEATURES_KHR:
+        VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SEPARATE_DEPTH_STENCIL_LAYOUTS_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_ATTACHMENT_REFERENCE_STENCIL_LAYOUT_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_ATTACHMENT_REFERENCE_STENCIL_LAYOUT;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_ATTACHMENT_DESCRIPTION_STENCIL_LAYOUT_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_ATTACHMENT_DESCRIPTION_STENCIL_LAYOUT;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BUFFER_ADDRESS_FEATURES_EXT: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BUFFER_DEVICE_ADDRESS_FEATURES_EXT;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_BUFFER_DEVICE_ADDRESS_INFO_EXT: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_BUFFER_DEVICE_ADDRESS_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_IMAGE_STENCIL_USAGE_CREATE_INFO_EXT: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_IMAGE_STENCIL_USAGE_CREATE_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_UNIFORM_BUFFER_STANDARD_LAYOUT_FEATURES_KHR:
+        VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_UNIFORM_BUFFER_STANDARD_LAYOUT_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BUFFER_DEVICE_ADDRESS_FEATURES_KHR:
+        VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BUFFER_DEVICE_ADDRESS_FEATURES;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_BUFFER_DEVICE_ADDRESS_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_BUFFER_DEVICE_ADDRESS_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_BUFFER_OPAQUE_CAPTURE_ADDRESS_CREATE_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_BUFFER_OPAQUE_CAPTURE_ADDRESS_CREATE_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_MEMORY_OPAQUE_CAPTURE_ADDRESS_ALLOCATE_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_MEMORY_OPAQUE_CAPTURE_ADDRESS_ALLOCATE_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_DEVICE_MEMORY_OPAQUE_CAPTURE_ADDRESS_INFO_KHR: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_DEVICE_MEMORY_OPAQUE_CAPTURE_ADDRESS_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_HOST_QUERY_RESET_FEATURES_EXT: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_HOST_QUERY_RESET_FEATURES;
+}
+impl VkStructureType {
     pub const VK_STRUCTURE_TYPE_BEGIN_RANGE: VkStructureType =
         VkStructureType::VK_STRUCTURE_TYPE_APPLICATION_INFO;
 }
 impl VkStructureType {
     pub const VK_STRUCTURE_TYPE_END_RANGE: VkStructureType =
         VkStructureType::VK_STRUCTURE_TYPE_LOADER_DEVICE_CREATE_INFO;
+}
+impl VkStructureType {
+    pub const VK_STRUCTURE_TYPE_RANGE_SIZE: VkStructureType =
+        VkStructureType::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_1_1_FEATURES;
 }
 #[repr(i32)]
 #[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
@@ -1169,7 +1536,7 @@ pub enum VkStructureType {
     VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO = 1000053000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_FEATURES = 1000053001,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES = 1000053002,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES = 1000120000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES = 1000120000,
     VK_STRUCTURE_TYPE_PROTECTED_SUBMIT_INFO = 1000145000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROTECTED_MEMORY_FEATURES = 1000145001,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROTECTED_MEMORY_PROPERTIES = 1000145002,
@@ -1197,7 +1564,57 @@ pub enum VkStructureType {
     VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES = 1000076001,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES = 1000168000,
     VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT = 1000168001,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DRAW_PARAMETER_FEATURES = 1000063000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DRAW_PARAMETERS_FEATURES = 1000063000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_1_1_FEATURES = 49,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_1_1_PROPERTIES = 50,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_1_2_FEATURES = 51,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_1_2_PROPERTIES = 52,
+    VK_STRUCTURE_TYPE_IMAGE_FORMAT_LIST_CREATE_INFO = 1000147000,
+    VK_STRUCTURE_TYPE_ATTACHMENT_DESCRIPTION_2 = 1000109000,
+    VK_STRUCTURE_TYPE_ATTACHMENT_REFERENCE_2 = 1000109001,
+    VK_STRUCTURE_TYPE_SUBPASS_DESCRIPTION_2 = 1000109002,
+    VK_STRUCTURE_TYPE_SUBPASS_DEPENDENCY_2 = 1000109003,
+    VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO_2 = 1000109004,
+    VK_STRUCTURE_TYPE_SUBPASS_BEGIN_INFO = 1000109005,
+    VK_STRUCTURE_TYPE_SUBPASS_END_INFO = 1000109006,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_8BIT_STORAGE_FEATURES = 1000177000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DRIVER_PROPERTIES = 1000196000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_ATOMIC_INT64_FEATURES = 1000180000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_FLOAT16_INT8_FEATURES = 1000082000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FLOAT_CONTROLS_PROPERTIES = 1000197000,
+    VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_BINDING_FLAGS_CREATE_INFO = 1000161000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_FEATURES = 1000161001,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES = 1000161002,
+    VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_ALLOCATE_INFO = 1000161003,
+    VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_LAYOUT_SUPPORT = 1000161004,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOLVE_PROPERTIES = 1000199000,
+    VK_STRUCTURE_TYPE_SUBPASS_DESCRIPTION_DEPTH_STENCIL_RESOLVE = 1000199001,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SCALAR_BLOCK_LAYOUT_FEATURES = 1000221000,
+    VK_STRUCTURE_TYPE_IMAGE_STENCIL_USAGE_CREATE_INFO = 1000246000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_FILTER_MINMAX_PROPERTIES = 1000130000,
+    VK_STRUCTURE_TYPE_SAMPLER_REDUCTION_MODE_CREATE_INFO = 1000130001,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_MEMORY_MODEL_FEATURES = 1000211000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGELESS_FRAMEBUFFER_FEATURES = 1000108000,
+    VK_STRUCTURE_TYPE_FRAMEBUFFER_ATTACHMENTS_CREATE_INFO = 1000108001,
+    VK_STRUCTURE_TYPE_FRAMEBUFFER_ATTACHMENT_IMAGE_INFO = 1000108002,
+    VK_STRUCTURE_TYPE_RENDER_PASS_ATTACHMENT_BEGIN_INFO = 1000108003,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_UNIFORM_BUFFER_STANDARD_LAYOUT_FEATURES = 1000253000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SUBGROUP_EXTENDED_TYPES_FEATURES = 1000175000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SEPARATE_DEPTH_STENCIL_LAYOUTS_FEATURES = 1000241000,
+    VK_STRUCTURE_TYPE_ATTACHMENT_REFERENCE_STENCIL_LAYOUT = 1000241001,
+    VK_STRUCTURE_TYPE_ATTACHMENT_DESCRIPTION_STENCIL_LAYOUT = 1000241002,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_HOST_QUERY_RESET_FEATURES = 1000261000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TIMELINE_SEMAPHORE_FEATURES = 1000207000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TIMELINE_SEMAPHORE_PROPERTIES = 1000207001,
+    VK_STRUCTURE_TYPE_SEMAPHORE_TYPE_CREATE_INFO = 1000207002,
+    VK_STRUCTURE_TYPE_TIMELINE_SEMAPHORE_SUBMIT_INFO = 1000207003,
+    VK_STRUCTURE_TYPE_SEMAPHORE_WAIT_INFO = 1000207004,
+    VK_STRUCTURE_TYPE_SEMAPHORE_SIGNAL_INFO = 1000207005,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BUFFER_DEVICE_ADDRESS_FEATURES = 1000257000,
+    VK_STRUCTURE_TYPE_BUFFER_DEVICE_ADDRESS_INFO = 1000244001,
+    VK_STRUCTURE_TYPE_BUFFER_OPAQUE_CAPTURE_ADDRESS_CREATE_INFO = 1000257002,
+    VK_STRUCTURE_TYPE_MEMORY_OPAQUE_CAPTURE_ADDRESS_ALLOCATE_INFO = 1000257003,
+    VK_STRUCTURE_TYPE_DEVICE_MEMORY_OPAQUE_CAPTURE_ADDRESS_INFO = 1000257004,
     VK_STRUCTURE_TYPE_SWAPCHAIN_CREATE_INFO_KHR = 1000001000,
     VK_STRUCTURE_TYPE_PRESENT_INFO_KHR = 1000001001,
     VK_STRUCTURE_TYPE_DEVICE_GROUP_PRESENT_CAPABILITIES_KHR = 1000060007,
@@ -1225,7 +1642,9 @@ pub enum VkStructureType {
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TRANSFORM_FEEDBACK_FEATURES_EXT = 1000028000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TRANSFORM_FEEDBACK_PROPERTIES_EXT = 1000028001,
     VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_STREAM_CREATE_INFO_EXT = 1000028002,
+    VK_STRUCTURE_TYPE_IMAGE_VIEW_HANDLE_INFO_NVX = 1000030000,
     VK_STRUCTURE_TYPE_TEXTURE_LOD_GATHER_FORMAT_PROPERTIES_AMD = 1000041000,
+    VK_STRUCTURE_TYPE_STREAM_DESCRIPTOR_SURFACE_CREATE_INFO_GGP = 1000049000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CORNER_SAMPLED_IMAGE_FEATURES_NV = 1000050000,
     VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_NV = 1000056000,
     VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_NV = 1000056001,
@@ -1234,6 +1653,7 @@ pub enum VkStructureType {
     VK_STRUCTURE_TYPE_WIN32_KEYED_MUTEX_ACQUIRE_RELEASE_INFO_NV = 1000058000,
     VK_STRUCTURE_TYPE_VALIDATION_FLAGS_EXT = 1000061000,
     VK_STRUCTURE_TYPE_VI_SURFACE_CREATE_INFO_NN = 1000062000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXTURE_COMPRESSION_ASTC_HDR_FEATURES_EXT = 1000066000,
     VK_STRUCTURE_TYPE_IMAGE_VIEW_ASTC_DECODE_MODE_EXT = 1000067000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ASTC_DECODE_FEATURES_EXT = 1000067001,
     VK_STRUCTURE_TYPE_IMPORT_MEMORY_WIN32_HANDLE_INFO_KHR = 1000073000,
@@ -1254,7 +1674,6 @@ pub enum VkStructureType {
     VK_STRUCTURE_TYPE_COMMAND_BUFFER_INHERITANCE_CONDITIONAL_RENDERING_INFO_EXT = 1000081000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CONDITIONAL_RENDERING_FEATURES_EXT = 1000081001,
     VK_STRUCTURE_TYPE_CONDITIONAL_RENDERING_BEGIN_INFO_EXT = 1000081002,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FLOAT16_INT8_FEATURES_KHR = 1000082000,
     VK_STRUCTURE_TYPE_PRESENT_REGIONS_KHR = 1000084000,
     VK_STRUCTURE_TYPE_OBJECT_TABLE_CREATE_INFO_NVX = 1000086000,
     VK_STRUCTURE_TYPE_INDIRECT_COMMANDS_LAYOUT_CREATE_INFO_NVX = 1000086001,
@@ -1278,19 +1697,19 @@ pub enum VkStructureType {
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_CLIP_ENABLE_FEATURES_EXT = 1000102000,
     VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_DEPTH_CLIP_STATE_CREATE_INFO_EXT = 1000102001,
     VK_STRUCTURE_TYPE_HDR_METADATA_EXT = 1000105000,
-    VK_STRUCTURE_TYPE_ATTACHMENT_DESCRIPTION_2_KHR = 1000109000,
-    VK_STRUCTURE_TYPE_ATTACHMENT_REFERENCE_2_KHR = 1000109001,
-    VK_STRUCTURE_TYPE_SUBPASS_DESCRIPTION_2_KHR = 1000109002,
-    VK_STRUCTURE_TYPE_SUBPASS_DEPENDENCY_2_KHR = 1000109003,
-    VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO_2_KHR = 1000109004,
-    VK_STRUCTURE_TYPE_SUBPASS_BEGIN_INFO_KHR = 1000109005,
-    VK_STRUCTURE_TYPE_SUBPASS_END_INFO_KHR = 1000109006,
     VK_STRUCTURE_TYPE_SHARED_PRESENT_SURFACE_CAPABILITIES_KHR = 1000111000,
     VK_STRUCTURE_TYPE_IMPORT_FENCE_WIN32_HANDLE_INFO_KHR = 1000114000,
     VK_STRUCTURE_TYPE_EXPORT_FENCE_WIN32_HANDLE_INFO_KHR = 1000114001,
     VK_STRUCTURE_TYPE_FENCE_GET_WIN32_HANDLE_INFO_KHR = 1000114002,
     VK_STRUCTURE_TYPE_IMPORT_FENCE_FD_INFO_KHR = 1000115000,
     VK_STRUCTURE_TYPE_FENCE_GET_FD_INFO_KHR = 1000115001,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PERFORMANCE_QUERY_FEATURES_KHR = 1000116000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PERFORMANCE_QUERY_PROPERTIES_KHR = 1000116001,
+    VK_STRUCTURE_TYPE_QUERY_POOL_PERFORMANCE_CREATE_INFO_KHR = 1000116002,
+    VK_STRUCTURE_TYPE_PERFORMANCE_QUERY_SUBMIT_INFO_KHR = 1000116003,
+    VK_STRUCTURE_TYPE_ACQUIRE_PROFILING_LOCK_INFO_KHR = 1000116004,
+    VK_STRUCTURE_TYPE_PERFORMANCE_COUNTER_KHR = 1000116005,
+    VK_STRUCTURE_TYPE_PERFORMANCE_COUNTER_DESCRIPTION_KHR = 1000116006,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SURFACE_INFO_2_KHR = 1000119000,
     VK_STRUCTURE_TYPE_SURFACE_CAPABILITIES_2_KHR = 1000119001,
     VK_STRUCTURE_TYPE_SURFACE_FORMAT_2_KHR = 1000119002,
@@ -1312,8 +1731,6 @@ pub enum VkStructureType {
     VK_STRUCTURE_TYPE_IMPORT_ANDROID_HARDWARE_BUFFER_INFO_ANDROID = 1000129003,
     VK_STRUCTURE_TYPE_MEMORY_GET_ANDROID_HARDWARE_BUFFER_INFO_ANDROID = 1000129004,
     VK_STRUCTURE_TYPE_EXTERNAL_FORMAT_ANDROID = 1000129005,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_FILTER_MINMAX_PROPERTIES_EXT = 1000130000,
-    VK_STRUCTURE_TYPE_SAMPLER_REDUCTION_MODE_CREATE_INFO_EXT = 1000130001,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INLINE_UNIFORM_BLOCK_FEATURES_EXT = 1000138000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INLINE_UNIFORM_BLOCK_PROPERTIES_EXT = 1000138001,
     VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET_INLINE_UNIFORM_BLOCK_EXT = 1000138002,
@@ -1323,12 +1740,13 @@ pub enum VkStructureType {
     VK_STRUCTURE_TYPE_PIPELINE_SAMPLE_LOCATIONS_STATE_CREATE_INFO_EXT = 1000143002,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLE_LOCATIONS_PROPERTIES_EXT = 1000143003,
     VK_STRUCTURE_TYPE_MULTISAMPLE_PROPERTIES_EXT = 1000143004,
-    VK_STRUCTURE_TYPE_IMAGE_FORMAT_LIST_CREATE_INFO_KHR = 1000147000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_FEATURES_EXT = 1000148000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_PROPERTIES_EXT = 1000148001,
     VK_STRUCTURE_TYPE_PIPELINE_COLOR_BLEND_ADVANCED_STATE_CREATE_INFO_EXT = 1000148002,
     VK_STRUCTURE_TYPE_PIPELINE_COVERAGE_TO_COLOR_STATE_CREATE_INFO_NV = 1000149000,
     VK_STRUCTURE_TYPE_PIPELINE_COVERAGE_MODULATION_STATE_CREATE_INFO_NV = 1000152000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SM_BUILTINS_FEATURES_NV = 1000154000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SM_BUILTINS_PROPERTIES_NV = 1000154001,
     VK_STRUCTURE_TYPE_DRM_FORMAT_MODIFIER_PROPERTIES_LIST_EXT = 1000158000,
     VK_STRUCTURE_TYPE_DRM_FORMAT_MODIFIER_PROPERTIES_EXT = 1000158001,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_DRM_FORMAT_MODIFIER_INFO_EXT = 1000158002,
@@ -1337,11 +1755,6 @@ pub enum VkStructureType {
     VK_STRUCTURE_TYPE_IMAGE_DRM_FORMAT_MODIFIER_PROPERTIES_EXT = 1000158005,
     VK_STRUCTURE_TYPE_VALIDATION_CACHE_CREATE_INFO_EXT = 1000160000,
     VK_STRUCTURE_TYPE_SHADER_MODULE_VALIDATION_CACHE_CREATE_INFO_EXT = 1000160001,
-    VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_BINDING_FLAGS_CREATE_INFO_EXT = 1000161000,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_FEATURES_EXT = 1000161001,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES_EXT = 1000161002,
-    VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_ALLOCATE_INFO_EXT = 1000161003,
-    VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_LAYOUT_SUPPORT_EXT = 1000161004,
     VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_SHADING_RATE_IMAGE_STATE_CREATE_INFO_NV = 1000164000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADING_RATE_IMAGE_FEATURES_NV = 1000164001,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADING_RATE_IMAGE_PROPERTIES_NV = 1000164002,
@@ -1362,21 +1775,19 @@ pub enum VkStructureType {
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_VIEW_IMAGE_FORMAT_INFO_EXT = 1000170000,
     VK_STRUCTURE_TYPE_FILTER_CUBIC_IMAGE_VIEW_IMAGE_FORMAT_PROPERTIES_EXT = 1000170001,
     VK_STRUCTURE_TYPE_DEVICE_QUEUE_GLOBAL_PRIORITY_CREATE_INFO_EXT = 1000174000,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_8BIT_STORAGE_FEATURES_KHR = 1000177000,
     VK_STRUCTURE_TYPE_IMPORT_MEMORY_HOST_POINTER_INFO_EXT = 1000178000,
     VK_STRUCTURE_TYPE_MEMORY_HOST_POINTER_PROPERTIES_EXT = 1000178001,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_MEMORY_HOST_PROPERTIES_EXT = 1000178002,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_ATOMIC_INT64_FEATURES_KHR = 1000180000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CLOCK_FEATURES_KHR = 1000181000,
+    VK_STRUCTURE_TYPE_PIPELINE_COMPILER_CONTROL_CREATE_INFO_AMD = 1000183000,
     VK_STRUCTURE_TYPE_CALIBRATED_TIMESTAMP_INFO_EXT = 1000184000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CORE_PROPERTIES_AMD = 1000185000,
     VK_STRUCTURE_TYPE_DEVICE_MEMORY_OVERALLOCATION_CREATE_INFO_AMD = 1000189000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_PROPERTIES_EXT = 1000190000,
     VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_DIVISOR_STATE_CREATE_INFO_EXT = 1000190001,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_FEATURES_EXT = 1000190002,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DRIVER_PROPERTIES_KHR = 1000196000,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FLOAT_CONTROLS_PROPERTIES_KHR = 1000197000,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOLVE_PROPERTIES_KHR = 1000199000,
-    VK_STRUCTURE_TYPE_SUBPASS_DESCRIPTION_DEPTH_STENCIL_RESOLVE_KHR = 1000199001,
+    VK_STRUCTURE_TYPE_PRESENT_FRAME_TOKEN_GGP = 1000191000,
+    VK_STRUCTURE_TYPE_PIPELINE_CREATION_FEEDBACK_CREATE_INFO_EXT = 1000192000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COMPUTE_SHADER_DERIVATIVES_FEATURES_NV = 1000201000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MESH_SHADER_FEATURES_NV = 1000202000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MESH_SHADER_PROPERTIES_NV = 1000202001,
@@ -1386,26 +1797,60 @@ pub enum VkStructureType {
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXCLUSIVE_SCISSOR_FEATURES_NV = 1000205002,
     VK_STRUCTURE_TYPE_CHECKPOINT_DATA_NV = 1000206000,
     VK_STRUCTURE_TYPE_QUEUE_FAMILY_CHECKPOINT_PROPERTIES_NV = 1000206001,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_MEMORY_MODEL_FEATURES_KHR = 1000211000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_INTEGER_FUNCTIONS_2_FEATURES_INTEL = 1000209000,
+    VK_STRUCTURE_TYPE_QUERY_POOL_CREATE_INFO_INTEL = 1000210000,
+    VK_STRUCTURE_TYPE_INITIALIZE_PERFORMANCE_API_INFO_INTEL = 1000210001,
+    VK_STRUCTURE_TYPE_PERFORMANCE_MARKER_INFO_INTEL = 1000210002,
+    VK_STRUCTURE_TYPE_PERFORMANCE_STREAM_MARKER_INFO_INTEL = 1000210003,
+    VK_STRUCTURE_TYPE_PERFORMANCE_OVERRIDE_INFO_INTEL = 1000210004,
+    VK_STRUCTURE_TYPE_PERFORMANCE_CONFIGURATION_ACQUIRE_INFO_INTEL = 1000210005,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PCI_BUS_INFO_PROPERTIES_EXT = 1000212000,
+    VK_STRUCTURE_TYPE_DISPLAY_NATIVE_HDR_SURFACE_CAPABILITIES_AMD = 1000213000,
+    VK_STRUCTURE_TYPE_SWAPCHAIN_DISPLAY_NATIVE_HDR_CREATE_INFO_AMD = 1000213001,
     VK_STRUCTURE_TYPE_IMAGEPIPE_SURFACE_CREATE_INFO_FUCHSIA = 1000214000,
+    VK_STRUCTURE_TYPE_METAL_SURFACE_CREATE_INFO_EXT = 1000217000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_FEATURES_EXT = 1000218000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_PROPERTIES_EXT = 1000218001,
     VK_STRUCTURE_TYPE_RENDER_PASS_FRAGMENT_DENSITY_MAP_CREATE_INFO_EXT = 1000218002,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SCALAR_BLOCK_LAYOUT_FEATURES_EXT = 1000221000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBGROUP_SIZE_CONTROL_PROPERTIES_EXT = 1000225000,
+    VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_REQUIRED_SUBGROUP_SIZE_CREATE_INFO_EXT = 1000225001,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBGROUP_SIZE_CONTROL_FEATURES_EXT = 1000225002,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CORE_PROPERTIES_2_AMD = 1000227000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COHERENT_MEMORY_FEATURES_AMD = 1000229000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_BUDGET_PROPERTIES_EXT = 1000237000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PRIORITY_FEATURES_EXT = 1000238000,
     VK_STRUCTURE_TYPE_MEMORY_PRIORITY_ALLOCATE_INFO_EXT = 1000238001,
+    VK_STRUCTURE_TYPE_SURFACE_PROTECTED_CAPABILITIES_KHR = 1000239000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEDICATED_ALLOCATION_IMAGE_ALIASING_FEATURES_NV = 1000240000,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BUFFER_ADDRESS_FEATURES_EXT = 1000244000,
-    VK_STRUCTURE_TYPE_BUFFER_DEVICE_ADDRESS_INFO_EXT = 1000244001,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BUFFER_DEVICE_ADDRESS_FEATURES_EXT = 1000244000,
     VK_STRUCTURE_TYPE_BUFFER_DEVICE_ADDRESS_CREATE_INFO_EXT = 1000244002,
-    VK_STRUCTURE_TYPE_IMAGE_STENCIL_USAGE_CREATE_INFO_EXT = 1000246000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TOOL_PROPERTIES_EXT = 1000245000,
     VK_STRUCTURE_TYPE_VALIDATION_FEATURES_EXT = 1000247000,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_FEATURES_NV = 1000249000,
     VK_STRUCTURE_TYPE_COOPERATIVE_MATRIX_PROPERTIES_NV = 1000249001,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_PROPERTIES_NV = 1000249002,
-    VK_STRUCTURE_TYPE_RANGE_SIZE = 49,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COVERAGE_REDUCTION_MODE_FEATURES_NV = 1000250000,
+    VK_STRUCTURE_TYPE_PIPELINE_COVERAGE_REDUCTION_STATE_CREATE_INFO_NV = 1000250001,
+    VK_STRUCTURE_TYPE_FRAMEBUFFER_MIXED_SAMPLES_COMBINATION_NV = 1000250002,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_SHADER_INTERLOCK_FEATURES_EXT = 1000251000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_YCBCR_IMAGE_ARRAYS_FEATURES_EXT = 1000252000,
+    VK_STRUCTURE_TYPE_SURFACE_FULL_SCREEN_EXCLUSIVE_INFO_EXT = 1000255000,
+    VK_STRUCTURE_TYPE_SURFACE_CAPABILITIES_FULL_SCREEN_EXCLUSIVE_EXT = 1000255002,
+    VK_STRUCTURE_TYPE_SURFACE_FULL_SCREEN_EXCLUSIVE_WIN32_INFO_EXT = 1000255001,
+    VK_STRUCTURE_TYPE_HEADLESS_SURFACE_CREATE_INFO_EXT = 1000256000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LINE_RASTERIZATION_FEATURES_EXT = 1000259000,
+    VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_LINE_STATE_CREATE_INFO_EXT = 1000259001,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LINE_RASTERIZATION_PROPERTIES_EXT = 1000259002,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INDEX_TYPE_UINT8_FEATURES_EXT = 1000265000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PIPELINE_EXECUTABLE_PROPERTIES_FEATURES_KHR = 1000269000,
+    VK_STRUCTURE_TYPE_PIPELINE_INFO_KHR = 1000269001,
+    VK_STRUCTURE_TYPE_PIPELINE_EXECUTABLE_PROPERTIES_KHR = 1000269002,
+    VK_STRUCTURE_TYPE_PIPELINE_EXECUTABLE_INFO_KHR = 1000269003,
+    VK_STRUCTURE_TYPE_PIPELINE_EXECUTABLE_STATISTIC_KHR = 1000269004,
+    VK_STRUCTURE_TYPE_PIPELINE_EXECUTABLE_INTERNAL_REPRESENTATION_KHR = 1000269005,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DEMOTE_TO_HELPER_INVOCATION_FEATURES_EXT = 1000276000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_FEATURES_EXT = 1000281000,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_PROPERTIES_EXT = 1000281001,
     VK_STRUCTURE_TYPE_MAX_ENUM = 2147483647,
 }
 impl VkSystemAllocationScope {
@@ -1810,6 +2255,20 @@ pub enum VkFormat {
     VK_FORMAT_PVRTC1_4BPP_SRGB_BLOCK_IMG = 1000054005,
     VK_FORMAT_PVRTC2_2BPP_SRGB_BLOCK_IMG = 1000054006,
     VK_FORMAT_PVRTC2_4BPP_SRGB_BLOCK_IMG = 1000054007,
+    VK_FORMAT_ASTC_4x4_SFLOAT_BLOCK_EXT = 1000066000,
+    VK_FORMAT_ASTC_5x4_SFLOAT_BLOCK_EXT = 1000066001,
+    VK_FORMAT_ASTC_5x5_SFLOAT_BLOCK_EXT = 1000066002,
+    VK_FORMAT_ASTC_6x5_SFLOAT_BLOCK_EXT = 1000066003,
+    VK_FORMAT_ASTC_6x6_SFLOAT_BLOCK_EXT = 1000066004,
+    VK_FORMAT_ASTC_8x5_SFLOAT_BLOCK_EXT = 1000066005,
+    VK_FORMAT_ASTC_8x6_SFLOAT_BLOCK_EXT = 1000066006,
+    VK_FORMAT_ASTC_8x8_SFLOAT_BLOCK_EXT = 1000066007,
+    VK_FORMAT_ASTC_10x5_SFLOAT_BLOCK_EXT = 1000066008,
+    VK_FORMAT_ASTC_10x6_SFLOAT_BLOCK_EXT = 1000066009,
+    VK_FORMAT_ASTC_10x8_SFLOAT_BLOCK_EXT = 1000066010,
+    VK_FORMAT_ASTC_10x10_SFLOAT_BLOCK_EXT = 1000066011,
+    VK_FORMAT_ASTC_12x10_SFLOAT_BLOCK_EXT = 1000066012,
+    VK_FORMAT_ASTC_12x12_SFLOAT_BLOCK_EXT = 1000066013,
     VK_FORMAT_RANGE_SIZE = 185,
     VK_FORMAT_MAX_ENUM = 2147483647,
 }
@@ -1875,7 +2334,9 @@ pub enum VkQueryType {
     VK_QUERY_TYPE_PIPELINE_STATISTICS = 1,
     VK_QUERY_TYPE_TIMESTAMP = 2,
     VK_QUERY_TYPE_TRANSFORM_FEEDBACK_STREAM_EXT = 1000028004,
+    VK_QUERY_TYPE_PERFORMANCE_QUERY_KHR = 1000116000,
     VK_QUERY_TYPE_ACCELERATION_STRUCTURE_COMPACTED_SIZE_NV = 1000165000,
+    VK_QUERY_TYPE_PERFORMANCE_QUERY_INTEL = 1000210000,
     VK_QUERY_TYPE_RANGE_SIZE = 3,
     VK_QUERY_TYPE_MAX_ENUM = 2147483647,
 }
@@ -1902,6 +2363,22 @@ impl VkImageLayout {
         VkImageLayout::VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL;
 }
 impl VkImageLayout {
+    pub const VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_OPTIMAL_KHR: VkImageLayout =
+        VkImageLayout::VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_OPTIMAL;
+}
+impl VkImageLayout {
+    pub const VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_OPTIMAL_KHR: VkImageLayout =
+        VkImageLayout::VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_OPTIMAL;
+}
+impl VkImageLayout {
+    pub const VK_IMAGE_LAYOUT_STENCIL_ATTACHMENT_OPTIMAL_KHR: VkImageLayout =
+        VkImageLayout::VK_IMAGE_LAYOUT_STENCIL_ATTACHMENT_OPTIMAL;
+}
+impl VkImageLayout {
+    pub const VK_IMAGE_LAYOUT_STENCIL_READ_ONLY_OPTIMAL_KHR: VkImageLayout =
+        VkImageLayout::VK_IMAGE_LAYOUT_STENCIL_READ_ONLY_OPTIMAL;
+}
+impl VkImageLayout {
     pub const VK_IMAGE_LAYOUT_BEGIN_RANGE: VkImageLayout = VkImageLayout::VK_IMAGE_LAYOUT_UNDEFINED;
 }
 impl VkImageLayout {
@@ -1922,6 +2399,10 @@ pub enum VkImageLayout {
     VK_IMAGE_LAYOUT_PREINITIALIZED = 8,
     VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_OPTIMAL = 1000117000,
     VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL = 1000117001,
+    VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_OPTIMAL = 1000241000,
+    VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_OPTIMAL = 1000241001,
+    VK_IMAGE_LAYOUT_STENCIL_ATTACHMENT_OPTIMAL = 1000241002,
+    VK_IMAGE_LAYOUT_STENCIL_READ_ONLY_OPTIMAL = 1000241003,
     VK_IMAGE_LAYOUT_PRESENT_SRC_KHR = 1000001002,
     VK_IMAGE_LAYOUT_SHARED_PRESENT_KHR = 1000111000,
     VK_IMAGE_LAYOUT_SHADING_RATE_OPTIMAL_NV = 1000164003,
@@ -2231,6 +2712,7 @@ pub enum VkDynamicState {
     VK_DYNAMIC_STATE_VIEWPORT_SHADING_RATE_PALETTE_NV = 1000164004,
     VK_DYNAMIC_STATE_VIEWPORT_COARSE_SAMPLE_ORDER_NV = 1000164006,
     VK_DYNAMIC_STATE_EXCLUSIVE_SCISSOR_NV = 1000205001,
+    VK_DYNAMIC_STATE_LINE_STIPPLE_EXT = 1000259000,
     VK_DYNAMIC_STATE_RANGE_SIZE = 9,
     VK_DYNAMIC_STATE_MAX_ENUM = 2147483647,
 }
@@ -2267,6 +2749,10 @@ pub enum VkSamplerMipmapMode {
     VK_SAMPLER_MIPMAP_MODE_LINEAR = 1,
     VK_SAMPLER_MIPMAP_MODE_RANGE_SIZE = 2,
     VK_SAMPLER_MIPMAP_MODE_MAX_ENUM = 2147483647,
+}
+impl VkSamplerAddressMode {
+    pub const VK_SAMPLER_ADDRESS_MODE_MIRROR_CLAMP_TO_EDGE_KHR: VkSamplerAddressMode =
+        VkSamplerAddressMode::VK_SAMPLER_ADDRESS_MODE_MIRROR_CLAMP_TO_EDGE;
 }
 impl VkSamplerAddressMode {
     pub const VK_SAMPLER_ADDRESS_MODE_BEGIN_RANGE: VkSamplerAddressMode =
@@ -2415,6 +2901,7 @@ pub enum VkIndexType {
     VK_INDEX_TYPE_UINT16 = 0,
     VK_INDEX_TYPE_UINT32 = 1,
     VK_INDEX_TYPE_NONE_NV = 1000165000,
+    VK_INDEX_TYPE_UINT8_EXT = 1000265000,
     VK_INDEX_TYPE_RANGE_SIZE = 2,
     VK_INDEX_TYPE_MAX_ENUM = 2147483647,
 }
@@ -2489,6 +2976,7 @@ pub enum VkObjectType {
     VK_OBJECT_TYPE_DEBUG_UTILS_MESSENGER_EXT = 1000128000,
     VK_OBJECT_TYPE_VALIDATION_CACHE_EXT = 1000160000,
     VK_OBJECT_TYPE_ACCELERATION_STRUCTURE_NV = 1000165000,
+    VK_OBJECT_TYPE_PERFORMANCE_CONFIGURATION_INTEL = 1000210000,
     VK_OBJECT_TYPE_RANGE_SIZE = 26,
     VK_OBJECT_TYPE_MAX_ENUM = 2147483647,
 }
@@ -2515,6 +3003,10 @@ impl VkFormatFeatureFlagBits {
 impl VkFormatFeatureFlagBits {
     pub const VK_FORMAT_FEATURE_TRANSFER_DST_BIT_KHR: VkFormatFeatureFlagBits =
         VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_TRANSFER_DST_BIT;
+}
+impl VkFormatFeatureFlagBits {
+    pub const VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_MINMAX_BIT_EXT: VkFormatFeatureFlagBits =
+        VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_MINMAX_BIT;
 }
 impl VkFormatFeatureFlagBits {
     pub const VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT_KHR: VkFormatFeatureFlagBits =
@@ -2572,8 +3064,8 @@ pub enum VkFormatFeatureFlagBits {
         2097152,
     VK_FORMAT_FEATURE_DISJOINT_BIT = 4194304,
     VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT = 8388608,
+    VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_MINMAX_BIT = 65536,
     VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_CUBIC_BIT_IMG = 8192,
-    VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_MINMAX_BIT_EXT = 65536,
     VK_FORMAT_FEATURE_FRAGMENT_DENSITY_MAP_BIT_EXT = 16777216,
     VK_FORMAT_FEATURE_FLAG_BITS_MAX_ENUM = 2147483647,
 }
@@ -2672,6 +3164,8 @@ pub enum VkMemoryPropertyFlagBits {
     VK_MEMORY_PROPERTY_HOST_CACHED_BIT = 8,
     VK_MEMORY_PROPERTY_LAZILY_ALLOCATED_BIT = 16,
     VK_MEMORY_PROPERTY_PROTECTED_BIT = 32,
+    VK_MEMORY_PROPERTY_DEVICE_COHERENT_BIT_AMD = 64,
+    VK_MEMORY_PROPERTY_DEVICE_UNCACHED_BIT_AMD = 128,
     VK_MEMORY_PROPERTY_FLAG_BITS_MAX_ENUM = 2147483647,
 }
 pub type VkMemoryPropertyFlags = VkFlags;
@@ -2810,6 +3304,14 @@ pub enum VkQueryResultFlagBits {
     VK_QUERY_RESULT_FLAG_BITS_MAX_ENUM = 2147483647,
 }
 pub type VkQueryResultFlags = VkFlags;
+impl VkBufferCreateFlagBits {
+    pub const VK_BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT_EXT: VkBufferCreateFlagBits =
+        VkBufferCreateFlagBits::VK_BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT;
+}
+impl VkBufferCreateFlagBits {
+    pub const VK_BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT_KHR: VkBufferCreateFlagBits =
+        VkBufferCreateFlagBits::VK_BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT;
+}
 #[repr(i32)]
 #[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
 pub enum VkBufferCreateFlagBits {
@@ -2817,10 +3319,18 @@ pub enum VkBufferCreateFlagBits {
     VK_BUFFER_CREATE_SPARSE_RESIDENCY_BIT = 2,
     VK_BUFFER_CREATE_SPARSE_ALIASED_BIT = 4,
     VK_BUFFER_CREATE_PROTECTED_BIT = 8,
-    VK_BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT_EXT = 16,
+    VK_BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT = 16,
     VK_BUFFER_CREATE_FLAG_BITS_MAX_ENUM = 2147483647,
 }
 pub type VkBufferCreateFlags = VkFlags;
+impl VkBufferUsageFlagBits {
+    pub const VK_BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT_EXT: VkBufferUsageFlagBits =
+        VkBufferUsageFlagBits::VK_BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT;
+}
+impl VkBufferUsageFlagBits {
+    pub const VK_BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT_KHR: VkBufferUsageFlagBits =
+        VkBufferUsageFlagBits::VK_BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT;
+}
 #[repr(i32)]
 #[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
 pub enum VkBufferUsageFlagBits {
@@ -2833,11 +3343,11 @@ pub enum VkBufferUsageFlagBits {
     VK_BUFFER_USAGE_INDEX_BUFFER_BIT = 64,
     VK_BUFFER_USAGE_VERTEX_BUFFER_BIT = 128,
     VK_BUFFER_USAGE_INDIRECT_BUFFER_BIT = 256,
+    VK_BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT = 131072,
     VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_BUFFER_BIT_EXT = 2048,
     VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_COUNTER_BUFFER_BIT_EXT = 4096,
     VK_BUFFER_USAGE_CONDITIONAL_RENDERING_BIT_EXT = 512,
     VK_BUFFER_USAGE_RAY_TRACING_BIT_NV = 1024,
-    VK_BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT_EXT = 131072,
     VK_BUFFER_USAGE_FLAG_BITS_MAX_ENUM = 2147483647,
 }
 pub type VkBufferUsageFlags = VkFlags;
@@ -2849,15 +3359,24 @@ pub enum VkImageViewCreateFlagBits {
     VK_IMAGE_VIEW_CREATE_FLAG_BITS_MAX_ENUM = 2147483647,
 }
 pub type VkImageViewCreateFlags = VkFlags;
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkShaderModuleCreateFlagBits {
+    VK_SHADER_MODULE_CREATE_FLAG_BITS_MAX_ENUM = 2147483647,
+}
 pub type VkShaderModuleCreateFlags = VkFlags;
 pub type VkPipelineCacheCreateFlags = VkFlags;
+impl VkPipelineCreateFlagBits {
+    pub const VK_PIPELINE_CREATE_DISPATCH_BASE: VkPipelineCreateFlagBits =
+        VkPipelineCreateFlagBits::VK_PIPELINE_CREATE_DISPATCH_BASE_BIT;
+}
 impl VkPipelineCreateFlagBits {
     pub const VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT_KHR: VkPipelineCreateFlagBits =
         VkPipelineCreateFlagBits::VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT;
 }
 impl VkPipelineCreateFlagBits {
     pub const VK_PIPELINE_CREATE_DISPATCH_BASE_KHR: VkPipelineCreateFlagBits =
-        VkPipelineCreateFlagBits::VK_PIPELINE_CREATE_DISPATCH_BASE;
+        VkPipelineCreateFlagBits::VK_PIPELINE_CREATE_DISPATCH_BASE_BIT;
 }
 #[repr(i32)]
 #[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
@@ -2866,11 +3385,20 @@ pub enum VkPipelineCreateFlagBits {
     VK_PIPELINE_CREATE_ALLOW_DERIVATIVES_BIT = 2,
     VK_PIPELINE_CREATE_DERIVATIVE_BIT = 4,
     VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT = 8,
-    VK_PIPELINE_CREATE_DISPATCH_BASE = 16,
+    VK_PIPELINE_CREATE_DISPATCH_BASE_BIT = 16,
     VK_PIPELINE_CREATE_DEFER_COMPILE_BIT_NV = 32,
+    VK_PIPELINE_CREATE_CAPTURE_STATISTICS_BIT_KHR = 64,
+    VK_PIPELINE_CREATE_CAPTURE_INTERNAL_REPRESENTATIONS_BIT_KHR = 128,
     VK_PIPELINE_CREATE_FLAG_BITS_MAX_ENUM = 2147483647,
 }
 pub type VkPipelineCreateFlags = VkFlags;
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkPipelineShaderStageCreateFlagBits {
+    VK_PIPELINE_SHADER_STAGE_CREATE_ALLOW_VARYING_SUBGROUP_SIZE_BIT_EXT = 1,
+    VK_PIPELINE_SHADER_STAGE_CREATE_REQUIRE_FULL_SUBGROUPS_BIT_EXT = 2,
+    VK_PIPELINE_SHADER_STAGE_CREATE_FLAG_BITS_MAX_ENUM = 2147483647,
+}
 pub type VkPipelineShaderStageCreateFlags = VkFlags;
 impl VkShaderStageFlagBits {
     pub const VK_SHADER_STAGE_FLAG_BITS_MAX_ENUM: VkShaderStageFlagBits =
@@ -2935,24 +3463,46 @@ pub enum VkSamplerCreateFlagBits {
     VK_SAMPLER_CREATE_FLAG_BITS_MAX_ENUM = 2147483647,
 }
 pub type VkSamplerCreateFlags = VkFlags;
+impl VkDescriptorSetLayoutCreateFlagBits {
+    pub const VK_DESCRIPTOR_SET_LAYOUT_CREATE_UPDATE_AFTER_BIND_POOL_BIT_EXT : VkDescriptorSetLayoutCreateFlagBits = VkDescriptorSetLayoutCreateFlagBits :: VK_DESCRIPTOR_SET_LAYOUT_CREATE_UPDATE_AFTER_BIND_POOL_BIT ;
+}
 #[repr(i32)]
 #[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
 pub enum VkDescriptorSetLayoutCreateFlagBits {
+    VK_DESCRIPTOR_SET_LAYOUT_CREATE_UPDATE_AFTER_BIND_POOL_BIT = 2,
     VK_DESCRIPTOR_SET_LAYOUT_CREATE_PUSH_DESCRIPTOR_BIT_KHR = 1,
-    VK_DESCRIPTOR_SET_LAYOUT_CREATE_UPDATE_AFTER_BIND_POOL_BIT_EXT = 2,
     VK_DESCRIPTOR_SET_LAYOUT_CREATE_FLAG_BITS_MAX_ENUM = 2147483647,
 }
 pub type VkDescriptorSetLayoutCreateFlags = VkFlags;
+impl VkDescriptorPoolCreateFlagBits {
+    pub const VK_DESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT_EXT: VkDescriptorPoolCreateFlagBits =
+        VkDescriptorPoolCreateFlagBits::VK_DESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT;
+}
 #[repr(i32)]
 #[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
 pub enum VkDescriptorPoolCreateFlagBits {
     VK_DESCRIPTOR_POOL_CREATE_FREE_DESCRIPTOR_SET_BIT = 1,
-    VK_DESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT_EXT = 2,
+    VK_DESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT = 2,
     VK_DESCRIPTOR_POOL_CREATE_FLAG_BITS_MAX_ENUM = 2147483647,
 }
 pub type VkDescriptorPoolCreateFlags = VkFlags;
 pub type VkDescriptorPoolResetFlags = VkFlags;
+impl VkFramebufferCreateFlagBits {
+    pub const VK_FRAMEBUFFER_CREATE_IMAGELESS_BIT_KHR: VkFramebufferCreateFlagBits =
+        VkFramebufferCreateFlagBits::VK_FRAMEBUFFER_CREATE_IMAGELESS_BIT;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkFramebufferCreateFlagBits {
+    VK_FRAMEBUFFER_CREATE_IMAGELESS_BIT = 1,
+    VK_FRAMEBUFFER_CREATE_FLAG_BITS_MAX_ENUM = 2147483647,
+}
 pub type VkFramebufferCreateFlags = VkFlags;
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkRenderPassCreateFlagBits {
+    VK_RENDER_PASS_CREATE_FLAG_BITS_MAX_ENUM = 2147483647,
+}
 pub type VkRenderPassCreateFlags = VkFlags;
 #[repr(i32)]
 #[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
@@ -3059,12 +3609,16 @@ pub enum VkCommandBufferResetFlagBits {
     VK_COMMAND_BUFFER_RESET_FLAG_BITS_MAX_ENUM = 2147483647,
 }
 pub type VkCommandBufferResetFlags = VkFlags;
+impl VkStencilFaceFlagBits {
+    pub const VK_STENCIL_FRONT_AND_BACK: VkStencilFaceFlagBits =
+        VkStencilFaceFlagBits::VK_STENCIL_FACE_FRONT_AND_BACK;
+}
 #[repr(i32)]
 #[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
 pub enum VkStencilFaceFlagBits {
     VK_STENCIL_FACE_FRONT_BIT = 1,
     VK_STENCIL_FACE_BACK_BIT = 2,
-    VK_STENCIL_FRONT_AND_BACK = 3,
+    VK_STENCIL_FACE_FRONT_AND_BACK = 3,
     VK_STENCIL_FACE_FLAG_BITS_MAX_ENUM = 2147483647,
 }
 pub type VkStencilFaceFlags = VkFlags;
@@ -6545,10 +7099,20 @@ impl VkMemoryAllocateFlagBits {
     pub const VK_MEMORY_ALLOCATE_DEVICE_MASK_BIT_KHR: VkMemoryAllocateFlagBits =
         VkMemoryAllocateFlagBits::VK_MEMORY_ALLOCATE_DEVICE_MASK_BIT;
 }
+impl VkMemoryAllocateFlagBits {
+    pub const VK_MEMORY_ALLOCATE_DEVICE_ADDRESS_BIT_KHR: VkMemoryAllocateFlagBits =
+        VkMemoryAllocateFlagBits::VK_MEMORY_ALLOCATE_DEVICE_ADDRESS_BIT;
+}
+impl VkMemoryAllocateFlagBits {
+    pub const VK_MEMORY_ALLOCATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT_KHR: VkMemoryAllocateFlagBits =
+        VkMemoryAllocateFlagBits::VK_MEMORY_ALLOCATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT;
+}
 #[repr(i32)]
 #[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
 pub enum VkMemoryAllocateFlagBits {
     VK_MEMORY_ALLOCATE_DEVICE_MASK_BIT = 1,
+    VK_MEMORY_ALLOCATE_DEVICE_ADDRESS_BIT = 2,
+    VK_MEMORY_ALLOCATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT = 4,
     VK_MEMORY_ALLOCATE_FLAG_BITS_MAX_ENUM = 2147483647,
 }
 pub type VkMemoryAllocateFlags = VkFlags;
@@ -7049,12 +7613,13 @@ pub struct VkPhysicalDeviceMultiviewProperties {
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
-pub struct VkPhysicalDeviceVariablePointerFeatures {
+pub struct VkPhysicalDeviceVariablePointersFeatures {
     pub sType: VkStructureType,
     pub pNext: *mut ::std::os::raw::c_void,
     pub variablePointersStorageBuffer: VkBool32,
     pub variablePointers: VkBool32,
 }
+pub type VkPhysicalDeviceVariablePointerFeatures = VkPhysicalDeviceVariablePointersFeatures;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct VkPhysicalDeviceProtectedMemoryFeatures {
@@ -7290,11 +7855,12 @@ pub struct VkDescriptorSetLayoutSupport {
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
-pub struct VkPhysicalDeviceShaderDrawParameterFeatures {
+pub struct VkPhysicalDeviceShaderDrawParametersFeatures {
     pub sType: VkStructureType,
     pub pNext: *mut ::std::os::raw::c_void,
     pub shaderDrawParameters: VkBool32,
 }
+pub type VkPhysicalDeviceShaderDrawParameterFeatures = VkPhysicalDeviceShaderDrawParametersFeatures;
 pub type PFN_vkEnumerateInstanceVersion =
     ::std::option::Option<unsafe extern "C" fn(pApiVersion: *mut u32) -> VkResult>;
 pub type PFN_vkBindBufferMemory2 = ::std::option::Option<
@@ -7685,6 +8251,1019 @@ extern "C" {
         pSupport: *mut VkDescriptorSetLayoutSupport,
     );
 }
+pub type VkDeviceAddress = u64;
+impl VkDriverId {
+    pub const VK_DRIVER_ID_AMD_PROPRIETARY_KHR: VkDriverId =
+        VkDriverId::VK_DRIVER_ID_AMD_PROPRIETARY;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_AMD_OPEN_SOURCE_KHR: VkDriverId =
+        VkDriverId::VK_DRIVER_ID_AMD_OPEN_SOURCE;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_MESA_RADV_KHR: VkDriverId = VkDriverId::VK_DRIVER_ID_MESA_RADV;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_NVIDIA_PROPRIETARY_KHR: VkDriverId =
+        VkDriverId::VK_DRIVER_ID_NVIDIA_PROPRIETARY;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_INTEL_PROPRIETARY_WINDOWS_KHR: VkDriverId =
+        VkDriverId::VK_DRIVER_ID_INTEL_PROPRIETARY_WINDOWS;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_INTEL_OPEN_SOURCE_MESA_KHR: VkDriverId =
+        VkDriverId::VK_DRIVER_ID_INTEL_OPEN_SOURCE_MESA;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_IMAGINATION_PROPRIETARY_KHR: VkDriverId =
+        VkDriverId::VK_DRIVER_ID_IMAGINATION_PROPRIETARY;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_QUALCOMM_PROPRIETARY_KHR: VkDriverId =
+        VkDriverId::VK_DRIVER_ID_QUALCOMM_PROPRIETARY;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_ARM_PROPRIETARY_KHR: VkDriverId =
+        VkDriverId::VK_DRIVER_ID_ARM_PROPRIETARY;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_GOOGLE_SWIFTSHADER_KHR: VkDriverId =
+        VkDriverId::VK_DRIVER_ID_GOOGLE_SWIFTSHADER;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_GGP_PROPRIETARY_KHR: VkDriverId =
+        VkDriverId::VK_DRIVER_ID_GGP_PROPRIETARY;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_BROADCOM_PROPRIETARY_KHR: VkDriverId =
+        VkDriverId::VK_DRIVER_ID_BROADCOM_PROPRIETARY;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_BEGIN_RANGE: VkDriverId = VkDriverId::VK_DRIVER_ID_AMD_PROPRIETARY;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_END_RANGE: VkDriverId = VkDriverId::VK_DRIVER_ID_BROADCOM_PROPRIETARY;
+}
+impl VkDriverId {
+    pub const VK_DRIVER_ID_RANGE_SIZE: VkDriverId = VkDriverId::VK_DRIVER_ID_BROADCOM_PROPRIETARY;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkDriverId {
+    VK_DRIVER_ID_AMD_PROPRIETARY = 1,
+    VK_DRIVER_ID_AMD_OPEN_SOURCE = 2,
+    VK_DRIVER_ID_MESA_RADV = 3,
+    VK_DRIVER_ID_NVIDIA_PROPRIETARY = 4,
+    VK_DRIVER_ID_INTEL_PROPRIETARY_WINDOWS = 5,
+    VK_DRIVER_ID_INTEL_OPEN_SOURCE_MESA = 6,
+    VK_DRIVER_ID_IMAGINATION_PROPRIETARY = 7,
+    VK_DRIVER_ID_QUALCOMM_PROPRIETARY = 8,
+    VK_DRIVER_ID_ARM_PROPRIETARY = 9,
+    VK_DRIVER_ID_GOOGLE_SWIFTSHADER = 10,
+    VK_DRIVER_ID_GGP_PROPRIETARY = 11,
+    VK_DRIVER_ID_BROADCOM_PROPRIETARY = 12,
+    VK_DRIVER_ID_MAX_ENUM = 2147483647,
+}
+impl VkShaderFloatControlsIndependence {
+    pub const VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_32_BIT_ONLY_KHR:
+        VkShaderFloatControlsIndependence =
+        VkShaderFloatControlsIndependence::VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_32_BIT_ONLY;
+}
+impl VkShaderFloatControlsIndependence {
+    pub const VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_ALL_KHR: VkShaderFloatControlsIndependence =
+        VkShaderFloatControlsIndependence::VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_ALL;
+}
+impl VkShaderFloatControlsIndependence {
+    pub const VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_NONE_KHR: VkShaderFloatControlsIndependence =
+        VkShaderFloatControlsIndependence::VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_NONE;
+}
+impl VkShaderFloatControlsIndependence {
+    pub const VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_BEGIN_RANGE: VkShaderFloatControlsIndependence =
+        VkShaderFloatControlsIndependence::VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_32_BIT_ONLY;
+}
+impl VkShaderFloatControlsIndependence {
+    pub const VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_END_RANGE: VkShaderFloatControlsIndependence =
+        VkShaderFloatControlsIndependence::VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_NONE;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkShaderFloatControlsIndependence {
+    VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_32_BIT_ONLY = 0,
+    VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_ALL = 1,
+    VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_NONE = 2,
+    VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_RANGE_SIZE = 3,
+    VK_SHADER_FLOAT_CONTROLS_INDEPENDENCE_MAX_ENUM = 2147483647,
+}
+impl VkSamplerReductionMode {
+    pub const VK_SAMPLER_REDUCTION_MODE_WEIGHTED_AVERAGE_EXT: VkSamplerReductionMode =
+        VkSamplerReductionMode::VK_SAMPLER_REDUCTION_MODE_WEIGHTED_AVERAGE;
+}
+impl VkSamplerReductionMode {
+    pub const VK_SAMPLER_REDUCTION_MODE_MIN_EXT: VkSamplerReductionMode =
+        VkSamplerReductionMode::VK_SAMPLER_REDUCTION_MODE_MIN;
+}
+impl VkSamplerReductionMode {
+    pub const VK_SAMPLER_REDUCTION_MODE_MAX_EXT: VkSamplerReductionMode =
+        VkSamplerReductionMode::VK_SAMPLER_REDUCTION_MODE_MAX;
+}
+impl VkSamplerReductionMode {
+    pub const VK_SAMPLER_REDUCTION_MODE_BEGIN_RANGE: VkSamplerReductionMode =
+        VkSamplerReductionMode::VK_SAMPLER_REDUCTION_MODE_WEIGHTED_AVERAGE;
+}
+impl VkSamplerReductionMode {
+    pub const VK_SAMPLER_REDUCTION_MODE_END_RANGE: VkSamplerReductionMode =
+        VkSamplerReductionMode::VK_SAMPLER_REDUCTION_MODE_MAX;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkSamplerReductionMode {
+    VK_SAMPLER_REDUCTION_MODE_WEIGHTED_AVERAGE = 0,
+    VK_SAMPLER_REDUCTION_MODE_MIN = 1,
+    VK_SAMPLER_REDUCTION_MODE_MAX = 2,
+    VK_SAMPLER_REDUCTION_MODE_RANGE_SIZE = 3,
+    VK_SAMPLER_REDUCTION_MODE_MAX_ENUM = 2147483647,
+}
+impl VkSemaphoreType {
+    pub const VK_SEMAPHORE_TYPE_BINARY_KHR: VkSemaphoreType =
+        VkSemaphoreType::VK_SEMAPHORE_TYPE_BINARY;
+}
+impl VkSemaphoreType {
+    pub const VK_SEMAPHORE_TYPE_TIMELINE_KHR: VkSemaphoreType =
+        VkSemaphoreType::VK_SEMAPHORE_TYPE_TIMELINE;
+}
+impl VkSemaphoreType {
+    pub const VK_SEMAPHORE_TYPE_BEGIN_RANGE: VkSemaphoreType =
+        VkSemaphoreType::VK_SEMAPHORE_TYPE_BINARY;
+}
+impl VkSemaphoreType {
+    pub const VK_SEMAPHORE_TYPE_END_RANGE: VkSemaphoreType =
+        VkSemaphoreType::VK_SEMAPHORE_TYPE_TIMELINE;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkSemaphoreType {
+    VK_SEMAPHORE_TYPE_BINARY = 0,
+    VK_SEMAPHORE_TYPE_TIMELINE = 1,
+    VK_SEMAPHORE_TYPE_RANGE_SIZE = 2,
+    VK_SEMAPHORE_TYPE_MAX_ENUM = 2147483647,
+}
+impl VkResolveModeFlagBits {
+    pub const VK_RESOLVE_MODE_NONE_KHR: VkResolveModeFlagBits =
+        VkResolveModeFlagBits::VK_RESOLVE_MODE_NONE;
+}
+impl VkResolveModeFlagBits {
+    pub const VK_RESOLVE_MODE_SAMPLE_ZERO_BIT_KHR: VkResolveModeFlagBits =
+        VkResolveModeFlagBits::VK_RESOLVE_MODE_SAMPLE_ZERO_BIT;
+}
+impl VkResolveModeFlagBits {
+    pub const VK_RESOLVE_MODE_AVERAGE_BIT_KHR: VkResolveModeFlagBits =
+        VkResolveModeFlagBits::VK_RESOLVE_MODE_AVERAGE_BIT;
+}
+impl VkResolveModeFlagBits {
+    pub const VK_RESOLVE_MODE_MIN_BIT_KHR: VkResolveModeFlagBits =
+        VkResolveModeFlagBits::VK_RESOLVE_MODE_MIN_BIT;
+}
+impl VkResolveModeFlagBits {
+    pub const VK_RESOLVE_MODE_MAX_BIT_KHR: VkResolveModeFlagBits =
+        VkResolveModeFlagBits::VK_RESOLVE_MODE_MAX_BIT;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkResolveModeFlagBits {
+    VK_RESOLVE_MODE_NONE = 0,
+    VK_RESOLVE_MODE_SAMPLE_ZERO_BIT = 1,
+    VK_RESOLVE_MODE_AVERAGE_BIT = 2,
+    VK_RESOLVE_MODE_MIN_BIT = 4,
+    VK_RESOLVE_MODE_MAX_BIT = 8,
+    VK_RESOLVE_MODE_FLAG_BITS_MAX_ENUM = 2147483647,
+}
+pub type VkResolveModeFlags = VkFlags;
+impl VkDescriptorBindingFlagBits {
+    pub const VK_DESCRIPTOR_BINDING_UPDATE_AFTER_BIND_BIT_EXT: VkDescriptorBindingFlagBits =
+        VkDescriptorBindingFlagBits::VK_DESCRIPTOR_BINDING_UPDATE_AFTER_BIND_BIT;
+}
+impl VkDescriptorBindingFlagBits {
+    pub const VK_DESCRIPTOR_BINDING_UPDATE_UNUSED_WHILE_PENDING_BIT_EXT:
+        VkDescriptorBindingFlagBits =
+        VkDescriptorBindingFlagBits::VK_DESCRIPTOR_BINDING_UPDATE_UNUSED_WHILE_PENDING_BIT;
+}
+impl VkDescriptorBindingFlagBits {
+    pub const VK_DESCRIPTOR_BINDING_PARTIALLY_BOUND_BIT_EXT: VkDescriptorBindingFlagBits =
+        VkDescriptorBindingFlagBits::VK_DESCRIPTOR_BINDING_PARTIALLY_BOUND_BIT;
+}
+impl VkDescriptorBindingFlagBits {
+    pub const VK_DESCRIPTOR_BINDING_VARIABLE_DESCRIPTOR_COUNT_BIT_EXT: VkDescriptorBindingFlagBits =
+        VkDescriptorBindingFlagBits::VK_DESCRIPTOR_BINDING_VARIABLE_DESCRIPTOR_COUNT_BIT;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkDescriptorBindingFlagBits {
+    VK_DESCRIPTOR_BINDING_UPDATE_AFTER_BIND_BIT = 1,
+    VK_DESCRIPTOR_BINDING_UPDATE_UNUSED_WHILE_PENDING_BIT = 2,
+    VK_DESCRIPTOR_BINDING_PARTIALLY_BOUND_BIT = 4,
+    VK_DESCRIPTOR_BINDING_VARIABLE_DESCRIPTOR_COUNT_BIT = 8,
+    VK_DESCRIPTOR_BINDING_FLAG_BITS_MAX_ENUM = 2147483647,
+}
+pub type VkDescriptorBindingFlags = VkFlags;
+impl VkSemaphoreWaitFlagBits {
+    pub const VK_SEMAPHORE_WAIT_ANY_BIT_KHR: VkSemaphoreWaitFlagBits =
+        VkSemaphoreWaitFlagBits::VK_SEMAPHORE_WAIT_ANY_BIT;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkSemaphoreWaitFlagBits {
+    VK_SEMAPHORE_WAIT_ANY_BIT = 1,
+    VK_SEMAPHORE_WAIT_FLAG_BITS_MAX_ENUM = 2147483647,
+}
+pub type VkSemaphoreWaitFlags = VkFlags;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceVulkan11Features {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub storageBuffer16BitAccess: VkBool32,
+    pub uniformAndStorageBuffer16BitAccess: VkBool32,
+    pub storagePushConstant16: VkBool32,
+    pub storageInputOutput16: VkBool32,
+    pub multiview: VkBool32,
+    pub multiviewGeometryShader: VkBool32,
+    pub multiviewTessellationShader: VkBool32,
+    pub variablePointersStorageBuffer: VkBool32,
+    pub variablePointers: VkBool32,
+    pub protectedMemory: VkBool32,
+    pub samplerYcbcrConversion: VkBool32,
+    pub shaderDrawParameters: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceVulkan11Properties {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub deviceUUID: [u8; 16usize],
+    pub driverUUID: [u8; 16usize],
+    pub deviceLUID: [u8; 8usize],
+    pub deviceNodeMask: u32,
+    pub deviceLUIDValid: VkBool32,
+    pub subgroupSize: u32,
+    pub subgroupSupportedStages: VkShaderStageFlags,
+    pub subgroupSupportedOperations: VkSubgroupFeatureFlags,
+    pub subgroupQuadOperationsInAllStages: VkBool32,
+    pub pointClippingBehavior: VkPointClippingBehavior,
+    pub maxMultiviewViewCount: u32,
+    pub maxMultiviewInstanceIndex: u32,
+    pub protectedNoFault: VkBool32,
+    pub maxPerSetDescriptors: u32,
+    pub maxMemoryAllocationSize: VkDeviceSize,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceVulkan12Features {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub samplerMirrorClampToEdge: VkBool32,
+    pub drawIndirectCount: VkBool32,
+    pub storageBuffer8BitAccess: VkBool32,
+    pub uniformAndStorageBuffer8BitAccess: VkBool32,
+    pub storagePushConstant8: VkBool32,
+    pub shaderBufferInt64Atomics: VkBool32,
+    pub shaderSharedInt64Atomics: VkBool32,
+    pub shaderFloat16: VkBool32,
+    pub shaderInt8: VkBool32,
+    pub descriptorIndexing: VkBool32,
+    pub shaderInputAttachmentArrayDynamicIndexing: VkBool32,
+    pub shaderUniformTexelBufferArrayDynamicIndexing: VkBool32,
+    pub shaderStorageTexelBufferArrayDynamicIndexing: VkBool32,
+    pub shaderUniformBufferArrayNonUniformIndexing: VkBool32,
+    pub shaderSampledImageArrayNonUniformIndexing: VkBool32,
+    pub shaderStorageBufferArrayNonUniformIndexing: VkBool32,
+    pub shaderStorageImageArrayNonUniformIndexing: VkBool32,
+    pub shaderInputAttachmentArrayNonUniformIndexing: VkBool32,
+    pub shaderUniformTexelBufferArrayNonUniformIndexing: VkBool32,
+    pub shaderStorageTexelBufferArrayNonUniformIndexing: VkBool32,
+    pub descriptorBindingUniformBufferUpdateAfterBind: VkBool32,
+    pub descriptorBindingSampledImageUpdateAfterBind: VkBool32,
+    pub descriptorBindingStorageImageUpdateAfterBind: VkBool32,
+    pub descriptorBindingStorageBufferUpdateAfterBind: VkBool32,
+    pub descriptorBindingUniformTexelBufferUpdateAfterBind: VkBool32,
+    pub descriptorBindingStorageTexelBufferUpdateAfterBind: VkBool32,
+    pub descriptorBindingUpdateUnusedWhilePending: VkBool32,
+    pub descriptorBindingPartiallyBound: VkBool32,
+    pub descriptorBindingVariableDescriptorCount: VkBool32,
+    pub runtimeDescriptorArray: VkBool32,
+    pub samplerFilterMinmax: VkBool32,
+    pub scalarBlockLayout: VkBool32,
+    pub imagelessFramebuffer: VkBool32,
+    pub uniformBufferStandardLayout: VkBool32,
+    pub shaderSubgroupExtendedTypes: VkBool32,
+    pub separateDepthStencilLayouts: VkBool32,
+    pub hostQueryReset: VkBool32,
+    pub timelineSemaphore: VkBool32,
+    pub bufferDeviceAddress: VkBool32,
+    pub bufferDeviceAddressCaptureReplay: VkBool32,
+    pub bufferDeviceAddressMultiDevice: VkBool32,
+    pub vulkanMemoryModel: VkBool32,
+    pub vulkanMemoryModelDeviceScope: VkBool32,
+    pub vulkanMemoryModelAvailabilityVisibilityChains: VkBool32,
+    pub shaderOutputViewportIndex: VkBool32,
+    pub shaderOutputLayer: VkBool32,
+    pub subgroupBroadcastDynamicId: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkConformanceVersion {
+    pub major: u8,
+    pub minor: u8,
+    pub subminor: u8,
+    pub patch: u8,
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct VkPhysicalDeviceVulkan12Properties {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub driverID: VkDriverId,
+    pub driverName: [::std::os::raw::c_char; 256usize],
+    pub driverInfo: [::std::os::raw::c_char; 256usize],
+    pub conformanceVersion: VkConformanceVersion,
+    pub denormBehaviorIndependence: VkShaderFloatControlsIndependence,
+    pub roundingModeIndependence: VkShaderFloatControlsIndependence,
+    pub shaderSignedZeroInfNanPreserveFloat16: VkBool32,
+    pub shaderSignedZeroInfNanPreserveFloat32: VkBool32,
+    pub shaderSignedZeroInfNanPreserveFloat64: VkBool32,
+    pub shaderDenormPreserveFloat16: VkBool32,
+    pub shaderDenormPreserveFloat32: VkBool32,
+    pub shaderDenormPreserveFloat64: VkBool32,
+    pub shaderDenormFlushToZeroFloat16: VkBool32,
+    pub shaderDenormFlushToZeroFloat32: VkBool32,
+    pub shaderDenormFlushToZeroFloat64: VkBool32,
+    pub shaderRoundingModeRTEFloat16: VkBool32,
+    pub shaderRoundingModeRTEFloat32: VkBool32,
+    pub shaderRoundingModeRTEFloat64: VkBool32,
+    pub shaderRoundingModeRTZFloat16: VkBool32,
+    pub shaderRoundingModeRTZFloat32: VkBool32,
+    pub shaderRoundingModeRTZFloat64: VkBool32,
+    pub maxUpdateAfterBindDescriptorsInAllPools: u32,
+    pub shaderUniformBufferArrayNonUniformIndexingNative: VkBool32,
+    pub shaderSampledImageArrayNonUniformIndexingNative: VkBool32,
+    pub shaderStorageBufferArrayNonUniformIndexingNative: VkBool32,
+    pub shaderStorageImageArrayNonUniformIndexingNative: VkBool32,
+    pub shaderInputAttachmentArrayNonUniformIndexingNative: VkBool32,
+    pub robustBufferAccessUpdateAfterBind: VkBool32,
+    pub quadDivergentImplicitLod: VkBool32,
+    pub maxPerStageDescriptorUpdateAfterBindSamplers: u32,
+    pub maxPerStageDescriptorUpdateAfterBindUniformBuffers: u32,
+    pub maxPerStageDescriptorUpdateAfterBindStorageBuffers: u32,
+    pub maxPerStageDescriptorUpdateAfterBindSampledImages: u32,
+    pub maxPerStageDescriptorUpdateAfterBindStorageImages: u32,
+    pub maxPerStageDescriptorUpdateAfterBindInputAttachments: u32,
+    pub maxPerStageUpdateAfterBindResources: u32,
+    pub maxDescriptorSetUpdateAfterBindSamplers: u32,
+    pub maxDescriptorSetUpdateAfterBindUniformBuffers: u32,
+    pub maxDescriptorSetUpdateAfterBindUniformBuffersDynamic: u32,
+    pub maxDescriptorSetUpdateAfterBindStorageBuffers: u32,
+    pub maxDescriptorSetUpdateAfterBindStorageBuffersDynamic: u32,
+    pub maxDescriptorSetUpdateAfterBindSampledImages: u32,
+    pub maxDescriptorSetUpdateAfterBindStorageImages: u32,
+    pub maxDescriptorSetUpdateAfterBindInputAttachments: u32,
+    pub supportedDepthResolveModes: VkResolveModeFlags,
+    pub supportedStencilResolveModes: VkResolveModeFlags,
+    pub independentResolveNone: VkBool32,
+    pub independentResolve: VkBool32,
+    pub filterMinmaxSingleComponentFormats: VkBool32,
+    pub filterMinmaxImageComponentMapping: VkBool32,
+    pub maxTimelineSemaphoreValueDifference: u64,
+    pub framebufferIntegerColorSampleCounts: VkSampleCountFlags,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkImageFormatListCreateInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub viewFormatCount: u32,
+    pub pViewFormats: *const VkFormat,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkAttachmentDescription2 {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub flags: VkAttachmentDescriptionFlags,
+    pub format: VkFormat,
+    pub samples: VkSampleCountFlagBits,
+    pub loadOp: VkAttachmentLoadOp,
+    pub storeOp: VkAttachmentStoreOp,
+    pub stencilLoadOp: VkAttachmentLoadOp,
+    pub stencilStoreOp: VkAttachmentStoreOp,
+    pub initialLayout: VkImageLayout,
+    pub finalLayout: VkImageLayout,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkAttachmentReference2 {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub attachment: u32,
+    pub layout: VkImageLayout,
+    pub aspectMask: VkImageAspectFlags,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkSubpassDescription2 {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub flags: VkSubpassDescriptionFlags,
+    pub pipelineBindPoint: VkPipelineBindPoint,
+    pub viewMask: u32,
+    pub inputAttachmentCount: u32,
+    pub pInputAttachments: *const VkAttachmentReference2,
+    pub colorAttachmentCount: u32,
+    pub pColorAttachments: *const VkAttachmentReference2,
+    pub pResolveAttachments: *const VkAttachmentReference2,
+    pub pDepthStencilAttachment: *const VkAttachmentReference2,
+    pub preserveAttachmentCount: u32,
+    pub pPreserveAttachments: *const u32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkSubpassDependency2 {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub srcSubpass: u32,
+    pub dstSubpass: u32,
+    pub srcStageMask: VkPipelineStageFlags,
+    pub dstStageMask: VkPipelineStageFlags,
+    pub srcAccessMask: VkAccessFlags,
+    pub dstAccessMask: VkAccessFlags,
+    pub dependencyFlags: VkDependencyFlags,
+    pub viewOffset: i32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkRenderPassCreateInfo2 {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub flags: VkRenderPassCreateFlags,
+    pub attachmentCount: u32,
+    pub pAttachments: *const VkAttachmentDescription2,
+    pub subpassCount: u32,
+    pub pSubpasses: *const VkSubpassDescription2,
+    pub dependencyCount: u32,
+    pub pDependencies: *const VkSubpassDependency2,
+    pub correlatedViewMaskCount: u32,
+    pub pCorrelatedViewMasks: *const u32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkSubpassBeginInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub contents: VkSubpassContents,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkSubpassEndInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDevice8BitStorageFeatures {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub storageBuffer8BitAccess: VkBool32,
+    pub uniformAndStorageBuffer8BitAccess: VkBool32,
+    pub storagePushConstant8: VkBool32,
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct VkPhysicalDeviceDriverProperties {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub driverID: VkDriverId,
+    pub driverName: [::std::os::raw::c_char; 256usize],
+    pub driverInfo: [::std::os::raw::c_char; 256usize],
+    pub conformanceVersion: VkConformanceVersion,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceShaderAtomicInt64Features {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub shaderBufferInt64Atomics: VkBool32,
+    pub shaderSharedInt64Atomics: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceShaderFloat16Int8Features {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub shaderFloat16: VkBool32,
+    pub shaderInt8: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceFloatControlsProperties {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub denormBehaviorIndependence: VkShaderFloatControlsIndependence,
+    pub roundingModeIndependence: VkShaderFloatControlsIndependence,
+    pub shaderSignedZeroInfNanPreserveFloat16: VkBool32,
+    pub shaderSignedZeroInfNanPreserveFloat32: VkBool32,
+    pub shaderSignedZeroInfNanPreserveFloat64: VkBool32,
+    pub shaderDenormPreserveFloat16: VkBool32,
+    pub shaderDenormPreserveFloat32: VkBool32,
+    pub shaderDenormPreserveFloat64: VkBool32,
+    pub shaderDenormFlushToZeroFloat16: VkBool32,
+    pub shaderDenormFlushToZeroFloat32: VkBool32,
+    pub shaderDenormFlushToZeroFloat64: VkBool32,
+    pub shaderRoundingModeRTEFloat16: VkBool32,
+    pub shaderRoundingModeRTEFloat32: VkBool32,
+    pub shaderRoundingModeRTEFloat64: VkBool32,
+    pub shaderRoundingModeRTZFloat16: VkBool32,
+    pub shaderRoundingModeRTZFloat32: VkBool32,
+    pub shaderRoundingModeRTZFloat64: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkDescriptorSetLayoutBindingFlagsCreateInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub bindingCount: u32,
+    pub pBindingFlags: *const VkDescriptorBindingFlags,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceDescriptorIndexingFeatures {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub shaderInputAttachmentArrayDynamicIndexing: VkBool32,
+    pub shaderUniformTexelBufferArrayDynamicIndexing: VkBool32,
+    pub shaderStorageTexelBufferArrayDynamicIndexing: VkBool32,
+    pub shaderUniformBufferArrayNonUniformIndexing: VkBool32,
+    pub shaderSampledImageArrayNonUniformIndexing: VkBool32,
+    pub shaderStorageBufferArrayNonUniformIndexing: VkBool32,
+    pub shaderStorageImageArrayNonUniformIndexing: VkBool32,
+    pub shaderInputAttachmentArrayNonUniformIndexing: VkBool32,
+    pub shaderUniformTexelBufferArrayNonUniformIndexing: VkBool32,
+    pub shaderStorageTexelBufferArrayNonUniformIndexing: VkBool32,
+    pub descriptorBindingUniformBufferUpdateAfterBind: VkBool32,
+    pub descriptorBindingSampledImageUpdateAfterBind: VkBool32,
+    pub descriptorBindingStorageImageUpdateAfterBind: VkBool32,
+    pub descriptorBindingStorageBufferUpdateAfterBind: VkBool32,
+    pub descriptorBindingUniformTexelBufferUpdateAfterBind: VkBool32,
+    pub descriptorBindingStorageTexelBufferUpdateAfterBind: VkBool32,
+    pub descriptorBindingUpdateUnusedWhilePending: VkBool32,
+    pub descriptorBindingPartiallyBound: VkBool32,
+    pub descriptorBindingVariableDescriptorCount: VkBool32,
+    pub runtimeDescriptorArray: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceDescriptorIndexingProperties {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub maxUpdateAfterBindDescriptorsInAllPools: u32,
+    pub shaderUniformBufferArrayNonUniformIndexingNative: VkBool32,
+    pub shaderSampledImageArrayNonUniformIndexingNative: VkBool32,
+    pub shaderStorageBufferArrayNonUniformIndexingNative: VkBool32,
+    pub shaderStorageImageArrayNonUniformIndexingNative: VkBool32,
+    pub shaderInputAttachmentArrayNonUniformIndexingNative: VkBool32,
+    pub robustBufferAccessUpdateAfterBind: VkBool32,
+    pub quadDivergentImplicitLod: VkBool32,
+    pub maxPerStageDescriptorUpdateAfterBindSamplers: u32,
+    pub maxPerStageDescriptorUpdateAfterBindUniformBuffers: u32,
+    pub maxPerStageDescriptorUpdateAfterBindStorageBuffers: u32,
+    pub maxPerStageDescriptorUpdateAfterBindSampledImages: u32,
+    pub maxPerStageDescriptorUpdateAfterBindStorageImages: u32,
+    pub maxPerStageDescriptorUpdateAfterBindInputAttachments: u32,
+    pub maxPerStageUpdateAfterBindResources: u32,
+    pub maxDescriptorSetUpdateAfterBindSamplers: u32,
+    pub maxDescriptorSetUpdateAfterBindUniformBuffers: u32,
+    pub maxDescriptorSetUpdateAfterBindUniformBuffersDynamic: u32,
+    pub maxDescriptorSetUpdateAfterBindStorageBuffers: u32,
+    pub maxDescriptorSetUpdateAfterBindStorageBuffersDynamic: u32,
+    pub maxDescriptorSetUpdateAfterBindSampledImages: u32,
+    pub maxDescriptorSetUpdateAfterBindStorageImages: u32,
+    pub maxDescriptorSetUpdateAfterBindInputAttachments: u32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkDescriptorSetVariableDescriptorCountAllocateInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub descriptorSetCount: u32,
+    pub pDescriptorCounts: *const u32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkDescriptorSetVariableDescriptorCountLayoutSupport {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub maxVariableDescriptorCount: u32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkSubpassDescriptionDepthStencilResolve {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub depthResolveMode: VkResolveModeFlagBits,
+    pub stencilResolveMode: VkResolveModeFlagBits,
+    pub pDepthStencilResolveAttachment: *const VkAttachmentReference2,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceDepthStencilResolveProperties {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub supportedDepthResolveModes: VkResolveModeFlags,
+    pub supportedStencilResolveModes: VkResolveModeFlags,
+    pub independentResolveNone: VkBool32,
+    pub independentResolve: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceScalarBlockLayoutFeatures {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub scalarBlockLayout: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkImageStencilUsageCreateInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub stencilUsage: VkImageUsageFlags,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkSamplerReductionModeCreateInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub reductionMode: VkSamplerReductionMode,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceSamplerFilterMinmaxProperties {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub filterMinmaxSingleComponentFormats: VkBool32,
+    pub filterMinmaxImageComponentMapping: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceVulkanMemoryModelFeatures {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub vulkanMemoryModel: VkBool32,
+    pub vulkanMemoryModelDeviceScope: VkBool32,
+    pub vulkanMemoryModelAvailabilityVisibilityChains: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceImagelessFramebufferFeatures {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub imagelessFramebuffer: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkFramebufferAttachmentImageInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub flags: VkImageCreateFlags,
+    pub usage: VkImageUsageFlags,
+    pub width: u32,
+    pub height: u32,
+    pub layerCount: u32,
+    pub viewFormatCount: u32,
+    pub pViewFormats: *const VkFormat,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkFramebufferAttachmentsCreateInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub attachmentImageInfoCount: u32,
+    pub pAttachmentImageInfos: *const VkFramebufferAttachmentImageInfo,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkRenderPassAttachmentBeginInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub attachmentCount: u32,
+    pub pAttachments: *const VkImageView,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceUniformBufferStandardLayoutFeatures {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub uniformBufferStandardLayout: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub shaderSubgroupExtendedTypes: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub separateDepthStencilLayouts: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkAttachmentReferenceStencilLayout {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub stencilLayout: VkImageLayout,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkAttachmentDescriptionStencilLayout {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub stencilInitialLayout: VkImageLayout,
+    pub stencilFinalLayout: VkImageLayout,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceHostQueryResetFeatures {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub hostQueryReset: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceTimelineSemaphoreFeatures {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub timelineSemaphore: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceTimelineSemaphoreProperties {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub maxTimelineSemaphoreValueDifference: u64,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkSemaphoreTypeCreateInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub semaphoreType: VkSemaphoreType,
+    pub initialValue: u64,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkTimelineSemaphoreSubmitInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub waitSemaphoreValueCount: u32,
+    pub pWaitSemaphoreValues: *const u64,
+    pub signalSemaphoreValueCount: u32,
+    pub pSignalSemaphoreValues: *const u64,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkSemaphoreWaitInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub flags: VkSemaphoreWaitFlags,
+    pub semaphoreCount: u32,
+    pub pSemaphores: *const VkSemaphore,
+    pub pValues: *const u64,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkSemaphoreSignalInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub semaphore: VkSemaphore,
+    pub value: u64,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceBufferDeviceAddressFeatures {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub bufferDeviceAddress: VkBool32,
+    pub bufferDeviceAddressCaptureReplay: VkBool32,
+    pub bufferDeviceAddressMultiDevice: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkBufferDeviceAddressInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub buffer: VkBuffer,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkBufferOpaqueCaptureAddressCreateInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub opaqueCaptureAddress: u64,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkMemoryOpaqueCaptureAddressAllocateInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub opaqueCaptureAddress: u64,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkDeviceMemoryOpaqueCaptureAddressInfo {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub memory: VkDeviceMemory,
+}
+pub type PFN_vkCmdDrawIndirectCount = ::std::option::Option<
+    unsafe extern "C" fn(
+        commandBuffer: VkCommandBuffer,
+        buffer: VkBuffer,
+        offset: VkDeviceSize,
+        countBuffer: VkBuffer,
+        countBufferOffset: VkDeviceSize,
+        maxDrawCount: u32,
+        stride: u32,
+    ),
+>;
+pub type PFN_vkCmdDrawIndexedIndirectCount = ::std::option::Option<
+    unsafe extern "C" fn(
+        commandBuffer: VkCommandBuffer,
+        buffer: VkBuffer,
+        offset: VkDeviceSize,
+        countBuffer: VkBuffer,
+        countBufferOffset: VkDeviceSize,
+        maxDrawCount: u32,
+        stride: u32,
+    ),
+>;
+pub type PFN_vkCreateRenderPass2 = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        pCreateInfo: *const VkRenderPassCreateInfo2,
+        pAllocator: *const VkAllocationCallbacks,
+        pRenderPass: *mut VkRenderPass,
+    ) -> VkResult,
+>;
+pub type PFN_vkCmdBeginRenderPass2 = ::std::option::Option<
+    unsafe extern "C" fn(
+        commandBuffer: VkCommandBuffer,
+        pRenderPassBegin: *const VkRenderPassBeginInfo,
+        pSubpassBeginInfo: *const VkSubpassBeginInfo,
+    ),
+>;
+pub type PFN_vkCmdNextSubpass2 = ::std::option::Option<
+    unsafe extern "C" fn(
+        commandBuffer: VkCommandBuffer,
+        pSubpassBeginInfo: *const VkSubpassBeginInfo,
+        pSubpassEndInfo: *const VkSubpassEndInfo,
+    ),
+>;
+pub type PFN_vkCmdEndRenderPass2 = ::std::option::Option<
+    unsafe extern "C" fn(commandBuffer: VkCommandBuffer, pSubpassEndInfo: *const VkSubpassEndInfo),
+>;
+pub type PFN_vkResetQueryPool = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        queryPool: VkQueryPool,
+        firstQuery: u32,
+        queryCount: u32,
+    ),
+>;
+pub type PFN_vkGetSemaphoreCounterValue = ::std::option::Option<
+    unsafe extern "C" fn(device: VkDevice, semaphore: VkSemaphore, pValue: *mut u64) -> VkResult,
+>;
+pub type PFN_vkWaitSemaphores = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        pWaitInfo: *const VkSemaphoreWaitInfo,
+        timeout: u64,
+    ) -> VkResult,
+>;
+pub type PFN_vkSignalSemaphore = ::std::option::Option<
+    unsafe extern "C" fn(device: VkDevice, pSignalInfo: *const VkSemaphoreSignalInfo) -> VkResult,
+>;
+pub type PFN_vkGetBufferDeviceAddress = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        pInfo: *const VkBufferDeviceAddressInfo,
+    ) -> VkDeviceAddress,
+>;
+pub type PFN_vkGetBufferOpaqueCaptureAddress = ::std::option::Option<
+    unsafe extern "C" fn(device: VkDevice, pInfo: *const VkBufferDeviceAddressInfo) -> u64,
+>;
+pub type PFN_vkGetDeviceMemoryOpaqueCaptureAddress = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        pInfo: *const VkDeviceMemoryOpaqueCaptureAddressInfo,
+    ) -> u64,
+>;
+extern "C" {
+    pub fn vkCmdDrawIndirectCount(
+        commandBuffer: VkCommandBuffer,
+        buffer: VkBuffer,
+        offset: VkDeviceSize,
+        countBuffer: VkBuffer,
+        countBufferOffset: VkDeviceSize,
+        maxDrawCount: u32,
+        stride: u32,
+    );
+}
+extern "C" {
+    pub fn vkCmdDrawIndexedIndirectCount(
+        commandBuffer: VkCommandBuffer,
+        buffer: VkBuffer,
+        offset: VkDeviceSize,
+        countBuffer: VkBuffer,
+        countBufferOffset: VkDeviceSize,
+        maxDrawCount: u32,
+        stride: u32,
+    );
+}
+extern "C" {
+    pub fn vkCreateRenderPass2(
+        device: VkDevice,
+        pCreateInfo: *const VkRenderPassCreateInfo2,
+        pAllocator: *const VkAllocationCallbacks,
+        pRenderPass: *mut VkRenderPass,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkCmdBeginRenderPass2(
+        commandBuffer: VkCommandBuffer,
+        pRenderPassBegin: *const VkRenderPassBeginInfo,
+        pSubpassBeginInfo: *const VkSubpassBeginInfo,
+    );
+}
+extern "C" {
+    pub fn vkCmdNextSubpass2(
+        commandBuffer: VkCommandBuffer,
+        pSubpassBeginInfo: *const VkSubpassBeginInfo,
+        pSubpassEndInfo: *const VkSubpassEndInfo,
+    );
+}
+extern "C" {
+    pub fn vkCmdEndRenderPass2(
+        commandBuffer: VkCommandBuffer,
+        pSubpassEndInfo: *const VkSubpassEndInfo,
+    );
+}
+extern "C" {
+    pub fn vkResetQueryPool(
+        device: VkDevice,
+        queryPool: VkQueryPool,
+        firstQuery: u32,
+        queryCount: u32,
+    );
+}
+extern "C" {
+    pub fn vkGetSemaphoreCounterValue(
+        device: VkDevice,
+        semaphore: VkSemaphore,
+        pValue: *mut u64,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkWaitSemaphores(
+        device: VkDevice,
+        pWaitInfo: *const VkSemaphoreWaitInfo,
+        timeout: u64,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkSignalSemaphore(
+        device: VkDevice,
+        pSignalInfo: *const VkSemaphoreSignalInfo,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkGetBufferDeviceAddress(
+        device: VkDevice,
+        pInfo: *const VkBufferDeviceAddressInfo,
+    ) -> VkDeviceAddress;
+}
+extern "C" {
+    pub fn vkGetBufferOpaqueCaptureAddress(
+        device: VkDevice,
+        pInfo: *const VkBufferDeviceAddressInfo,
+    ) -> u64;
+}
+extern "C" {
+    pub fn vkGetDeviceMemoryOpaqueCaptureAddress(
+        device: VkDevice,
+        pInfo: *const VkDeviceMemoryOpaqueCaptureAddressInfo,
+    ) -> u64;
+}
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct VkSurfaceKHR_T {
@@ -7694,6 +9273,10 @@ pub type VkSurfaceKHR = *mut VkSurfaceKHR_T;
 impl VkColorSpaceKHR {
     pub const VK_COLORSPACE_SRGB_NONLINEAR_KHR: VkColorSpaceKHR =
         VkColorSpaceKHR::VK_COLOR_SPACE_SRGB_NONLINEAR_KHR;
+}
+impl VkColorSpaceKHR {
+    pub const VK_COLOR_SPACE_DCI_P3_LINEAR_EXT: VkColorSpaceKHR =
+        VkColorSpaceKHR::VK_COLOR_SPACE_DISPLAY_P3_LINEAR_EXT;
 }
 impl VkColorSpaceKHR {
     pub const VK_COLOR_SPACE_BEGIN_RANGE_KHR: VkColorSpaceKHR =
@@ -7709,7 +9292,7 @@ pub enum VkColorSpaceKHR {
     VK_COLOR_SPACE_SRGB_NONLINEAR_KHR = 0,
     VK_COLOR_SPACE_DISPLAY_P3_NONLINEAR_EXT = 1000104001,
     VK_COLOR_SPACE_EXTENDED_SRGB_LINEAR_EXT = 1000104002,
-    VK_COLOR_SPACE_DCI_P3_LINEAR_EXT = 1000104003,
+    VK_COLOR_SPACE_DISPLAY_P3_LINEAR_EXT = 1000104003,
     VK_COLOR_SPACE_DCI_P3_NONLINEAR_EXT = 1000104004,
     VK_COLOR_SPACE_BT709_LINEAR_EXT = 1000104005,
     VK_COLOR_SPACE_BT709_NONLINEAR_EXT = 1000104006,
@@ -7721,6 +9304,7 @@ pub enum VkColorSpaceKHR {
     VK_COLOR_SPACE_ADOBERGB_NONLINEAR_EXT = 1000104012,
     VK_COLOR_SPACE_PASS_THROUGH_EXT = 1000104013,
     VK_COLOR_SPACE_EXTENDED_SRGB_NONLINEAR_EXT = 1000104014,
+    VK_COLOR_SPACE_DISPLAY_NATIVE_AMD = 1000213000,
     VK_COLOR_SPACE_RANGE_SIZE_KHR = 1,
     VK_COLOR_SPACE_MAX_ENUM_KHR = 2147483647,
 }
@@ -8712,14 +10296,8 @@ extern "C" {
         pData: *const ::std::os::raw::c_void,
     );
 }
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkPhysicalDeviceFloat16Int8FeaturesKHR {
-    pub sType: VkStructureType,
-    pub pNext: *mut ::std::os::raw::c_void,
-    pub shaderFloat16: VkBool32,
-    pub shaderInt8: VkBool32,
-}
+pub type VkPhysicalDeviceShaderFloat16Int8FeaturesKHR = VkPhysicalDeviceShaderFloat16Int8Features;
+pub type VkPhysicalDeviceFloat16Int8FeaturesKHR = VkPhysicalDeviceShaderFloat16Int8Features;
 pub type VkPhysicalDevice16BitStorageFeaturesKHR = VkPhysicalDevice16BitStorageFeatures;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -8793,93 +10371,22 @@ extern "C" {
         pData: *const ::std::os::raw::c_void,
     );
 }
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkAttachmentDescription2KHR {
-    pub sType: VkStructureType,
-    pub pNext: *const ::std::os::raw::c_void,
-    pub flags: VkAttachmentDescriptionFlags,
-    pub format: VkFormat,
-    pub samples: VkSampleCountFlagBits,
-    pub loadOp: VkAttachmentLoadOp,
-    pub storeOp: VkAttachmentStoreOp,
-    pub stencilLoadOp: VkAttachmentLoadOp,
-    pub stencilStoreOp: VkAttachmentStoreOp,
-    pub initialLayout: VkImageLayout,
-    pub finalLayout: VkImageLayout,
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkAttachmentReference2KHR {
-    pub sType: VkStructureType,
-    pub pNext: *const ::std::os::raw::c_void,
-    pub attachment: u32,
-    pub layout: VkImageLayout,
-    pub aspectMask: VkImageAspectFlags,
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkSubpassDescription2KHR {
-    pub sType: VkStructureType,
-    pub pNext: *const ::std::os::raw::c_void,
-    pub flags: VkSubpassDescriptionFlags,
-    pub pipelineBindPoint: VkPipelineBindPoint,
-    pub viewMask: u32,
-    pub inputAttachmentCount: u32,
-    pub pInputAttachments: *const VkAttachmentReference2KHR,
-    pub colorAttachmentCount: u32,
-    pub pColorAttachments: *const VkAttachmentReference2KHR,
-    pub pResolveAttachments: *const VkAttachmentReference2KHR,
-    pub pDepthStencilAttachment: *const VkAttachmentReference2KHR,
-    pub preserveAttachmentCount: u32,
-    pub pPreserveAttachments: *const u32,
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkSubpassDependency2KHR {
-    pub sType: VkStructureType,
-    pub pNext: *const ::std::os::raw::c_void,
-    pub srcSubpass: u32,
-    pub dstSubpass: u32,
-    pub srcStageMask: VkPipelineStageFlags,
-    pub dstStageMask: VkPipelineStageFlags,
-    pub srcAccessMask: VkAccessFlags,
-    pub dstAccessMask: VkAccessFlags,
-    pub dependencyFlags: VkDependencyFlags,
-    pub viewOffset: i32,
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkRenderPassCreateInfo2KHR {
-    pub sType: VkStructureType,
-    pub pNext: *const ::std::os::raw::c_void,
-    pub flags: VkRenderPassCreateFlags,
-    pub attachmentCount: u32,
-    pub pAttachments: *const VkAttachmentDescription2KHR,
-    pub subpassCount: u32,
-    pub pSubpasses: *const VkSubpassDescription2KHR,
-    pub dependencyCount: u32,
-    pub pDependencies: *const VkSubpassDependency2KHR,
-    pub correlatedViewMaskCount: u32,
-    pub pCorrelatedViewMasks: *const u32,
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkSubpassBeginInfoKHR {
-    pub sType: VkStructureType,
-    pub pNext: *const ::std::os::raw::c_void,
-    pub contents: VkSubpassContents,
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkSubpassEndInfoKHR {
-    pub sType: VkStructureType,
-    pub pNext: *const ::std::os::raw::c_void,
-}
+pub type VkPhysicalDeviceImagelessFramebufferFeaturesKHR =
+    VkPhysicalDeviceImagelessFramebufferFeatures;
+pub type VkFramebufferAttachmentsCreateInfoKHR = VkFramebufferAttachmentsCreateInfo;
+pub type VkFramebufferAttachmentImageInfoKHR = VkFramebufferAttachmentImageInfo;
+pub type VkRenderPassAttachmentBeginInfoKHR = VkRenderPassAttachmentBeginInfo;
+pub type VkRenderPassCreateInfo2KHR = VkRenderPassCreateInfo2;
+pub type VkAttachmentDescription2KHR = VkAttachmentDescription2;
+pub type VkAttachmentReference2KHR = VkAttachmentReference2;
+pub type VkSubpassDescription2KHR = VkSubpassDescription2;
+pub type VkSubpassDependency2KHR = VkSubpassDependency2;
+pub type VkSubpassBeginInfoKHR = VkSubpassBeginInfo;
+pub type VkSubpassEndInfoKHR = VkSubpassEndInfo;
 pub type PFN_vkCreateRenderPass2KHR = ::std::option::Option<
     unsafe extern "C" fn(
         device: VkDevice,
-        pCreateInfo: *const VkRenderPassCreateInfo2KHR,
+        pCreateInfo: *const VkRenderPassCreateInfo2,
         pAllocator: *const VkAllocationCallbacks,
         pRenderPass: *mut VkRenderPass,
     ) -> VkResult,
@@ -8888,26 +10395,23 @@ pub type PFN_vkCmdBeginRenderPass2KHR = ::std::option::Option<
     unsafe extern "C" fn(
         commandBuffer: VkCommandBuffer,
         pRenderPassBegin: *const VkRenderPassBeginInfo,
-        pSubpassBeginInfo: *const VkSubpassBeginInfoKHR,
+        pSubpassBeginInfo: *const VkSubpassBeginInfo,
     ),
 >;
 pub type PFN_vkCmdNextSubpass2KHR = ::std::option::Option<
     unsafe extern "C" fn(
         commandBuffer: VkCommandBuffer,
-        pSubpassBeginInfo: *const VkSubpassBeginInfoKHR,
-        pSubpassEndInfo: *const VkSubpassEndInfoKHR,
+        pSubpassBeginInfo: *const VkSubpassBeginInfo,
+        pSubpassEndInfo: *const VkSubpassEndInfo,
     ),
 >;
 pub type PFN_vkCmdEndRenderPass2KHR = ::std::option::Option<
-    unsafe extern "C" fn(
-        commandBuffer: VkCommandBuffer,
-        pSubpassEndInfo: *const VkSubpassEndInfoKHR,
-    ),
+    unsafe extern "C" fn(commandBuffer: VkCommandBuffer, pSubpassEndInfo: *const VkSubpassEndInfo),
 >;
 extern "C" {
     pub fn vkCreateRenderPass2KHR(
         device: VkDevice,
-        pCreateInfo: *const VkRenderPassCreateInfo2KHR,
+        pCreateInfo: *const VkRenderPassCreateInfo2,
         pAllocator: *const VkAllocationCallbacks,
         pRenderPass: *mut VkRenderPass,
     ) -> VkResult;
@@ -8916,20 +10420,20 @@ extern "C" {
     pub fn vkCmdBeginRenderPass2KHR(
         commandBuffer: VkCommandBuffer,
         pRenderPassBegin: *const VkRenderPassBeginInfo,
-        pSubpassBeginInfo: *const VkSubpassBeginInfoKHR,
+        pSubpassBeginInfo: *const VkSubpassBeginInfo,
     );
 }
 extern "C" {
     pub fn vkCmdNextSubpass2KHR(
         commandBuffer: VkCommandBuffer,
-        pSubpassBeginInfo: *const VkSubpassBeginInfoKHR,
-        pSubpassEndInfo: *const VkSubpassEndInfoKHR,
+        pSubpassBeginInfo: *const VkSubpassBeginInfo,
+        pSubpassEndInfo: *const VkSubpassEndInfo,
     );
 }
 extern "C" {
     pub fn vkCmdEndRenderPass2KHR(
         commandBuffer: VkCommandBuffer,
-        pSubpassEndInfo: *const VkSubpassEndInfoKHR,
+        pSubpassEndInfo: *const VkSubpassEndInfo,
     );
 }
 #[repr(C)]
@@ -9012,6 +10516,211 @@ extern "C" {
         pFd: *mut ::std::os::raw::c_int,
     ) -> VkResult;
 }
+impl VkPerformanceCounterUnitKHR {
+    pub const VK_PERFORMANCE_COUNTER_UNIT_BEGIN_RANGE_KHR: VkPerformanceCounterUnitKHR =
+        VkPerformanceCounterUnitKHR::VK_PERFORMANCE_COUNTER_UNIT_GENERIC_KHR;
+}
+impl VkPerformanceCounterUnitKHR {
+    pub const VK_PERFORMANCE_COUNTER_UNIT_END_RANGE_KHR: VkPerformanceCounterUnitKHR =
+        VkPerformanceCounterUnitKHR::VK_PERFORMANCE_COUNTER_UNIT_CYCLES_KHR;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkPerformanceCounterUnitKHR {
+    VK_PERFORMANCE_COUNTER_UNIT_GENERIC_KHR = 0,
+    VK_PERFORMANCE_COUNTER_UNIT_PERCENTAGE_KHR = 1,
+    VK_PERFORMANCE_COUNTER_UNIT_NANOSECONDS_KHR = 2,
+    VK_PERFORMANCE_COUNTER_UNIT_BYTES_KHR = 3,
+    VK_PERFORMANCE_COUNTER_UNIT_BYTES_PER_SECOND_KHR = 4,
+    VK_PERFORMANCE_COUNTER_UNIT_KELVIN_KHR = 5,
+    VK_PERFORMANCE_COUNTER_UNIT_WATTS_KHR = 6,
+    VK_PERFORMANCE_COUNTER_UNIT_VOLTS_KHR = 7,
+    VK_PERFORMANCE_COUNTER_UNIT_AMPS_KHR = 8,
+    VK_PERFORMANCE_COUNTER_UNIT_HERTZ_KHR = 9,
+    VK_PERFORMANCE_COUNTER_UNIT_CYCLES_KHR = 10,
+    VK_PERFORMANCE_COUNTER_UNIT_RANGE_SIZE_KHR = 11,
+    VK_PERFORMANCE_COUNTER_UNIT_MAX_ENUM_KHR = 2147483647,
+}
+impl VkPerformanceCounterScopeKHR {
+    pub const VK_QUERY_SCOPE_COMMAND_BUFFER_KHR: VkPerformanceCounterScopeKHR =
+        VkPerformanceCounterScopeKHR::VK_PERFORMANCE_COUNTER_SCOPE_COMMAND_BUFFER_KHR;
+}
+impl VkPerformanceCounterScopeKHR {
+    pub const VK_QUERY_SCOPE_RENDER_PASS_KHR: VkPerformanceCounterScopeKHR =
+        VkPerformanceCounterScopeKHR::VK_PERFORMANCE_COUNTER_SCOPE_RENDER_PASS_KHR;
+}
+impl VkPerformanceCounterScopeKHR {
+    pub const VK_QUERY_SCOPE_COMMAND_KHR: VkPerformanceCounterScopeKHR =
+        VkPerformanceCounterScopeKHR::VK_PERFORMANCE_COUNTER_SCOPE_COMMAND_KHR;
+}
+impl VkPerformanceCounterScopeKHR {
+    pub const VK_PERFORMANCE_COUNTER_SCOPE_BEGIN_RANGE_KHR: VkPerformanceCounterScopeKHR =
+        VkPerformanceCounterScopeKHR::VK_PERFORMANCE_COUNTER_SCOPE_COMMAND_BUFFER_KHR;
+}
+impl VkPerformanceCounterScopeKHR {
+    pub const VK_PERFORMANCE_COUNTER_SCOPE_END_RANGE_KHR: VkPerformanceCounterScopeKHR =
+        VkPerformanceCounterScopeKHR::VK_PERFORMANCE_COUNTER_SCOPE_COMMAND_KHR;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkPerformanceCounterScopeKHR {
+    VK_PERFORMANCE_COUNTER_SCOPE_COMMAND_BUFFER_KHR = 0,
+    VK_PERFORMANCE_COUNTER_SCOPE_RENDER_PASS_KHR = 1,
+    VK_PERFORMANCE_COUNTER_SCOPE_COMMAND_KHR = 2,
+    VK_PERFORMANCE_COUNTER_SCOPE_RANGE_SIZE_KHR = 3,
+    VK_PERFORMANCE_COUNTER_SCOPE_MAX_ENUM_KHR = 2147483647,
+}
+impl VkPerformanceCounterStorageKHR {
+    pub const VK_PERFORMANCE_COUNTER_STORAGE_BEGIN_RANGE_KHR: VkPerformanceCounterStorageKHR =
+        VkPerformanceCounterStorageKHR::VK_PERFORMANCE_COUNTER_STORAGE_INT32_KHR;
+}
+impl VkPerformanceCounterStorageKHR {
+    pub const VK_PERFORMANCE_COUNTER_STORAGE_END_RANGE_KHR: VkPerformanceCounterStorageKHR =
+        VkPerformanceCounterStorageKHR::VK_PERFORMANCE_COUNTER_STORAGE_FLOAT64_KHR;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkPerformanceCounterStorageKHR {
+    VK_PERFORMANCE_COUNTER_STORAGE_INT32_KHR = 0,
+    VK_PERFORMANCE_COUNTER_STORAGE_INT64_KHR = 1,
+    VK_PERFORMANCE_COUNTER_STORAGE_UINT32_KHR = 2,
+    VK_PERFORMANCE_COUNTER_STORAGE_UINT64_KHR = 3,
+    VK_PERFORMANCE_COUNTER_STORAGE_FLOAT32_KHR = 4,
+    VK_PERFORMANCE_COUNTER_STORAGE_FLOAT64_KHR = 5,
+    VK_PERFORMANCE_COUNTER_STORAGE_RANGE_SIZE_KHR = 6,
+    VK_PERFORMANCE_COUNTER_STORAGE_MAX_ENUM_KHR = 2147483647,
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkPerformanceCounterDescriptionFlagBitsKHR {
+    VK_PERFORMANCE_COUNTER_DESCRIPTION_PERFORMANCE_IMPACTING_KHR = 1,
+    VK_PERFORMANCE_COUNTER_DESCRIPTION_CONCURRENTLY_IMPACTED_KHR = 2,
+    VK_PERFORMANCE_COUNTER_DESCRIPTION_FLAG_BITS_MAX_ENUM_KHR = 2147483647,
+}
+pub type VkPerformanceCounterDescriptionFlagsKHR = VkFlags;
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkAcquireProfilingLockFlagBitsKHR {
+    VK_ACQUIRE_PROFILING_LOCK_FLAG_BITS_MAX_ENUM_KHR = 2147483647,
+}
+pub type VkAcquireProfilingLockFlagsKHR = VkFlags;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDevicePerformanceQueryFeaturesKHR {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub performanceCounterQueryPools: VkBool32,
+    pub performanceCounterMultipleQueryPools: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDevicePerformanceQueryPropertiesKHR {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub allowCommandBufferQueryCopies: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPerformanceCounterKHR {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub unit: VkPerformanceCounterUnitKHR,
+    pub scope: VkPerformanceCounterScopeKHR,
+    pub storage: VkPerformanceCounterStorageKHR,
+    pub uuid: [u8; 16usize],
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct VkPerformanceCounterDescriptionKHR {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub flags: VkPerformanceCounterDescriptionFlagsKHR,
+    pub name: [::std::os::raw::c_char; 256usize],
+    pub category: [::std::os::raw::c_char; 256usize],
+    pub description: [::std::os::raw::c_char; 256usize],
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkQueryPoolPerformanceCreateInfoKHR {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub queueFamilyIndex: u32,
+    pub counterIndexCount: u32,
+    pub pCounterIndices: *const u32,
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub union VkPerformanceCounterResultKHR {
+    pub int32: i32,
+    pub int64: i64,
+    pub uint32: u32,
+    pub uint64: u64,
+    pub float32: f32,
+    pub float64: f64,
+    _bindgen_union_align: u64,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkAcquireProfilingLockInfoKHR {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub flags: VkAcquireProfilingLockFlagsKHR,
+    pub timeout: u64,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPerformanceQuerySubmitInfoKHR {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub counterPassIndex: u32,
+}
+pub type PFN_vkEnumeratePhysicalDeviceQueueFamilyPerformanceQueryCountersKHR =
+    ::std::option::Option<
+        unsafe extern "C" fn(
+            physicalDevice: VkPhysicalDevice,
+            queueFamilyIndex: u32,
+            pCounterCount: *mut u32,
+            pCounters: *mut VkPerformanceCounterKHR,
+            pCounterDescriptions: *mut VkPerformanceCounterDescriptionKHR,
+        ) -> VkResult,
+    >;
+pub type PFN_vkGetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR = ::std::option::Option<
+    unsafe extern "C" fn(
+        physicalDevice: VkPhysicalDevice,
+        pPerformanceQueryCreateInfo: *const VkQueryPoolPerformanceCreateInfoKHR,
+        pNumPasses: *mut u32,
+    ),
+>;
+pub type PFN_vkAcquireProfilingLockKHR = ::std::option::Option<
+    unsafe extern "C" fn(device: VkDevice, pInfo: *const VkAcquireProfilingLockInfoKHR) -> VkResult,
+>;
+pub type PFN_vkReleaseProfilingLockKHR =
+    ::std::option::Option<unsafe extern "C" fn(device: VkDevice)>;
+extern "C" {
+    pub fn vkEnumeratePhysicalDeviceQueueFamilyPerformanceQueryCountersKHR(
+        physicalDevice: VkPhysicalDevice,
+        queueFamilyIndex: u32,
+        pCounterCount: *mut u32,
+        pCounters: *mut VkPerformanceCounterKHR,
+        pCounterDescriptions: *mut VkPerformanceCounterDescriptionKHR,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkGetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR(
+        physicalDevice: VkPhysicalDevice,
+        pPerformanceQueryCreateInfo: *const VkQueryPoolPerformanceCreateInfoKHR,
+        pNumPasses: *mut u32,
+    );
+}
+extern "C" {
+    pub fn vkAcquireProfilingLockKHR(
+        device: VkDevice,
+        pInfo: *const VkAcquireProfilingLockInfoKHR,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkReleaseProfilingLockKHR(device: VkDevice);
+}
 pub use self::VkPointClippingBehavior as VkPointClippingBehaviorKHR;
 pub use self::VkTessellationDomainOrigin as VkTessellationDomainOriginKHR;
 pub type VkPhysicalDevicePointClippingPropertiesKHR = VkPhysicalDevicePointClippingProperties;
@@ -9072,7 +10781,8 @@ extern "C" {
         pSurfaceFormats: *mut VkSurfaceFormat2KHR,
     ) -> VkResult;
 }
-pub type VkPhysicalDeviceVariablePointerFeaturesKHR = VkPhysicalDeviceVariablePointerFeatures;
+pub type VkPhysicalDeviceVariablePointerFeaturesKHR = VkPhysicalDeviceVariablePointersFeatures;
+pub type VkPhysicalDeviceVariablePointersFeaturesKHR = VkPhysicalDeviceVariablePointersFeatures;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct VkDisplayProperties2KHR {
@@ -9217,14 +10927,7 @@ extern "C" {
         pSparseMemoryRequirements: *mut VkSparseImageMemoryRequirements2,
     );
 }
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkImageFormatListCreateInfoKHR {
-    pub sType: VkStructureType,
-    pub pNext: *const ::std::os::raw::c_void,
-    pub viewFormatCount: u32,
-    pub pViewFormats: *const VkFormat,
-}
+pub type VkImageFormatListCreateInfoKHR = VkImageFormatListCreateInfo;
 pub type VkSamplerYcbcrConversionKHR = VkSamplerYcbcrConversion;
 pub use self::VkChromaLocation as VkChromaLocationKHR;
 pub use self::VkSamplerYcbcrModelConversion as VkSamplerYcbcrModelConversionKHR;
@@ -9357,129 +11060,253 @@ extern "C" {
         stride: u32,
     );
 }
+pub type VkPhysicalDeviceShaderSubgroupExtendedTypesFeaturesKHR =
+    VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures;
+pub type VkPhysicalDevice8BitStorageFeaturesKHR = VkPhysicalDevice8BitStorageFeatures;
+pub type VkPhysicalDeviceShaderAtomicInt64FeaturesKHR = VkPhysicalDeviceShaderAtomicInt64Features;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
-pub struct VkPhysicalDevice8BitStorageFeaturesKHR {
+pub struct VkPhysicalDeviceShaderClockFeaturesKHR {
     pub sType: VkStructureType,
     pub pNext: *mut ::std::os::raw::c_void,
-    pub storageBuffer8BitAccess: VkBool32,
-    pub uniformAndStorageBuffer8BitAccess: VkBool32,
-    pub storagePushConstant8: VkBool32,
+    pub shaderSubgroupClock: VkBool32,
+    pub shaderDeviceClock: VkBool32,
 }
+pub use self::VkDriverId as VkDriverIdKHR;
+pub type VkConformanceVersionKHR = VkConformanceVersion;
+pub type VkPhysicalDeviceDriverPropertiesKHR = VkPhysicalDeviceDriverProperties;
+pub use self::VkShaderFloatControlsIndependence as VkShaderFloatControlsIndependenceKHR;
+pub type VkPhysicalDeviceFloatControlsPropertiesKHR = VkPhysicalDeviceFloatControlsProperties;
+pub use self::VkResolveModeFlagBits as VkResolveModeFlagBitsKHR;
+pub type VkResolveModeFlagsKHR = VkResolveModeFlags;
+pub type VkSubpassDescriptionDepthStencilResolveKHR = VkSubpassDescriptionDepthStencilResolve;
+pub type VkPhysicalDeviceDepthStencilResolvePropertiesKHR =
+    VkPhysicalDeviceDepthStencilResolveProperties;
+pub use self::VkSemaphoreType as VkSemaphoreTypeKHR;
+pub use self::VkSemaphoreWaitFlagBits as VkSemaphoreWaitFlagBitsKHR;
+pub type VkSemaphoreWaitFlagsKHR = VkSemaphoreWaitFlags;
+pub type VkPhysicalDeviceTimelineSemaphoreFeaturesKHR = VkPhysicalDeviceTimelineSemaphoreFeatures;
+pub type VkPhysicalDeviceTimelineSemaphorePropertiesKHR =
+    VkPhysicalDeviceTimelineSemaphoreProperties;
+pub type VkSemaphoreTypeCreateInfoKHR = VkSemaphoreTypeCreateInfo;
+pub type VkTimelineSemaphoreSubmitInfoKHR = VkTimelineSemaphoreSubmitInfo;
+pub type VkSemaphoreWaitInfoKHR = VkSemaphoreWaitInfo;
+pub type VkSemaphoreSignalInfoKHR = VkSemaphoreSignalInfo;
+pub type PFN_vkGetSemaphoreCounterValueKHR = ::std::option::Option<
+    unsafe extern "C" fn(device: VkDevice, semaphore: VkSemaphore, pValue: *mut u64) -> VkResult,
+>;
+pub type PFN_vkWaitSemaphoresKHR = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        pWaitInfo: *const VkSemaphoreWaitInfo,
+        timeout: u64,
+    ) -> VkResult,
+>;
+pub type PFN_vkSignalSemaphoreKHR = ::std::option::Option<
+    unsafe extern "C" fn(device: VkDevice, pSignalInfo: *const VkSemaphoreSignalInfo) -> VkResult,
+>;
+extern "C" {
+    pub fn vkGetSemaphoreCounterValueKHR(
+        device: VkDevice,
+        semaphore: VkSemaphore,
+        pValue: *mut u64,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkWaitSemaphoresKHR(
+        device: VkDevice,
+        pWaitInfo: *const VkSemaphoreWaitInfo,
+        timeout: u64,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkSignalSemaphoreKHR(
+        device: VkDevice,
+        pSignalInfo: *const VkSemaphoreSignalInfo,
+    ) -> VkResult;
+}
+pub type VkPhysicalDeviceVulkanMemoryModelFeaturesKHR = VkPhysicalDeviceVulkanMemoryModelFeatures;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
-pub struct VkPhysicalDeviceShaderAtomicInt64FeaturesKHR {
+pub struct VkSurfaceProtectedCapabilitiesKHR {
     pub sType: VkStructureType,
-    pub pNext: *mut ::std::os::raw::c_void,
-    pub shaderBufferInt64Atomics: VkBool32,
-    pub shaderSharedInt64Atomics: VkBool32,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub supportsProtected: VkBool32,
 }
-impl VkDriverIdKHR {
-    pub const VK_DRIVER_ID_BEGIN_RANGE_KHR: VkDriverIdKHR =
-        VkDriverIdKHR::VK_DRIVER_ID_AMD_PROPRIETARY_KHR;
+pub type VkPhysicalDeviceSeparateDepthStencilLayoutsFeaturesKHR =
+    VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures;
+pub type VkAttachmentReferenceStencilLayoutKHR = VkAttachmentReferenceStencilLayout;
+pub type VkAttachmentDescriptionStencilLayoutKHR = VkAttachmentDescriptionStencilLayout;
+pub type VkPhysicalDeviceUniformBufferStandardLayoutFeaturesKHR =
+    VkPhysicalDeviceUniformBufferStandardLayoutFeatures;
+pub type VkPhysicalDeviceBufferDeviceAddressFeaturesKHR =
+    VkPhysicalDeviceBufferDeviceAddressFeatures;
+pub type VkBufferDeviceAddressInfoKHR = VkBufferDeviceAddressInfo;
+pub type VkBufferOpaqueCaptureAddressCreateInfoKHR = VkBufferOpaqueCaptureAddressCreateInfo;
+pub type VkMemoryOpaqueCaptureAddressAllocateInfoKHR = VkMemoryOpaqueCaptureAddressAllocateInfo;
+pub type VkDeviceMemoryOpaqueCaptureAddressInfoKHR = VkDeviceMemoryOpaqueCaptureAddressInfo;
+pub type PFN_vkGetBufferDeviceAddressKHR = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        pInfo: *const VkBufferDeviceAddressInfo,
+    ) -> VkDeviceAddress,
+>;
+pub type PFN_vkGetBufferOpaqueCaptureAddressKHR = ::std::option::Option<
+    unsafe extern "C" fn(device: VkDevice, pInfo: *const VkBufferDeviceAddressInfo) -> u64,
+>;
+pub type PFN_vkGetDeviceMemoryOpaqueCaptureAddressKHR = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        pInfo: *const VkDeviceMemoryOpaqueCaptureAddressInfo,
+    ) -> u64,
+>;
+extern "C" {
+    pub fn vkGetBufferDeviceAddressKHR(
+        device: VkDevice,
+        pInfo: *const VkBufferDeviceAddressInfo,
+    ) -> VkDeviceAddress;
 }
-impl VkDriverIdKHR {
-    pub const VK_DRIVER_ID_END_RANGE_KHR: VkDriverIdKHR =
-        VkDriverIdKHR::VK_DRIVER_ID_GOOGLE_PASTEL_KHR;
+extern "C" {
+    pub fn vkGetBufferOpaqueCaptureAddressKHR(
+        device: VkDevice,
+        pInfo: *const VkBufferDeviceAddressInfo,
+    ) -> u64;
 }
-impl VkDriverIdKHR {
-    pub const VK_DRIVER_ID_RANGE_SIZE_KHR: VkDriverIdKHR =
-        VkDriverIdKHR::VK_DRIVER_ID_GOOGLE_PASTEL_KHR;
+extern "C" {
+    pub fn vkGetDeviceMemoryOpaqueCaptureAddressKHR(
+        device: VkDevice,
+        pInfo: *const VkDeviceMemoryOpaqueCaptureAddressInfo,
+    ) -> u64;
+}
+impl VkPipelineExecutableStatisticFormatKHR {
+    pub const VK_PIPELINE_EXECUTABLE_STATISTIC_FORMAT_BEGIN_RANGE_KHR:
+        VkPipelineExecutableStatisticFormatKHR =
+        VkPipelineExecutableStatisticFormatKHR::VK_PIPELINE_EXECUTABLE_STATISTIC_FORMAT_BOOL32_KHR;
+}
+impl VkPipelineExecutableStatisticFormatKHR {
+    pub const VK_PIPELINE_EXECUTABLE_STATISTIC_FORMAT_END_RANGE_KHR:
+        VkPipelineExecutableStatisticFormatKHR =
+        VkPipelineExecutableStatisticFormatKHR::VK_PIPELINE_EXECUTABLE_STATISTIC_FORMAT_FLOAT64_KHR;
 }
 #[repr(i32)]
 #[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
-pub enum VkDriverIdKHR {
-    VK_DRIVER_ID_AMD_PROPRIETARY_KHR = 1,
-    VK_DRIVER_ID_AMD_OPEN_SOURCE_KHR = 2,
-    VK_DRIVER_ID_MESA_RADV_KHR = 3,
-    VK_DRIVER_ID_NVIDIA_PROPRIETARY_KHR = 4,
-    VK_DRIVER_ID_INTEL_PROPRIETARY_WINDOWS_KHR = 5,
-    VK_DRIVER_ID_INTEL_OPEN_SOURCE_MESA_KHR = 6,
-    VK_DRIVER_ID_IMAGINATION_PROPRIETARY_KHR = 7,
-    VK_DRIVER_ID_QUALCOMM_PROPRIETARY_KHR = 8,
-    VK_DRIVER_ID_ARM_PROPRIETARY_KHR = 9,
-    VK_DRIVER_ID_GOOGLE_PASTEL_KHR = 10,
-    VK_DRIVER_ID_MAX_ENUM_KHR = 2147483647,
+pub enum VkPipelineExecutableStatisticFormatKHR {
+    VK_PIPELINE_EXECUTABLE_STATISTIC_FORMAT_BOOL32_KHR = 0,
+    VK_PIPELINE_EXECUTABLE_STATISTIC_FORMAT_INT64_KHR = 1,
+    VK_PIPELINE_EXECUTABLE_STATISTIC_FORMAT_UINT64_KHR = 2,
+    VK_PIPELINE_EXECUTABLE_STATISTIC_FORMAT_FLOAT64_KHR = 3,
+    VK_PIPELINE_EXECUTABLE_STATISTIC_FORMAT_RANGE_SIZE_KHR = 4,
+    VK_PIPELINE_EXECUTABLE_STATISTIC_FORMAT_MAX_ENUM_KHR = 2147483647,
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
-pub struct VkConformanceVersionKHR {
-    pub major: u8,
-    pub minor: u8,
-    pub subminor: u8,
-    pub patch: u8,
+pub struct VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub pipelineExecutableInfo: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPipelineInfoKHR {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub pipeline: VkPipeline,
 }
 #[repr(C)]
 #[derive(Copy, Clone)]
-pub struct VkPhysicalDeviceDriverPropertiesKHR {
+pub struct VkPipelineExecutablePropertiesKHR {
     pub sType: VkStructureType,
     pub pNext: *mut ::std::os::raw::c_void,
-    pub driverID: VkDriverIdKHR,
-    pub driverName: [::std::os::raw::c_char; 256usize],
-    pub driverInfo: [::std::os::raw::c_char; 256usize],
-    pub conformanceVersion: VkConformanceVersionKHR,
+    pub stages: VkShaderStageFlags,
+    pub name: [::std::os::raw::c_char; 256usize],
+    pub description: [::std::os::raw::c_char; 256usize],
+    pub subgroupSize: u32,
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
-pub struct VkPhysicalDeviceFloatControlsPropertiesKHR {
-    pub sType: VkStructureType,
-    pub pNext: *mut ::std::os::raw::c_void,
-    pub separateDenormSettings: VkBool32,
-    pub separateRoundingModeSettings: VkBool32,
-    pub shaderSignedZeroInfNanPreserveFloat16: VkBool32,
-    pub shaderSignedZeroInfNanPreserveFloat32: VkBool32,
-    pub shaderSignedZeroInfNanPreserveFloat64: VkBool32,
-    pub shaderDenormPreserveFloat16: VkBool32,
-    pub shaderDenormPreserveFloat32: VkBool32,
-    pub shaderDenormPreserveFloat64: VkBool32,
-    pub shaderDenormFlushToZeroFloat16: VkBool32,
-    pub shaderDenormFlushToZeroFloat32: VkBool32,
-    pub shaderDenormFlushToZeroFloat64: VkBool32,
-    pub shaderRoundingModeRTEFloat16: VkBool32,
-    pub shaderRoundingModeRTEFloat32: VkBool32,
-    pub shaderRoundingModeRTEFloat64: VkBool32,
-    pub shaderRoundingModeRTZFloat16: VkBool32,
-    pub shaderRoundingModeRTZFloat32: VkBool32,
-    pub shaderRoundingModeRTZFloat64: VkBool32,
-}
-#[repr(i32)]
-#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
-pub enum VkResolveModeFlagBitsKHR {
-    VK_RESOLVE_MODE_NONE_KHR = 0,
-    VK_RESOLVE_MODE_SAMPLE_ZERO_BIT_KHR = 1,
-    VK_RESOLVE_MODE_AVERAGE_BIT_KHR = 2,
-    VK_RESOLVE_MODE_MIN_BIT_KHR = 4,
-    VK_RESOLVE_MODE_MAX_BIT_KHR = 8,
-    VK_RESOLVE_MODE_FLAG_BITS_MAX_ENUM_KHR = 2147483647,
-}
-pub type VkResolveModeFlagsKHR = VkFlags;
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkSubpassDescriptionDepthStencilResolveKHR {
+pub struct VkPipelineExecutableInfoKHR {
     pub sType: VkStructureType,
     pub pNext: *const ::std::os::raw::c_void,
-    pub depthResolveMode: VkResolveModeFlagBitsKHR,
-    pub stencilResolveMode: VkResolveModeFlagBitsKHR,
-    pub pDepthStencilResolveAttachment: *const VkAttachmentReference2KHR,
+    pub pipeline: VkPipeline,
+    pub executableIndex: u32,
 }
 #[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkPhysicalDeviceDepthStencilResolvePropertiesKHR {
-    pub sType: VkStructureType,
-    pub pNext: *mut ::std::os::raw::c_void,
-    pub supportedDepthResolveModes: VkResolveModeFlagsKHR,
-    pub supportedStencilResolveModes: VkResolveModeFlagsKHR,
-    pub independentResolveNone: VkBool32,
-    pub independentResolve: VkBool32,
+#[derive(Copy, Clone)]
+pub union VkPipelineExecutableStatisticValueKHR {
+    pub b32: VkBool32,
+    pub i64: i64,
+    pub u64: u64,
+    pub f64: f64,
+    _bindgen_union_align: u64,
 }
 #[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkPhysicalDeviceVulkanMemoryModelFeaturesKHR {
+#[derive(Copy, Clone)]
+pub struct VkPipelineExecutableStatisticKHR {
     pub sType: VkStructureType,
     pub pNext: *mut ::std::os::raw::c_void,
-    pub vulkanMemoryModel: VkBool32,
-    pub vulkanMemoryModelDeviceScope: VkBool32,
-    pub vulkanMemoryModelAvailabilityVisibilityChains: VkBool32,
+    pub name: [::std::os::raw::c_char; 256usize],
+    pub description: [::std::os::raw::c_char; 256usize],
+    pub format: VkPipelineExecutableStatisticFormatKHR,
+    pub value: VkPipelineExecutableStatisticValueKHR,
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct VkPipelineExecutableInternalRepresentationKHR {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub name: [::std::os::raw::c_char; 256usize],
+    pub description: [::std::os::raw::c_char; 256usize],
+    pub isText: VkBool32,
+    pub dataSize: usize,
+    pub pData: *mut ::std::os::raw::c_void,
+}
+pub type PFN_vkGetPipelineExecutablePropertiesKHR = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        pPipelineInfo: *const VkPipelineInfoKHR,
+        pExecutableCount: *mut u32,
+        pProperties: *mut VkPipelineExecutablePropertiesKHR,
+    ) -> VkResult,
+>;
+pub type PFN_vkGetPipelineExecutableStatisticsKHR = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        pExecutableInfo: *const VkPipelineExecutableInfoKHR,
+        pStatisticCount: *mut u32,
+        pStatistics: *mut VkPipelineExecutableStatisticKHR,
+    ) -> VkResult,
+>;
+pub type PFN_vkGetPipelineExecutableInternalRepresentationsKHR = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        pExecutableInfo: *const VkPipelineExecutableInfoKHR,
+        pInternalRepresentationCount: *mut u32,
+        pInternalRepresentations: *mut VkPipelineExecutableInternalRepresentationKHR,
+    ) -> VkResult,
+>;
+extern "C" {
+    pub fn vkGetPipelineExecutablePropertiesKHR(
+        device: VkDevice,
+        pPipelineInfo: *const VkPipelineInfoKHR,
+        pExecutableCount: *mut u32,
+        pProperties: *mut VkPipelineExecutablePropertiesKHR,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkGetPipelineExecutableStatisticsKHR(
+        device: VkDevice,
+        pExecutableInfo: *const VkPipelineExecutableInfoKHR,
+        pStatisticCount: *mut u32,
+        pStatistics: *mut VkPipelineExecutableStatisticKHR,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkGetPipelineExecutableInternalRepresentationsKHR(
+        device: VkDevice,
+        pExecutableInfo: *const VkPipelineExecutableInfoKHR,
+        pInternalRepresentationCount: *mut u32,
+        pInternalRepresentations: *mut VkPipelineExecutableInternalRepresentationKHR,
+    ) -> VkResult;
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -9913,6 +11740,22 @@ extern "C" {
         vertexStride: u32,
     );
 }
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkImageViewHandleInfoNVX {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub imageView: VkImageView,
+    pub descriptorType: VkDescriptorType,
+    pub sampler: VkSampler,
+}
+pub type PFN_vkGetImageViewHandleNVX = ::std::option::Option<
+    unsafe extern "C" fn(device: VkDevice, pInfo: *const VkImageViewHandleInfoNVX) -> u32,
+>;
+extern "C" {
+    pub fn vkGetImageViewHandleNVX(device: VkDevice, pInfo: *const VkImageViewHandleInfoNVX)
+        -> u32;
+}
 pub type PFN_vkCmdDrawIndirectCountAMD = ::std::option::Option<
     unsafe extern "C" fn(
         commandBuffer: VkCommandBuffer,
@@ -10116,6 +11959,13 @@ pub struct VkValidationFlagsEXT {
     pub pNext: *const ::std::os::raw::c_void,
     pub disabledValidationCheckCount: u32,
     pub pDisabledValidationChecks: *const VkValidationCheckEXT,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceTextureCompressionASTCHDRFeaturesEXT {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub textureCompressionASTC_HDR: VkBool32,
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -11176,38 +13026,10 @@ extern "C" {
         pCallbackData: *const VkDebugUtilsMessengerCallbackDataEXT,
     );
 }
-impl VkSamplerReductionModeEXT {
-    pub const VK_SAMPLER_REDUCTION_MODE_BEGIN_RANGE_EXT: VkSamplerReductionModeEXT =
-        VkSamplerReductionModeEXT::VK_SAMPLER_REDUCTION_MODE_WEIGHTED_AVERAGE_EXT;
-}
-impl VkSamplerReductionModeEXT {
-    pub const VK_SAMPLER_REDUCTION_MODE_END_RANGE_EXT: VkSamplerReductionModeEXT =
-        VkSamplerReductionModeEXT::VK_SAMPLER_REDUCTION_MODE_MAX_EXT;
-}
-#[repr(i32)]
-#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
-pub enum VkSamplerReductionModeEXT {
-    VK_SAMPLER_REDUCTION_MODE_WEIGHTED_AVERAGE_EXT = 0,
-    VK_SAMPLER_REDUCTION_MODE_MIN_EXT = 1,
-    VK_SAMPLER_REDUCTION_MODE_MAX_EXT = 2,
-    VK_SAMPLER_REDUCTION_MODE_RANGE_SIZE_EXT = 3,
-    VK_SAMPLER_REDUCTION_MODE_MAX_ENUM_EXT = 2147483647,
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkSamplerReductionModeCreateInfoEXT {
-    pub sType: VkStructureType,
-    pub pNext: *const ::std::os::raw::c_void,
-    pub reductionMode: VkSamplerReductionModeEXT,
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkPhysicalDeviceSamplerFilterMinmaxPropertiesEXT {
-    pub sType: VkStructureType,
-    pub pNext: *mut ::std::os::raw::c_void,
-    pub filterMinmaxSingleComponentFormats: VkBool32,
-    pub filterMinmaxImageComponentMapping: VkBool32,
-}
+pub use self::VkSamplerReductionMode as VkSamplerReductionModeEXT;
+pub type VkSamplerReductionModeCreateInfoEXT = VkSamplerReductionModeCreateInfo;
+pub type VkPhysicalDeviceSamplerFilterMinmaxPropertiesEXT =
+    VkPhysicalDeviceSamplerFilterMinmaxProperties;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct VkPhysicalDeviceInlineUniformBlockFeaturesEXT {
@@ -11419,6 +13241,21 @@ pub struct VkPipelineCoverageModulationStateCreateInfoNV {
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceShaderSMBuiltinsPropertiesNV {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub shaderSMCount: u32,
+    pub shaderWarpsPerSM: u32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceShaderSMBuiltinsFeaturesNV {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub shaderSMBuiltins: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
 pub struct VkDrmFormatModifierPropertiesEXT {
     pub drmFormatModifier: u64,
     pub drmFormatModifierPlaneCount: u32,
@@ -11584,94 +13421,17 @@ extern "C" {
         pData: *mut ::std::os::raw::c_void,
     ) -> VkResult;
 }
-#[repr(i32)]
-#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
-pub enum VkDescriptorBindingFlagBitsEXT {
-    VK_DESCRIPTOR_BINDING_UPDATE_AFTER_BIND_BIT_EXT = 1,
-    VK_DESCRIPTOR_BINDING_UPDATE_UNUSED_WHILE_PENDING_BIT_EXT = 2,
-    VK_DESCRIPTOR_BINDING_PARTIALLY_BOUND_BIT_EXT = 4,
-    VK_DESCRIPTOR_BINDING_VARIABLE_DESCRIPTOR_COUNT_BIT_EXT = 8,
-    VK_DESCRIPTOR_BINDING_FLAG_BITS_MAX_ENUM_EXT = 2147483647,
-}
-pub type VkDescriptorBindingFlagsEXT = VkFlags;
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkDescriptorSetLayoutBindingFlagsCreateInfoEXT {
-    pub sType: VkStructureType,
-    pub pNext: *const ::std::os::raw::c_void,
-    pub bindingCount: u32,
-    pub pBindingFlags: *const VkDescriptorBindingFlagsEXT,
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkPhysicalDeviceDescriptorIndexingFeaturesEXT {
-    pub sType: VkStructureType,
-    pub pNext: *mut ::std::os::raw::c_void,
-    pub shaderInputAttachmentArrayDynamicIndexing: VkBool32,
-    pub shaderUniformTexelBufferArrayDynamicIndexing: VkBool32,
-    pub shaderStorageTexelBufferArrayDynamicIndexing: VkBool32,
-    pub shaderUniformBufferArrayNonUniformIndexing: VkBool32,
-    pub shaderSampledImageArrayNonUniformIndexing: VkBool32,
-    pub shaderStorageBufferArrayNonUniformIndexing: VkBool32,
-    pub shaderStorageImageArrayNonUniformIndexing: VkBool32,
-    pub shaderInputAttachmentArrayNonUniformIndexing: VkBool32,
-    pub shaderUniformTexelBufferArrayNonUniformIndexing: VkBool32,
-    pub shaderStorageTexelBufferArrayNonUniformIndexing: VkBool32,
-    pub descriptorBindingUniformBufferUpdateAfterBind: VkBool32,
-    pub descriptorBindingSampledImageUpdateAfterBind: VkBool32,
-    pub descriptorBindingStorageImageUpdateAfterBind: VkBool32,
-    pub descriptorBindingStorageBufferUpdateAfterBind: VkBool32,
-    pub descriptorBindingUniformTexelBufferUpdateAfterBind: VkBool32,
-    pub descriptorBindingStorageTexelBufferUpdateAfterBind: VkBool32,
-    pub descriptorBindingUpdateUnusedWhilePending: VkBool32,
-    pub descriptorBindingPartiallyBound: VkBool32,
-    pub descriptorBindingVariableDescriptorCount: VkBool32,
-    pub runtimeDescriptorArray: VkBool32,
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkPhysicalDeviceDescriptorIndexingPropertiesEXT {
-    pub sType: VkStructureType,
-    pub pNext: *mut ::std::os::raw::c_void,
-    pub maxUpdateAfterBindDescriptorsInAllPools: u32,
-    pub shaderUniformBufferArrayNonUniformIndexingNative: VkBool32,
-    pub shaderSampledImageArrayNonUniformIndexingNative: VkBool32,
-    pub shaderStorageBufferArrayNonUniformIndexingNative: VkBool32,
-    pub shaderStorageImageArrayNonUniformIndexingNative: VkBool32,
-    pub shaderInputAttachmentArrayNonUniformIndexingNative: VkBool32,
-    pub robustBufferAccessUpdateAfterBind: VkBool32,
-    pub quadDivergentImplicitLod: VkBool32,
-    pub maxPerStageDescriptorUpdateAfterBindSamplers: u32,
-    pub maxPerStageDescriptorUpdateAfterBindUniformBuffers: u32,
-    pub maxPerStageDescriptorUpdateAfterBindStorageBuffers: u32,
-    pub maxPerStageDescriptorUpdateAfterBindSampledImages: u32,
-    pub maxPerStageDescriptorUpdateAfterBindStorageImages: u32,
-    pub maxPerStageDescriptorUpdateAfterBindInputAttachments: u32,
-    pub maxPerStageUpdateAfterBindResources: u32,
-    pub maxDescriptorSetUpdateAfterBindSamplers: u32,
-    pub maxDescriptorSetUpdateAfterBindUniformBuffers: u32,
-    pub maxDescriptorSetUpdateAfterBindUniformBuffersDynamic: u32,
-    pub maxDescriptorSetUpdateAfterBindStorageBuffers: u32,
-    pub maxDescriptorSetUpdateAfterBindStorageBuffersDynamic: u32,
-    pub maxDescriptorSetUpdateAfterBindSampledImages: u32,
-    pub maxDescriptorSetUpdateAfterBindStorageImages: u32,
-    pub maxDescriptorSetUpdateAfterBindInputAttachments: u32,
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkDescriptorSetVariableDescriptorCountAllocateInfoEXT {
-    pub sType: VkStructureType,
-    pub pNext: *const ::std::os::raw::c_void,
-    pub descriptorSetCount: u32,
-    pub pDescriptorCounts: *const u32,
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkDescriptorSetVariableDescriptorCountLayoutSupportEXT {
-    pub sType: VkStructureType,
-    pub pNext: *mut ::std::os::raw::c_void,
-    pub maxVariableDescriptorCount: u32,
-}
+pub use self::VkDescriptorBindingFlagBits as VkDescriptorBindingFlagBitsEXT;
+pub type VkDescriptorBindingFlagsEXT = VkDescriptorBindingFlags;
+pub type VkDescriptorSetLayoutBindingFlagsCreateInfoEXT =
+    VkDescriptorSetLayoutBindingFlagsCreateInfo;
+pub type VkPhysicalDeviceDescriptorIndexingFeaturesEXT = VkPhysicalDeviceDescriptorIndexingFeatures;
+pub type VkPhysicalDeviceDescriptorIndexingPropertiesEXT =
+    VkPhysicalDeviceDescriptorIndexingProperties;
+pub type VkDescriptorSetVariableDescriptorCountAllocateInfoEXT =
+    VkDescriptorSetVariableDescriptorCountAllocateInfo;
+pub type VkDescriptorSetVariableDescriptorCountLayoutSupportEXT =
+    VkDescriptorSetVariableDescriptorCountLayoutSupport;
 impl VkShadingRatePaletteEntryNV {
     pub const VK_SHADING_RATE_PALETTE_ENTRY_BEGIN_RANGE_NV: VkShadingRatePaletteEntryNV =
         VkShadingRatePaletteEntryNV::VK_SHADING_RATE_PALETTE_ENTRY_NO_INVOCATIONS_NV;
@@ -11824,6 +13584,22 @@ pub struct VkAccelerationStructureNV_T {
     _unused: [u8; 0],
 }
 pub type VkAccelerationStructureNV = *mut VkAccelerationStructureNV_T;
+impl VkAccelerationStructureTypeNV {
+    pub const VK_ACCELERATION_STRUCTURE_TYPE_BEGIN_RANGE_NV: VkAccelerationStructureTypeNV =
+        VkAccelerationStructureTypeNV::VK_ACCELERATION_STRUCTURE_TYPE_TOP_LEVEL_NV;
+}
+impl VkAccelerationStructureTypeNV {
+    pub const VK_ACCELERATION_STRUCTURE_TYPE_END_RANGE_NV: VkAccelerationStructureTypeNV =
+        VkAccelerationStructureTypeNV::VK_ACCELERATION_STRUCTURE_TYPE_BOTTOM_LEVEL_NV;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkAccelerationStructureTypeNV {
+    VK_ACCELERATION_STRUCTURE_TYPE_TOP_LEVEL_NV = 0,
+    VK_ACCELERATION_STRUCTURE_TYPE_BOTTOM_LEVEL_NV = 1,
+    VK_ACCELERATION_STRUCTURE_TYPE_RANGE_SIZE_NV = 2,
+    VK_ACCELERATION_STRUCTURE_TYPE_MAX_ENUM_NV = 2147483647,
+}
 impl VkRayTracingShaderGroupTypeNV {
     pub const VK_RAY_TRACING_SHADER_GROUP_TYPE_BEGIN_RANGE_NV: VkRayTracingShaderGroupTypeNV =
         VkRayTracingShaderGroupTypeNV::VK_RAY_TRACING_SHADER_GROUP_TYPE_GENERAL_NV;
@@ -11856,22 +13632,6 @@ pub enum VkGeometryTypeNV {
     VK_GEOMETRY_TYPE_AABBS_NV = 1,
     VK_GEOMETRY_TYPE_RANGE_SIZE_NV = 2,
     VK_GEOMETRY_TYPE_MAX_ENUM_NV = 2147483647,
-}
-impl VkAccelerationStructureTypeNV {
-    pub const VK_ACCELERATION_STRUCTURE_TYPE_BEGIN_RANGE_NV: VkAccelerationStructureTypeNV =
-        VkAccelerationStructureTypeNV::VK_ACCELERATION_STRUCTURE_TYPE_TOP_LEVEL_NV;
-}
-impl VkAccelerationStructureTypeNV {
-    pub const VK_ACCELERATION_STRUCTURE_TYPE_END_RANGE_NV: VkAccelerationStructureTypeNV =
-        VkAccelerationStructureTypeNV::VK_ACCELERATION_STRUCTURE_TYPE_BOTTOM_LEVEL_NV;
-}
-#[repr(i32)]
-#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
-pub enum VkAccelerationStructureTypeNV {
-    VK_ACCELERATION_STRUCTURE_TYPE_TOP_LEVEL_NV = 0,
-    VK_ACCELERATION_STRUCTURE_TYPE_BOTTOM_LEVEL_NV = 1,
-    VK_ACCELERATION_STRUCTURE_TYPE_RANGE_SIZE_NV = 2,
-    VK_ACCELERATION_STRUCTURE_TYPE_MAX_ENUM_NV = 2147483647,
 }
 impl VkCopyAccelerationStructureModeNV {
     pub const VK_COPY_ACCELERATION_STRUCTURE_MODE_BEGIN_RANGE_NV:
@@ -12392,6 +14152,19 @@ extern "C" {
         marker: u32,
     );
 }
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkPipelineCompilerControlFlagBitsAMD {
+    VK_PIPELINE_COMPILER_CONTROL_FLAG_BITS_MAX_ENUM_AMD = 2147483647,
+}
+pub type VkPipelineCompilerControlFlagsAMD = VkFlags;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPipelineCompilerControlCreateInfoAMD {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub compilerControlFlags: VkPipelineCompilerControlFlagsAMD,
+}
 impl VkTimeDomainEXT {
     pub const VK_TIME_DOMAIN_BEGIN_RANGE_EXT: VkTimeDomainEXT =
         VkTimeDomainEXT::VK_TIME_DOMAIN_DEVICE_EXT;
@@ -12521,6 +14294,30 @@ pub struct VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT {
     pub pNext: *mut ::std::os::raw::c_void,
     pub vertexAttributeInstanceRateDivisor: VkBool32,
     pub vertexAttributeInstanceRateZeroDivisor: VkBool32,
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkPipelineCreationFeedbackFlagBitsEXT {
+    VK_PIPELINE_CREATION_FEEDBACK_VALID_BIT_EXT = 1,
+    VK_PIPELINE_CREATION_FEEDBACK_APPLICATION_PIPELINE_CACHE_HIT_BIT_EXT = 2,
+    VK_PIPELINE_CREATION_FEEDBACK_BASE_PIPELINE_ACCELERATION_BIT_EXT = 4,
+    VK_PIPELINE_CREATION_FEEDBACK_FLAG_BITS_MAX_ENUM_EXT = 2147483647,
+}
+pub type VkPipelineCreationFeedbackFlagsEXT = VkFlags;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPipelineCreationFeedbackEXT {
+    pub flags: VkPipelineCreationFeedbackFlagsEXT,
+    pub duration: u64,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPipelineCreationFeedbackCreateInfoEXT {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub pPipelineCreationFeedback: *mut VkPipelineCreationFeedbackEXT,
+    pub pipelineStageCreationFeedbackCount: u32,
+    pub pPipelineStageCreationFeedbacks: *mut VkPipelineCreationFeedbackEXT,
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -12697,6 +14494,262 @@ extern "C" {
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub shaderIntegerFunctions2: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPerformanceConfigurationINTEL_T {
+    _unused: [u8; 0],
+}
+pub type VkPerformanceConfigurationINTEL = *mut VkPerformanceConfigurationINTEL_T;
+impl VkPerformanceConfigurationTypeINTEL {
+    pub const VK_PERFORMANCE_CONFIGURATION_TYPE_BEGIN_RANGE_INTEL : VkPerformanceConfigurationTypeINTEL = VkPerformanceConfigurationTypeINTEL :: VK_PERFORMANCE_CONFIGURATION_TYPE_COMMAND_QUEUE_METRICS_DISCOVERY_ACTIVATED_INTEL ;
+}
+impl VkPerformanceConfigurationTypeINTEL {
+    pub const VK_PERFORMANCE_CONFIGURATION_TYPE_END_RANGE_INTEL : VkPerformanceConfigurationTypeINTEL = VkPerformanceConfigurationTypeINTEL :: VK_PERFORMANCE_CONFIGURATION_TYPE_COMMAND_QUEUE_METRICS_DISCOVERY_ACTIVATED_INTEL ;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkPerformanceConfigurationTypeINTEL {
+    VK_PERFORMANCE_CONFIGURATION_TYPE_COMMAND_QUEUE_METRICS_DISCOVERY_ACTIVATED_INTEL = 0,
+    VK_PERFORMANCE_CONFIGURATION_TYPE_RANGE_SIZE_INTEL = 1,
+    VK_PERFORMANCE_CONFIGURATION_TYPE_MAX_ENUM_INTEL = 2147483647,
+}
+impl VkQueryPoolSamplingModeINTEL {
+    pub const VK_QUERY_POOL_SAMPLING_MODE_BEGIN_RANGE_INTEL: VkQueryPoolSamplingModeINTEL =
+        VkQueryPoolSamplingModeINTEL::VK_QUERY_POOL_SAMPLING_MODE_MANUAL_INTEL;
+}
+impl VkQueryPoolSamplingModeINTEL {
+    pub const VK_QUERY_POOL_SAMPLING_MODE_END_RANGE_INTEL: VkQueryPoolSamplingModeINTEL =
+        VkQueryPoolSamplingModeINTEL::VK_QUERY_POOL_SAMPLING_MODE_MANUAL_INTEL;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkQueryPoolSamplingModeINTEL {
+    VK_QUERY_POOL_SAMPLING_MODE_MANUAL_INTEL = 0,
+    VK_QUERY_POOL_SAMPLING_MODE_RANGE_SIZE_INTEL = 1,
+    VK_QUERY_POOL_SAMPLING_MODE_MAX_ENUM_INTEL = 2147483647,
+}
+impl VkPerformanceOverrideTypeINTEL {
+    pub const VK_PERFORMANCE_OVERRIDE_TYPE_BEGIN_RANGE_INTEL: VkPerformanceOverrideTypeINTEL =
+        VkPerformanceOverrideTypeINTEL::VK_PERFORMANCE_OVERRIDE_TYPE_NULL_HARDWARE_INTEL;
+}
+impl VkPerformanceOverrideTypeINTEL {
+    pub const VK_PERFORMANCE_OVERRIDE_TYPE_END_RANGE_INTEL: VkPerformanceOverrideTypeINTEL =
+        VkPerformanceOverrideTypeINTEL::VK_PERFORMANCE_OVERRIDE_TYPE_FLUSH_GPU_CACHES_INTEL;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkPerformanceOverrideTypeINTEL {
+    VK_PERFORMANCE_OVERRIDE_TYPE_NULL_HARDWARE_INTEL = 0,
+    VK_PERFORMANCE_OVERRIDE_TYPE_FLUSH_GPU_CACHES_INTEL = 1,
+    VK_PERFORMANCE_OVERRIDE_TYPE_RANGE_SIZE_INTEL = 2,
+    VK_PERFORMANCE_OVERRIDE_TYPE_MAX_ENUM_INTEL = 2147483647,
+}
+impl VkPerformanceParameterTypeINTEL {
+    pub const VK_PERFORMANCE_PARAMETER_TYPE_BEGIN_RANGE_INTEL: VkPerformanceParameterTypeINTEL =
+        VkPerformanceParameterTypeINTEL::VK_PERFORMANCE_PARAMETER_TYPE_HW_COUNTERS_SUPPORTED_INTEL;
+}
+impl VkPerformanceParameterTypeINTEL {
+    pub const VK_PERFORMANCE_PARAMETER_TYPE_END_RANGE_INTEL : VkPerformanceParameterTypeINTEL = VkPerformanceParameterTypeINTEL :: VK_PERFORMANCE_PARAMETER_TYPE_STREAM_MARKER_VALID_BITS_INTEL ;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkPerformanceParameterTypeINTEL {
+    VK_PERFORMANCE_PARAMETER_TYPE_HW_COUNTERS_SUPPORTED_INTEL = 0,
+    VK_PERFORMANCE_PARAMETER_TYPE_STREAM_MARKER_VALID_BITS_INTEL = 1,
+    VK_PERFORMANCE_PARAMETER_TYPE_RANGE_SIZE_INTEL = 2,
+    VK_PERFORMANCE_PARAMETER_TYPE_MAX_ENUM_INTEL = 2147483647,
+}
+impl VkPerformanceValueTypeINTEL {
+    pub const VK_PERFORMANCE_VALUE_TYPE_BEGIN_RANGE_INTEL: VkPerformanceValueTypeINTEL =
+        VkPerformanceValueTypeINTEL::VK_PERFORMANCE_VALUE_TYPE_UINT32_INTEL;
+}
+impl VkPerformanceValueTypeINTEL {
+    pub const VK_PERFORMANCE_VALUE_TYPE_END_RANGE_INTEL: VkPerformanceValueTypeINTEL =
+        VkPerformanceValueTypeINTEL::VK_PERFORMANCE_VALUE_TYPE_STRING_INTEL;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkPerformanceValueTypeINTEL {
+    VK_PERFORMANCE_VALUE_TYPE_UINT32_INTEL = 0,
+    VK_PERFORMANCE_VALUE_TYPE_UINT64_INTEL = 1,
+    VK_PERFORMANCE_VALUE_TYPE_FLOAT_INTEL = 2,
+    VK_PERFORMANCE_VALUE_TYPE_BOOL_INTEL = 3,
+    VK_PERFORMANCE_VALUE_TYPE_STRING_INTEL = 4,
+    VK_PERFORMANCE_VALUE_TYPE_RANGE_SIZE_INTEL = 5,
+    VK_PERFORMANCE_VALUE_TYPE_MAX_ENUM_INTEL = 2147483647,
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub union VkPerformanceValueDataINTEL {
+    pub value32: u32,
+    pub value64: u64,
+    pub valueFloat: f32,
+    pub valueBool: VkBool32,
+    pub valueString: *const ::std::os::raw::c_char,
+    _bindgen_union_align: u64,
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct VkPerformanceValueINTEL {
+    pub type_: VkPerformanceValueTypeINTEL,
+    pub data: VkPerformanceValueDataINTEL,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkInitializePerformanceApiInfoINTEL {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub pUserData: *mut ::std::os::raw::c_void,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkQueryPoolCreateInfoINTEL {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub performanceCountersSampling: VkQueryPoolSamplingModeINTEL,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPerformanceMarkerInfoINTEL {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub marker: u64,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPerformanceStreamMarkerInfoINTEL {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub marker: u32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPerformanceOverrideInfoINTEL {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub type_: VkPerformanceOverrideTypeINTEL,
+    pub enable: VkBool32,
+    pub parameter: u64,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPerformanceConfigurationAcquireInfoINTEL {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub type_: VkPerformanceConfigurationTypeINTEL,
+}
+pub type PFN_vkInitializePerformanceApiINTEL = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        pInitializeInfo: *const VkInitializePerformanceApiInfoINTEL,
+    ) -> VkResult,
+>;
+pub type PFN_vkUninitializePerformanceApiINTEL =
+    ::std::option::Option<unsafe extern "C" fn(device: VkDevice)>;
+pub type PFN_vkCmdSetPerformanceMarkerINTEL = ::std::option::Option<
+    unsafe extern "C" fn(
+        commandBuffer: VkCommandBuffer,
+        pMarkerInfo: *const VkPerformanceMarkerInfoINTEL,
+    ) -> VkResult,
+>;
+pub type PFN_vkCmdSetPerformanceStreamMarkerINTEL = ::std::option::Option<
+    unsafe extern "C" fn(
+        commandBuffer: VkCommandBuffer,
+        pMarkerInfo: *const VkPerformanceStreamMarkerInfoINTEL,
+    ) -> VkResult,
+>;
+pub type PFN_vkCmdSetPerformanceOverrideINTEL = ::std::option::Option<
+    unsafe extern "C" fn(
+        commandBuffer: VkCommandBuffer,
+        pOverrideInfo: *const VkPerformanceOverrideInfoINTEL,
+    ) -> VkResult,
+>;
+pub type PFN_vkAcquirePerformanceConfigurationINTEL = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        pAcquireInfo: *const VkPerformanceConfigurationAcquireInfoINTEL,
+        pConfiguration: *mut VkPerformanceConfigurationINTEL,
+    ) -> VkResult,
+>;
+pub type PFN_vkReleasePerformanceConfigurationINTEL = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        configuration: VkPerformanceConfigurationINTEL,
+    ) -> VkResult,
+>;
+pub type PFN_vkQueueSetPerformanceConfigurationINTEL = ::std::option::Option<
+    unsafe extern "C" fn(
+        queue: VkQueue,
+        configuration: VkPerformanceConfigurationINTEL,
+    ) -> VkResult,
+>;
+pub type PFN_vkGetPerformanceParameterINTEL = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        parameter: VkPerformanceParameterTypeINTEL,
+        pValue: *mut VkPerformanceValueINTEL,
+    ) -> VkResult,
+>;
+extern "C" {
+    pub fn vkInitializePerformanceApiINTEL(
+        device: VkDevice,
+        pInitializeInfo: *const VkInitializePerformanceApiInfoINTEL,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkUninitializePerformanceApiINTEL(device: VkDevice);
+}
+extern "C" {
+    pub fn vkCmdSetPerformanceMarkerINTEL(
+        commandBuffer: VkCommandBuffer,
+        pMarkerInfo: *const VkPerformanceMarkerInfoINTEL,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkCmdSetPerformanceStreamMarkerINTEL(
+        commandBuffer: VkCommandBuffer,
+        pMarkerInfo: *const VkPerformanceStreamMarkerInfoINTEL,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkCmdSetPerformanceOverrideINTEL(
+        commandBuffer: VkCommandBuffer,
+        pOverrideInfo: *const VkPerformanceOverrideInfoINTEL,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkAcquirePerformanceConfigurationINTEL(
+        device: VkDevice,
+        pAcquireInfo: *const VkPerformanceConfigurationAcquireInfoINTEL,
+        pConfiguration: *mut VkPerformanceConfigurationINTEL,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkReleasePerformanceConfigurationINTEL(
+        device: VkDevice,
+        configuration: VkPerformanceConfigurationINTEL,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkQueueSetPerformanceConfigurationINTEL(
+        queue: VkQueue,
+        configuration: VkPerformanceConfigurationINTEL,
+    ) -> VkResult;
+}
+extern "C" {
+    pub fn vkGetPerformanceParameterINTEL(
+        device: VkDevice,
+        parameter: VkPerformanceParameterTypeINTEL,
+        pValue: *mut VkPerformanceValueINTEL,
+    ) -> VkResult;
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
 pub struct VkPhysicalDevicePCIBusInfoPropertiesEXT {
     pub sType: VkStructureType,
     pub pNext: *mut ::std::os::raw::c_void,
@@ -12704,6 +14757,30 @@ pub struct VkPhysicalDevicePCIBusInfoPropertiesEXT {
     pub pciBus: u32,
     pub pciDevice: u32,
     pub pciFunction: u32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkDisplayNativeHdrSurfaceCapabilitiesAMD {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub localDimmingSupport: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkSwapchainDisplayNativeHdrCreateInfoAMD {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub localDimmingEnable: VkBool32,
+}
+pub type PFN_vkSetLocalDimmingAMD = ::std::option::Option<
+    unsafe extern "C" fn(device: VkDevice, swapChain: VkSwapchainKHR, localDimmingEnable: VkBool32),
+>;
+extern "C" {
+    pub fn vkSetLocalDimmingAMD(
+        device: VkDevice,
+        swapChain: VkSwapchainKHR,
+        localDimmingEnable: VkBool32,
+    );
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -12730,12 +14807,52 @@ pub struct VkRenderPassFragmentDensityMapCreateInfoEXT {
     pub pNext: *const ::std::os::raw::c_void,
     pub fragmentDensityMapAttachment: VkAttachmentReference,
 }
+pub type VkPhysicalDeviceScalarBlockLayoutFeaturesEXT = VkPhysicalDeviceScalarBlockLayoutFeatures;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
-pub struct VkPhysicalDeviceScalarBlockLayoutFeaturesEXT {
+pub struct VkPhysicalDeviceSubgroupSizeControlFeaturesEXT {
     pub sType: VkStructureType,
     pub pNext: *mut ::std::os::raw::c_void,
-    pub scalarBlockLayout: VkBool32,
+    pub subgroupSizeControl: VkBool32,
+    pub computeFullSubgroups: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceSubgroupSizeControlPropertiesEXT {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub minSubgroupSize: u32,
+    pub maxSubgroupSize: u32,
+    pub maxComputeWorkgroupSubgroups: u32,
+    pub requiredSubgroupSizeStages: VkShaderStageFlags,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub requiredSubgroupSize: u32,
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkShaderCorePropertiesFlagBitsAMD {
+    VK_SHADER_CORE_PROPERTIES_FLAG_BITS_MAX_ENUM_AMD = 2147483647,
+}
+pub type VkShaderCorePropertiesFlagsAMD = VkFlags;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceShaderCoreProperties2AMD {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub shaderCoreFeatures: VkShaderCorePropertiesFlagsAMD,
+    pub activeComputeUnitCount: u32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceCoherentMemoryFeaturesAMD {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub deviceCoherentMemory: VkBool32,
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -12766,62 +14883,90 @@ pub struct VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV {
     pub pNext: *mut ::std::os::raw::c_void,
     pub dedicatedAllocationImageAliasing: VkBool32,
 }
-pub type VkDeviceAddress = u64;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
-pub struct VkPhysicalDeviceBufferAddressFeaturesEXT {
+pub struct VkPhysicalDeviceBufferDeviceAddressFeaturesEXT {
     pub sType: VkStructureType,
     pub pNext: *mut ::std::os::raw::c_void,
     pub bufferDeviceAddress: VkBool32,
     pub bufferDeviceAddressCaptureReplay: VkBool32,
     pub bufferDeviceAddressMultiDevice: VkBool32,
 }
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkBufferDeviceAddressInfoEXT {
-    pub sType: VkStructureType,
-    pub pNext: *const ::std::os::raw::c_void,
-    pub buffer: VkBuffer,
-}
+pub type VkPhysicalDeviceBufferAddressFeaturesEXT = VkPhysicalDeviceBufferDeviceAddressFeaturesEXT;
+pub type VkBufferDeviceAddressInfoEXT = VkBufferDeviceAddressInfo;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct VkBufferDeviceAddressCreateInfoEXT {
     pub sType: VkStructureType,
     pub pNext: *const ::std::os::raw::c_void,
-    pub deviceAddress: VkDeviceSize,
+    pub deviceAddress: VkDeviceAddress,
 }
 pub type PFN_vkGetBufferDeviceAddressEXT = ::std::option::Option<
     unsafe extern "C" fn(
         device: VkDevice,
-        pInfo: *const VkBufferDeviceAddressInfoEXT,
+        pInfo: *const VkBufferDeviceAddressInfo,
     ) -> VkDeviceAddress,
 >;
 extern "C" {
     pub fn vkGetBufferDeviceAddressEXT(
         device: VkDevice,
-        pInfo: *const VkBufferDeviceAddressInfoEXT,
+        pInfo: *const VkBufferDeviceAddressInfo,
     ) -> VkDeviceAddress;
 }
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct VkImageStencilUsageCreateInfoEXT {
-    pub sType: VkStructureType,
-    pub pNext: *const ::std::os::raw::c_void,
-    pub stencilUsage: VkImageUsageFlags,
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkToolPurposeFlagBitsEXT {
+    VK_TOOL_PURPOSE_VALIDATION_BIT_EXT = 1,
+    VK_TOOL_PURPOSE_PROFILING_BIT_EXT = 2,
+    VK_TOOL_PURPOSE_TRACING_BIT_EXT = 4,
+    VK_TOOL_PURPOSE_ADDITIONAL_FEATURES_BIT_EXT = 8,
+    VK_TOOL_PURPOSE_MODIFYING_FEATURES_BIT_EXT = 16,
+    VK_TOOL_PURPOSE_DEBUG_REPORTING_BIT_EXT = 32,
+    VK_TOOL_PURPOSE_DEBUG_MARKERS_BIT_EXT = 64,
+    VK_TOOL_PURPOSE_FLAG_BITS_MAX_ENUM_EXT = 2147483647,
 }
+pub type VkToolPurposeFlagsEXT = VkFlags;
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct VkPhysicalDeviceToolPropertiesEXT {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub name: [::std::os::raw::c_char; 256usize],
+    pub version: [::std::os::raw::c_char; 256usize],
+    pub purposes: VkToolPurposeFlagsEXT,
+    pub description: [::std::os::raw::c_char; 256usize],
+    pub layer: [::std::os::raw::c_char; 256usize],
+}
+pub type PFN_vkGetPhysicalDeviceToolPropertiesEXT = ::std::option::Option<
+    unsafe extern "C" fn(
+        physicalDevice: VkPhysicalDevice,
+        pToolCount: *mut u32,
+        pToolProperties: *mut VkPhysicalDeviceToolPropertiesEXT,
+    ) -> VkResult,
+>;
+extern "C" {
+    pub fn vkGetPhysicalDeviceToolPropertiesEXT(
+        physicalDevice: VkPhysicalDevice,
+        pToolCount: *mut u32,
+        pToolProperties: *mut VkPhysicalDeviceToolPropertiesEXT,
+    ) -> VkResult;
+}
+pub type VkImageStencilUsageCreateInfoEXT = VkImageStencilUsageCreateInfo;
 impl VkValidationFeatureEnableEXT {
     pub const VK_VALIDATION_FEATURE_ENABLE_BEGIN_RANGE_EXT: VkValidationFeatureEnableEXT =
         VkValidationFeatureEnableEXT::VK_VALIDATION_FEATURE_ENABLE_GPU_ASSISTED_EXT;
 }
 impl VkValidationFeatureEnableEXT {
-    pub const VK_VALIDATION_FEATURE_ENABLE_END_RANGE_EXT : VkValidationFeatureEnableEXT = VkValidationFeatureEnableEXT :: VK_VALIDATION_FEATURE_ENABLE_GPU_ASSISTED_RESERVE_BINDING_SLOT_EXT ;
+    pub const VK_VALIDATION_FEATURE_ENABLE_END_RANGE_EXT: VkValidationFeatureEnableEXT =
+        VkValidationFeatureEnableEXT::VK_VALIDATION_FEATURE_ENABLE_BEST_PRACTICES_EXT;
 }
 #[repr(i32)]
 #[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
 pub enum VkValidationFeatureEnableEXT {
     VK_VALIDATION_FEATURE_ENABLE_GPU_ASSISTED_EXT = 0,
     VK_VALIDATION_FEATURE_ENABLE_GPU_ASSISTED_RESERVE_BINDING_SLOT_EXT = 1,
-    VK_VALIDATION_FEATURE_ENABLE_RANGE_SIZE_EXT = 2,
+    VK_VALIDATION_FEATURE_ENABLE_BEST_PRACTICES_EXT = 2,
+    VK_VALIDATION_FEATURE_ENABLE_RANGE_SIZE_EXT = 3,
     VK_VALIDATION_FEATURE_ENABLE_MAX_ENUM_EXT = 2147483647,
 }
 impl VkValidationFeatureDisableEXT {
@@ -12940,6 +15085,212 @@ extern "C" {
         pPropertyCount: *mut u32,
         pProperties: *mut VkCooperativeMatrixPropertiesNV,
     ) -> VkResult;
+}
+impl VkCoverageReductionModeNV {
+    pub const VK_COVERAGE_REDUCTION_MODE_BEGIN_RANGE_NV: VkCoverageReductionModeNV =
+        VkCoverageReductionModeNV::VK_COVERAGE_REDUCTION_MODE_MERGE_NV;
+}
+impl VkCoverageReductionModeNV {
+    pub const VK_COVERAGE_REDUCTION_MODE_END_RANGE_NV: VkCoverageReductionModeNV =
+        VkCoverageReductionModeNV::VK_COVERAGE_REDUCTION_MODE_TRUNCATE_NV;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkCoverageReductionModeNV {
+    VK_COVERAGE_REDUCTION_MODE_MERGE_NV = 0,
+    VK_COVERAGE_REDUCTION_MODE_TRUNCATE_NV = 1,
+    VK_COVERAGE_REDUCTION_MODE_RANGE_SIZE_NV = 2,
+    VK_COVERAGE_REDUCTION_MODE_MAX_ENUM_NV = 2147483647,
+}
+pub type VkPipelineCoverageReductionStateCreateFlagsNV = VkFlags;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceCoverageReductionModeFeaturesNV {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub coverageReductionMode: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPipelineCoverageReductionStateCreateInfoNV {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub flags: VkPipelineCoverageReductionStateCreateFlagsNV,
+    pub coverageReductionMode: VkCoverageReductionModeNV,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkFramebufferMixedSamplesCombinationNV {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub coverageReductionMode: VkCoverageReductionModeNV,
+    pub rasterizationSamples: VkSampleCountFlagBits,
+    pub depthStencilSamples: VkSampleCountFlags,
+    pub colorSamples: VkSampleCountFlags,
+}
+pub type PFN_vkGetPhysicalDeviceSupportedFramebufferMixedSamplesCombinationsNV =
+    ::std::option::Option<
+        unsafe extern "C" fn(
+            physicalDevice: VkPhysicalDevice,
+            pCombinationCount: *mut u32,
+            pCombinations: *mut VkFramebufferMixedSamplesCombinationNV,
+        ) -> VkResult,
+    >;
+extern "C" {
+    pub fn vkGetPhysicalDeviceSupportedFramebufferMixedSamplesCombinationsNV(
+        physicalDevice: VkPhysicalDevice,
+        pCombinationCount: *mut u32,
+        pCombinations: *mut VkFramebufferMixedSamplesCombinationNV,
+    ) -> VkResult;
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub fragmentShaderSampleInterlock: VkBool32,
+    pub fragmentShaderPixelInterlock: VkBool32,
+    pub fragmentShaderShadingRateInterlock: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceYcbcrImageArraysFeaturesEXT {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub ycbcrImageArrays: VkBool32,
+}
+pub type VkHeadlessSurfaceCreateFlagsEXT = VkFlags;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkHeadlessSurfaceCreateInfoEXT {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub flags: VkHeadlessSurfaceCreateFlagsEXT,
+}
+pub type PFN_vkCreateHeadlessSurfaceEXT = ::std::option::Option<
+    unsafe extern "C" fn(
+        instance: VkInstance,
+        pCreateInfo: *const VkHeadlessSurfaceCreateInfoEXT,
+        pAllocator: *const VkAllocationCallbacks,
+        pSurface: *mut VkSurfaceKHR,
+    ) -> VkResult,
+>;
+extern "C" {
+    pub fn vkCreateHeadlessSurfaceEXT(
+        instance: VkInstance,
+        pCreateInfo: *const VkHeadlessSurfaceCreateInfoEXT,
+        pAllocator: *const VkAllocationCallbacks,
+        pSurface: *mut VkSurfaceKHR,
+    ) -> VkResult;
+}
+impl VkLineRasterizationModeEXT {
+    pub const VK_LINE_RASTERIZATION_MODE_BEGIN_RANGE_EXT: VkLineRasterizationModeEXT =
+        VkLineRasterizationModeEXT::VK_LINE_RASTERIZATION_MODE_DEFAULT_EXT;
+}
+impl VkLineRasterizationModeEXT {
+    pub const VK_LINE_RASTERIZATION_MODE_END_RANGE_EXT: VkLineRasterizationModeEXT =
+        VkLineRasterizationModeEXT::VK_LINE_RASTERIZATION_MODE_RECTANGULAR_SMOOTH_EXT;
+}
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum VkLineRasterizationModeEXT {
+    VK_LINE_RASTERIZATION_MODE_DEFAULT_EXT = 0,
+    VK_LINE_RASTERIZATION_MODE_RECTANGULAR_EXT = 1,
+    VK_LINE_RASTERIZATION_MODE_BRESENHAM_EXT = 2,
+    VK_LINE_RASTERIZATION_MODE_RECTANGULAR_SMOOTH_EXT = 3,
+    VK_LINE_RASTERIZATION_MODE_RANGE_SIZE_EXT = 4,
+    VK_LINE_RASTERIZATION_MODE_MAX_ENUM_EXT = 2147483647,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceLineRasterizationFeaturesEXT {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub rectangularLines: VkBool32,
+    pub bresenhamLines: VkBool32,
+    pub smoothLines: VkBool32,
+    pub stippledRectangularLines: VkBool32,
+    pub stippledBresenhamLines: VkBool32,
+    pub stippledSmoothLines: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceLineRasterizationPropertiesEXT {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub lineSubPixelPrecisionBits: u32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPipelineRasterizationLineStateCreateInfoEXT {
+    pub sType: VkStructureType,
+    pub pNext: *const ::std::os::raw::c_void,
+    pub lineRasterizationMode: VkLineRasterizationModeEXT,
+    pub stippledLineEnable: VkBool32,
+    pub lineStippleFactor: u32,
+    pub lineStipplePattern: u16,
+}
+pub type PFN_vkCmdSetLineStippleEXT = ::std::option::Option<
+    unsafe extern "C" fn(
+        commandBuffer: VkCommandBuffer,
+        lineStippleFactor: u32,
+        lineStipplePattern: u16,
+    ),
+>;
+extern "C" {
+    pub fn vkCmdSetLineStippleEXT(
+        commandBuffer: VkCommandBuffer,
+        lineStippleFactor: u32,
+        lineStipplePattern: u16,
+    );
+}
+pub type VkPhysicalDeviceHostQueryResetFeaturesEXT = VkPhysicalDeviceHostQueryResetFeatures;
+pub type PFN_vkResetQueryPoolEXT = ::std::option::Option<
+    unsafe extern "C" fn(
+        device: VkDevice,
+        queryPool: VkQueryPool,
+        firstQuery: u32,
+        queryCount: u32,
+    ),
+>;
+extern "C" {
+    pub fn vkResetQueryPoolEXT(
+        device: VkDevice,
+        queryPool: VkQueryPool,
+        firstQuery: u32,
+        queryCount: u32,
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceIndexTypeUint8FeaturesEXT {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub indexTypeUint8: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub shaderDemoteToHelperInvocation: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub texelBufferAlignment: VkBool32,
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT {
+    pub sType: VkStructureType,
+    pub pNext: *mut ::std::os::raw::c_void,
+    pub storageTexelBufferOffsetAlignmentBytes: VkDeviceSize,
+    pub storageTexelBufferOffsetSingleTexelAlignment: VkBool32,
+    pub uniformTexelBufferOffsetAlignmentBytes: VkDeviceSize,
+    pub uniformTexelBufferOffsetSingleTexelAlignment: VkBool32,
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
